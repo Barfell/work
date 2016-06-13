@@ -317,7 +317,7 @@ STATIC VOID IdleWindow(VOID)
 }
 
 
-
+//主要的任务
 VOID TestGuiProc(VOID)
 {
 		
@@ -328,7 +328,7 @@ VOID TestGuiProc(VOID)
 //	pOldFont = GUI_SetFont(&GUI_Font8x9);//GUI_Font6x8
 	pOldFont = GUI_SetFont(&GUI_FontHZ12);  
 	
-	IdleWindow();
+	IdleWindow(); 
 	
 	
 	while(1)
@@ -376,11 +376,11 @@ VOID TestGuiProc(VOID)
 				}
                 else if(g_u8SelectCount == ADJUST_GAIN)
                 {
-                    AdjustRfidGain();
+                    AdjustRfidGain();//rfid
                 }
                 else if(g_u8SelectCount == SET_SUPERSOUND)
                 {
-                    SetRailPillow();
+                    SetRailPillow();//里程
                 }
 			}
 			GUI_Clear();

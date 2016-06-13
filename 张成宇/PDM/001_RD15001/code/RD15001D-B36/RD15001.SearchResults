@@ -1,4 +1,9 @@
----- SetRailPillow_begain Matches (3 in 1 files) ----
-TestGui.c (code\test):SetRailPillow_begain: 
-TestGui.c (code\test):                goto SetRailPillow_begain;
-TestGui.c (code\test):                goto SetRailPillow_begain;
+---- switch_value Matches (11 in 1 files) ----
+Mileage.c (code\drv\src):U16 switch_value;
+Mileage.c (code\drv\src):    switch_value = (GPIO_ReadInputData(GPIOE) & 0x6000);
+Mileage.c (code\drv\src):    switch_value = ((switch_value >> 13) & 0x03);
+Mileage.c (code\drv\src):    turn_direction.current_switchstate=switch_value;
+Mileage.c (code\drv\src):        switch_value = (GPIO_ReadInputData(GPIOE) & 0x6000);
+Mileage.c (code\drv\src):        switch_value = ((switch_value >> 13) & 0x03);
+Mileage.c (code\drv\src):        switch_value = (GPIO_ReadInputData(GPIOE) & 0x6000);
+Mileage.c (code\drv\src):        switch_value = ((switch_value >> 13) & 0x03);
