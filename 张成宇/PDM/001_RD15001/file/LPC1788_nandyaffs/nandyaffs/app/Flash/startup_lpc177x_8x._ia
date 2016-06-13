@@ -1,0 +1,6 @@
+--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-I "D:\Program Files\mdk\ARM\RV31\INC"
+-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"
+-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"
+
+--list .\startup_lpc177x_8x.lst --xref -o .\flash\startup_lpc177x_8x.o --depend .\flash\startup_lpc177x_8x.d "..\Startup\startup_LPC177x_8x.s"

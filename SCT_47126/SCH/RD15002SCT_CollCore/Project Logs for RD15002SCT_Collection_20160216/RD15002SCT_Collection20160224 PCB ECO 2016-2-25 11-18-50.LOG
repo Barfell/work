@@ -1,0 +1,57 @@
+Removed Pin From Net: NetName=TRAN_PWR_CN Pin=JP2-1
+Removed Pin From Net: NetName=DTU_ONOFF Pin=JP2-3
+Removed Pin From Net: NetName=IN4- Pin=JP2-6
+Removed Pin From Net: NetName=IN4+ Pin=JP2-7
+Removed Pin From Net: NetName=IN5- Pin=JP2-8
+Removed Pin From Net: NetName=IN5+ Pin=JP2-9
+Removed Pin From Net: NetName=P4.2 Pin=JP2-10
+Removed Pin From Net: NetName=P4.1 Pin=JP2-11
+Removed Pin From Net: NetName=P3.4 Pin=JP2-12
+Removed Pin From Net: NetName=P4.3 Pin=JP2-13
+Removed Pin From Net: NetName=P3.3 Pin=JP2-14
+Removed Pin From Net: NetName=P3.2 Pin=JP2-15
+Removed Pin From Net: NetName=P3.1 Pin=JP2-16
+Removed Pin From Net: NetName=P3.0 Pin=JP2-17
+Removed Pin From Net: NetName=P2.7 Pin=JP2-18
+Removed Pin From Net: NetName=P1.3 Pin=K1-1
+Removed Pin From Net: NetName=P1.2 Pin=K2-1
+Removed Pin From Net: NetName=P1.3 Pin=R25-2
+Removed Pin From Net: NetName=P1.2 Pin=R26-2
+Removed Pin From Net: NetName=TRAN_PWR_CN Pin=U5-51
+Removed Pin From Net: NetName=DTU_DCD Pin=U5-52
+Removed Pin From Net: NetName=DTU_ONOFF Pin=U5-53
+Added Pin To Net: NetName=DTU_ONOFF Pin=JP2-1
+Added Pin To Net: NetName=P4.3 Pin=JP2-3
+Added Pin To Net: NetName=TRAN_PWR_CN Pin=JP2-4
+Added Pin To Net: NetName=P4.2 Pin=JP2-5
+Added Pin To Net: NetName=P4.1 Pin=JP2-6
+Added Pin To Net: NetName=P5.1 Pin=JP2-7
+Added Pin To Net: NetName=P5.2 Pin=JP2-8
+Added Pin To Net: NetName=P5.3 Pin=JP2-9
+Added Pin To Net: NetName=P5.4 Pin=JP2-10
+Added Pin To Net: NetName=P3.6 Pin=JP2-11
+Added Pin To Net: NetName=P3.7 Pin=JP2-12
+Added Pin To Net: NetName=P3.3 Pin=JP2-13
+Added Pin To Net: NetName=P3.4 Pin=JP2-14
+Added Pin To Net: NetName=P3.1 Pin=JP2-15
+Added Pin To Net: NetName=P3.2 Pin=JP2-16
+Added Pin To Net: NetName=P2.7 Pin=JP2-17
+Added Pin To Net: NetName=P3.0 Pin=JP2-18
+Added Pin To Net: NetName=P1.2 Pin=K1-1
+Added Pin To Net: NetName=P1.3 Pin=K2-1
+Added Pin To Net: NetName=P1.2 Pin=R25-2
+Added Pin To Net: NetName=P1.3 Pin=R26-2
+Added Pin To Net: NetName=DTU_DCD Pin=U5-48
+Added Pin To Net: NetName=DTU_ONOFF Pin=U5-49
+Added Pin To Net: NetName=TRAN_PWR_CN Pin=U5-50
+Added Pin To Net: NetName=P4.3 Pin=U5-51
+Added Pin To Net: NetName=P4.2 Pin=U5-52
+Added Pin To Net: NetName=P4.1 Pin=U5-53
+Added Room: Name=U_1_Power_Supply
+Added Room: Name=U_2_MCU_MSP430
+Added Room: Name=U_3_VW_Sensor
+Added Room: Name=U_4_Resistor_Sensor
+Added Room: Name=U_5_Current_Voltage_Sensor
+Added Room: Name=U_6_Pulse_Sensor
+Added Room: Name=U_7_RS485_RS232_Sensor
+Added Room: Name=U_8_Port

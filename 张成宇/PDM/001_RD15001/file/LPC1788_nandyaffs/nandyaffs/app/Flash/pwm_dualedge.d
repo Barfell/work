@@ -1,0 +1,9 @@
+.\Flash\pwm_dualedge.o: PWM\Pwm_DualEdge.c
+.\Flash\pwm_dualedge.o: ..\Drivers\lpc177x_8x_pwm.h
+.\Flash\pwm_dualedge.o: ..\Startup\LPC177x_8x.h
+.\Flash\pwm_dualedge.o: ..\CM3_lib\core_cm3.h
+.\Flash\pwm_dualedge.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\pwm_dualedge.o: ..\Drivers\lpc_types.h
+.\Flash\pwm_dualedge.o: ..\Drivers\lpc177x_8x_pinsel.h
+.\Flash\pwm_dualedge.o: ..\app\bsp.h
+.\Flash\pwm_dualedge.o: ..\Drivers\phylan_dp83848c.h

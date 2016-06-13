@@ -1,0 +1,25 @@
+CC = arm-elf-gcc
+AR = arm-elf-ar
+MCU = arm9tdmi
+
+include includes
+include cflags
+
+target = yaffs2.o
+ 
+codes = $(wildcard *.c) 
+objects = $(codes:.c=.o) 
+depends = $(codes:.c=.d) 
+
+all_objects = $(objects)
+
+$(target): $(all_objects)
+	$(AR) -r $@ $(all_objects)
+
+sinclude $(depends) 
+
+$(objects):
+	$(CC) -c -mcpu=$(MCU) $(INCLUDES) $(CFLAGS) -gdwarf-2 -O0 $< -o $@ 
+
+
+

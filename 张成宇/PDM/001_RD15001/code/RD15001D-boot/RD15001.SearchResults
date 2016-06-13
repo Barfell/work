@@ -1,0 +1,3 @@
+---- EnterWriteProc Matches (2 in 1 files) ----
+TestBoot.c (code\test):STATIC VOID EnterWriteProc(U8 *pBuf, U16 u16Count)
+TestBoot.c (code\test):						EnterWriteProc(szTestTest + 4, u16Count - 7);

@@ -1,0 +1,13 @@
+.\Flash\sst39vf6401.o: ..\Drivers\SST39VF6401.c
+.\Flash\sst39vf6401.o: ..\app\bsp.h
+.\Flash\sst39vf6401.o: ..\Drivers\lpc_types.h
+.\Flash\sst39vf6401.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\sst39vf6401.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\sst39vf6401.o: ..\Drivers\SST39VF6401.h
+.\Flash\sst39vf6401.o: ..\Drivers\lpc177x_8x_emc.h
+.\Flash\sst39vf6401.o: ..\Startup\LPC177x_8x.h
+.\Flash\sst39vf6401.o: ..\CM3_lib\core_cm3.h
+.\Flash\sst39vf6401.o: ..\Drivers\lpc177x_8x_clkpwr.h
+.\Flash\sst39vf6401.o: ..\Startup\system_LPC177x_8x.h
+.\Flash\sst39vf6401.o: ..\Drivers\lpc177x_8x_pinsel.h
+.\Flash\sst39vf6401.o: ..\Drivers\lpc177x_8x_timer.h

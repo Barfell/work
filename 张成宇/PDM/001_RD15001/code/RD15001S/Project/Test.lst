@@ -1,0 +1,157 @@
+C51 COMPILER V9.52.0.0   TEST                                                              08/18/2015 14:52:37 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE TEST
+OBJECT MODULE PLACED IN .\Test.obj
+COMPILER INVOKED BY: C:\Keil_v4\C51\BIN\C51.EXE ..\code\Test.c LARGE BROWSE INCDIR(..\code) DEBUG OBJECTEXTEND PRINT(.\T
+                    -est.lst) OBJECT(.\Test.obj)
+
+line level    source
+
+   1          #include <c8051f340.h>
+   2          #include <intrins.h>   
+   3          #include "stdio.h"
+   4          #include "uart.h"
+   5          #include "hum_tem.h"
+   6          #include "Init.h"        
+   7          extern unsigned char Am2305_Read();
+   8          extern unsigned char Sensor_Data[5];
+   9          extern void DelayUs(unsigned int t);
+  10          extern void DelayMs(unsigned int t);
+  11          
+  12          void TestUart1(void)
+  13          {
+  14   1              U16 xdata u16Length;
+  15   1              U8 xdata szData[20];
+  16   1              while(1)
+  17   1              {
+  18   2                      ReceiveUsart1Data(szData, &u16Length);
+  19   2                      if(u16Length)
+  20   2                      {
+  21   3                              Uart1_Tx(szData, u16Length);
+  22   3                      }
+  23   2                      
+  24   2              }
+  25   1      
+  26   1      }
+  27          
+  28          void TestUart2(void)
+  29          {
+  30   1              U16 xdata u16Length;
+  31   1              U8 xdata szData[20];
+  32   1              while(1)
+  33   1              {
+  34   2                      ReceiveUsart2Data(szData, &u16Length);
+  35   2                      if(u16Length)
+  36   2                      {
+  37   3                              Uart2_Tx(szData, u16Length);
+  38   3                      }
+  39   2              }
+  40   1      }
+  41          #define TIMELENGTH  11
+  42          #define TAGLENGTH  4
+  43          void TestUartRfid(void)
+  44          {
+  45   1          U16 xdata u16Cnt, xdata u16Length;
+  46   1          
+  47   1          U8 xdata szData[RFIDDATACOUNT], xdata szTestTest[RFIDDATACOUNT], xdata szTimeBuf[TIMELENGTH], xdata sz
+             -TagBuf[TAGLENGTH], xdata szOutputBuf[TIMELENGTH + TAGLENGTH + 2];
+  48   1        
+  49   1      
+  50   1              while(1)
+  51   1              {
+  52   2      
+  53   2                      ReceiveUsart1Data(szData, &u16Length);
+C51 COMPILER V9.52.0.0   TEST                                                              08/18/2015 14:52:37 PAGE 2   
+
+  54   2                      if(u16Length)
+  55   2                      {
+  56   3                              memcpy(szTestTest, szData, u16Length);
+  57   3      //                  if(AnalyzeCmd(szTestTest, u16Length) == FALSE)
+  58   3                      Uart2_Tx(szTestTest, u16Length);
+  59   3                      }
+  60   2      
+  61   2                      ReceiveUsart2Data(szData, &u16Length);
+  62   2                      if(u16Length)
+  63   2                      {
+  64   3                              memcpy(szTestTest, szData, u16Length);
+  65   3                              Uart1_Tx(szTestTest, u16Length);
+  66   3                          for(u16Cnt = 0; u16Cnt < u16Length; u16Cnt++)
+  67   3                          {
+  68   4                              if((szTestTest[u16Cnt] == 0xff) && (szTestTest[u16Cnt + 1] == 0x18) && (szTestTest[u16Cnt
+             - + 2] == 0x22))
+  69   4                              {
+  70   5                                  if(HandleTag(szTestTest + u16Cnt + 15) == TRUE)
+  71   5                                  {
+  72   6      //                              GetCurrentTagString(szTagBuf, g_cRfidVar.u8Tag);
+  73   6      //                              GetCurrentTimeString(szTimeBuf);
+  74   6                                      memcpy(szOutputBuf, szTimeBuf, TIMELENGTH);
+  75   6                                      memcpy(szOutputBuf + TIMELENGTH, szTagBuf, TAGLENGTH);
+  76   6                                      szOutputBuf[TIMELENGTH + TAGLENGTH] = '\r';
+  77   6                                      szOutputBuf[TIMELENGTH + TAGLENGTH + 1] = '\n';
+  78   6                                      Uart1_Tx(szOutputBuf, TIMELENGTH + TAGLENGTH + 2);
+  79   6                                      break;
+  80   6                                  }
+  81   5                              }
+  82   4                              
+  83   4                          }
+  84   3                      }
+  85   2      
+  86   2      
+  87   2              }
+  88   1      
+  89   1      }
+  90          
+  91          void TestUartTimer(void)
+  92          {
+  93   1              U32 xdata u32Count, xdata u32CurrentCount;
+  94   1              U8 xdata szData[20] = {"test timer uart"};
+  95   1              u32Count = GetTickCount();
+  96   1              while(1)
+  97   1              {
+  98   2                       u32CurrentCount = GetTickCount();
+  99   2                       if((u32CurrentCount - u32Count) > 500)
+ 100   2                       {
+ 101   3                                Uart1_Tx(szData, 15);
+ 102   3                                u32Count = GetTickCount();
+ 103   3                       }
+ 104   2              }
+ 105   1      
+ 106   1      }
+ 107           
+ 108          void TestTemperature(void)
+ 109          {
+ 110   1              int xdata i;
+ 111   1              while(1)
+ 112   1              {
+ 113   2                      Am2305_Read();
+ 114   2                      for(i=0;i<5;i++)
+C51 COMPILER V9.52.0.0   TEST                                                              08/18/2015 14:52:37 PAGE 3   
+
+ 115   2                      {
+ 116   3                              Uart1_Tx(Sensor_Data + i, 1);
+ 117   3                      }
+ 118   2              
+ 119   2                      for(i = 0; i< 30; i++)    //
+ 120   2                      {               
+ 121   3                              DelayMs(100);
+ 122   3                      }
+ 123   2              }
+ 124   1      }
+ 125          
+ 126          
+ 127           
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    609    ----
+   CONSTANT SIZE    =     20    ----
+   XDATA SIZE       =   ----     210
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

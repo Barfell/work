@@ -1,0 +1,11 @@
+".\app_rfid.obj",
+".\hum_tem.obj",
+".\Init.obj",
+".\main.obj",
+".\protocol.obj",
+".\Test.obj",
+".\TestRfid.obj",
+".\usart.obj",
+".\STARTUP.obj" 
+TO "RD15001S" 
+RAMSIZE(256) 

@@ -1,0 +1,51 @@
+.\fattester.o: ..\code\FATFS\exfuns\fattester.c
+.\fattester.o: ..\code\FATFS\exfuns\fattester.h
+.\fattester.o: ..\code\sys\Include\stm32f4xx.h
+.\fattester.o: ..\code\DSP_LIB\Include\core_cm4.h
+.\fattester.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdint.h
+.\fattester.o: ..\code\DSP_LIB\Include\core_cmInstr.h
+.\fattester.o: ..\code\DSP_LIB\Include\core_cmFunc.h
+.\fattester.o: ..\code\DSP_LIB\Include\core_cm4_simd.h
+.\fattester.o: ..\code\sys\Include\system_stm32f4xx.h
+.\fattester.o: ..\code\user\stm32f4xx_conf.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_adc.h
+.\fattester.o: ..\code\sys\Include\stm32f4xx.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_crc.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_dbgmcu.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_dma.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_exti.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_flash.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_gpio.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_i2c.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_iwdg.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_pwr.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_rcc.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_rtc.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_sdio.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_spi.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_syscfg.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_tim.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_usart.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_wwdg.h
+.\fattester.o: ..\code\bsp\inc\misc.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_can.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_cryp.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_hash.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_rng.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_dac.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_dcmi.h
+.\fattester.o: ..\code\bsp\inc\stm32f4xx_fsmc.h
+.\fattester.o: ..\code\FATFS\src\ff.h
+.\fattester.o: ..\code\FATFS\src\integer.h
+.\fattester.o: ..\code\FATFS\src\ffconf.h
+.\fattester.o: ..\code\drv\inc\usart.h
+.\fattester.o: ..\code\user\protocol.h
+.\fattester.o: ..\code\sys\Include\kernal.h
+.\fattester.o: ..\code\sys\Include\tool.h
+.\fattester.o: ..\code\sys\Include\type32.h
+.\fattester.o: ..\code\sys\Include\archDef.h
+.\fattester.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h
+.\fattester.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdlib.h
+.\fattester.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\string.h
+.\fattester.o: ..\code\sys\Include\malloc.h
+.\fattester.o: ..\code\FATFS\exfuns\exfuns.h

@@ -1,0 +1,15 @@
+---- yaffs_driver Matches (10 in 9 files) ----
+Yaffs_fileem2k.c (direct\test-framework):	struct yaffs_driver *drv;
+Yaffs_guts.c:	struct yaffs_driver *drv = &dev->drv;
+Yaffs_guts.h:struct yaffs_driver {
+Yaffs_guts.h:	struct yaffs_driver drv;
+Yaffs_m18_drv.c (direct\test-framework):	struct yaffs_driver *drv;
+Yaffs_mtdif_multi.c:	struct yaffs_driver *drv = &dev->drv;
+Yaffs_mtdif_single.c:	struct yaffs_driver *drv = &dev->drv;
+Yaffs_nand_drv.c (direct\test-framework):	struct yaffs_driver *drv = &dev->drv;
+Yaffs_nor_drv.c (direct\test-framework):	struct yaffs_driver *drv;
+Yramsim.c (direct\test-framework):	struct yaffs_driver *d;
+---- yaffs_driver Search Errors Encountered (2) ----
+The following 2 files could not be processed:
+E:\PROJECT\张成宇\PDM\001_RD15001\file\yaffs2-5cd357c\SI\yaffs.IAB : File could not be opened.
+E:\PROJECT\张成宇\PDM\001_RD15001\file\yaffs2-5cd357c\SI\yaffs.IMB : File could not be opened.

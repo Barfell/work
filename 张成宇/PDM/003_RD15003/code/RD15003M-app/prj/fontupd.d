@@ -1,0 +1,50 @@
+.\fontupd.o: ..\code\TEXT\fontupd.c
+.\fontupd.o: ..\code\TEXT\fontupd.h
+.\fontupd.o: ..\code\sys\Include\stm32f4xx.h
+.\fontupd.o: ..\code\DSP_LIB\Include\core_cm4.h
+.\fontupd.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdint.h
+.\fontupd.o: ..\code\DSP_LIB\Include\core_cmInstr.h
+.\fontupd.o: ..\code\DSP_LIB\Include\core_cmFunc.h
+.\fontupd.o: ..\code\DSP_LIB\Include\core_cm4_simd.h
+.\fontupd.o: ..\code\sys\Include\system_stm32f4xx.h
+.\fontupd.o: ..\code\user\stm32f4xx_conf.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_adc.h
+.\fontupd.o: ..\code\sys\Include\stm32f4xx.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_crc.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_dbgmcu.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_dma.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_exti.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_flash.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_gpio.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_i2c.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_iwdg.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_pwr.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_rcc.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_rtc.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_sdio.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_spi.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_syscfg.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_tim.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_usart.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_wwdg.h
+.\fontupd.o: ..\code\bsp\inc\misc.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_can.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_cryp.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_hash.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_rng.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_dac.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_dcmi.h
+.\fontupd.o: ..\code\bsp\inc\stm32f4xx_fsmc.h
+.\fontupd.o: ..\code\FATFS\src\ff.h
+.\fontupd.o: ..\code\FATFS\src\integer.h
+.\fontupd.o: ..\code\FATFS\src\ffconf.h
+.\fontupd.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\string.h
+.\fontupd.o: ..\code\sys\Include\malloc.h
+.\fontupd.o: ..\code\sys\Include\tool.h
+.\fontupd.o: ..\code\sys\Include\type32.h
+.\fontupd.o: ..\code\sys\Include\archDef.h
+.\fontupd.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h
+.\fontupd.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdlib.h
+.\fontupd.o: ..\code\drv\inc\usart.h
+.\fontupd.o: ..\code\user\protocol.h
+.\fontupd.o: ..\code\sys\Include\kernal.h

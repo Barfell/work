@@ -1,0 +1,16 @@
+.\Flash\tcpip.o: Easy_web\tcpip.c
+.\Flash\tcpip.o: Easy_web\tcpip.h
+.\Flash\tcpip.o: ..\Drivers\lpc_types.h
+.\Flash\tcpip.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\tcpip.o: Easy_web\EMAC.h
+.\Flash\tcpip.o: C:\Keil\ARM\RV31\Inc\string.h
+.\Flash\tcpip.o: ..\Startup\LPC177x_8x.h
+.\Flash\tcpip.o: ..\CM3_lib\core_cm3.h
+.\Flash\tcpip.o: ..\Drivers\lpc177x_8x_clkpwr.h
+.\Flash\tcpip.o: ..\Startup\system_LPC177x_8x.h
+.\Flash\tcpip.o: ..\Drivers\lpc177x_8x_pinsel.h
+.\Flash\tcpip.o: ..\Drivers\lpc177x_8x_timer.h
+.\Flash\tcpip.o: ..\Drivers\lpc177x_8x_nvic.h
+.\Flash\tcpip.o: ..\Drivers\lpc177x_8x_emac.h
+.\Flash\tcpip.o: ..\app\bsp.h
+.\Flash\tcpip.o: ..\Drivers\phylan_dp83848c.h

@@ -1,0 +1,20 @@
+CC = arm-elf-gcc
+SED = sed_WinARM
+RM = rm
+
+include includes
+include cflags
+
+%.d: %.c
+	@echo generate depends for $<;\
+	$(CC) -M $(INCLUDES) $(CFLAGS) $< > tmp;\
+	$(SED) 's/\($*\)\.o:/\1.o $@ :/g' <tmp> $@;\
+	$(RM) -f tmp 
+        
+codes = $(wildcard *.c) 
+depends = $(codes:.c=.d) 
+
+all: $(depends)
+	@echo all depends have been generated!
+
+sinclude $(depends) 

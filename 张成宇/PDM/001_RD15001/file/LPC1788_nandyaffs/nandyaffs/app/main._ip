@@ -1,0 +1,6 @@
+main.c -E -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs
+-I "D:\Program Files\mdk\ARM\RV31\INC"
+-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"
+-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"
+
+-o .\main.i --list_dir ".\\" --list

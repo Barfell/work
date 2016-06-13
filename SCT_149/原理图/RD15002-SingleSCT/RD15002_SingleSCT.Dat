@@ -1,0 +1,67 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~RD15002_SingleSCT.PrjPcb|ReportField=ProjectFullPath~E:\PROJECT\SCT\原理图\RD15002-SingleSCT\RD15002_SingleSCT.PrjPcb|ReportField=Title~Bill of Materials For Project [RD15002_SingleSCT.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~207|ReportField=ReportTime~15:03:55|ReportField=ReportDate~2015/12/30 星期三|ReportField=ReportDateTime~2015/12/30 星期三 15:03:55|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2015/12/30 星期三|ReportField=CurrentTime~15:03:53|ReportField=Date~|ReportField=DocumentFullPathAndName~E:\PROJECT\SCT\原理图\RD15002-SingleSCT\RD15002_SingleSCT.SchDoc|ReportField=DocumentName~RD15002_SingleSCT.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~邓勇杰|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2015/12/3 星期四|ReportField=Organization~|ReportField=ProjectName~RD15002_SingleSCT.PrjPcb|ReportField=Revision~A1.0.0|ReportField=Rule~|ReportField=SheetNumber~1|ReportField=SheetTotal~10|ReportField=Time~2015/12/2|ReportField=Title~RD15002_SingleSCT.PrjPcb|ReportField=DataSourceFileName~RD15002_SingleSCT.PrjPcb|ReportField=DataSourceFullPath~E:\PROJECT\SCT\原理图\RD15002-SingleSCT\RD15002_SingleSCT.PrjPcb
+BEEP||B1|BUZZER-5V|BEEP|1
+JN5139||B2|JN5139|JN5139|1
+MS920T|Multicell Battery|BT1|MS920T|Battery|1
+22uF/16V|Polarized Capacitor (Radial)|C1, C4, C6, C8, C10, C12, C14, C29, C45|CB3528|Cap Pol1|9
+0.1uF|Capacitor|C2, C5, C7, C9, C11, C13, C15, C16, C18, C25, C26, C28, C30, C34, C35, C36, C37, C38, C39, C42, C44, C46, C47, C48, C49, C50, C51|CC0603|Cap|27
+100pF|Capacitor|C3, C31, C32, C33, C53|CC0603|Cap|5
+100uF/20V|Polarized Capacitor (Surface Mount)|C17|CD7343|Cap Pol3|1
+4.7uF/10V|Polarized Capacitor (Radial)|C19|CA3216|Cap Pol1|1
+10uF/16V|Polarized Capacitor (Radial)|C20|CA3216|Cap Pol1|1
+22pF|Capacitor|C21, C22, C23, C24|CC0603|Cap|4
+1uF|Capacitor|C27, C40, C41, C54|CC0603|Cap|4
+1000pF|Capacitor|C43|CC0603|Cap|1
+Cap|Capacitor|C52|CC0603|Cap|1
+CMDSH-3|Schottky Diode|D1, D2|SOD323|D Schottky|2
+DESD1P0RFW-7|TVS DIODE,70VVVM,8VC,SOT-323|D3|SOT-323|BAV99WT1G|1
+DFLS1200-7|Diode, Schotky, 200V, 1A, PowerDI123|D4|powerDI123|DFLS1200-7|1
+1N4148||D5|SOD323|DIODE|1
+LED||D6, D7, D8|D0603|LED|3
+BAT|jointbar|J1|CON2-2.54MM|SIP2|1
+Header2*10||J2|IDC20-2.0MM|Header2*10|1
+COM2|jointbar|J3, J4|ECH350H-3P|SIP3|2
+COM3|jointbar|J5|ECH350H-3P|SIP3|1
+CON5|Header, 5-Pin|J6|ECH350H-5P|Header 5|1
+CON2|jointbar|J7|ECH350H-2P|SIP2|1
+JTAG||JP1|IDC14-2.0MM|Header2*7|1
+10uH|Inductor|L1|SLF6025|Inductor|1
+CJ2301||Q1|SOT-23W|P-MOSFET1|1
+MMBT3904||Q2, TR1, TR2|SOT-23W|NPN|3
+105K|Resistor|R1|CC0603|Res2|1
+100K|Resistor|R2, R7, R8, R9, R15, R26, R27, R29, R30, R31, R32, R41|CC0603|Res2|12
+20K|Resistor|R3|CC0603|Res2|1
+300K|Resistor|R4|CC0603|Res2|1
+22R|Resistor|R5, R16, R17, R18, R19|CC0603|Res2|5
+100R|Resistor|R6, R61|CC0603|Res2|2
+357R|Resistor|R10|CC0603|Res2|1
+10K|Resistor|R11, R12, R14, R24, R25, R40, R58, R59, R60, R77, R78, R82, R94, R95|CC0603|Res2|14
+0R|Resistor|R13, R20, R21, R36, R37, R38, R45, R47, R48, R51, R53, R56, R63, R66, R67, R68, R69, R70, R71, R72, R73, R74, R75, R76, R79, R80, R88, R89, R91, R92, R93, R98, R99, R100, R101, R102, R103, R104, R105, R106, R107|CC0603|Res2|41
+470|Resistor|R22|CC0603|Res2|1
+1K|Resistor|R23, R28, R39, R44, R62, R64, R65|CC0603|Res2|7
+4.7K|Resistor|R33, R34, R35|CC0603|Res2|3
+100K 1%|Resistor|R42, R43|CC0603|Res2|2
+12K|Resistor|R46|CC0603|Res2|1
+25R|Resistor|R49, R55|CC0603|Res2|2
+5K|Resistor|R50, R57|CC0603|Res2|2
+92.6K 1%|Resistor|R52|CC0603|Res2|1
+2.49K 1%|Resistor|R54|CC0603|Res2|1
+120R|Resistor|R81|CC0603|Res2|1
+200R|Resistor|R83, R85, R87|CC0603|Res2|3
+2.2K|Resistor|R84, R86, R90, R96, R97|CC0603|Res2|5
+G6K||RE1|G6K|G6K|1
+RESET|Switch|S1|SPST|SW-PB|1
+SW-PB|Switch|S2, S3, S4, S5|SPST|SW-PB|4
+TPS560200||U1|SOT-23-5|TPS560200|1
+LP2985-25||U2, U3|SOT-23-5|LP2985|2
+LT1019AIS8-5||U4|SO-8|LT1019AIS8-5|1
+MSP430F1X/2X/4X||U5|LQFP64|MSP430F1X/2X/4X|1
+FAN3122||U6|SO-8|FAN3122|1
+TLV3491AID||U7|SOT-23-5|TLV3491AID|1
+LT1807||U8, U9|SO-8|LM833N|2
+LTC2402||U10|MS10|LTC2402|1
+AD8420||U11|MSOP8|AD8420|1
+MAX3232|communication  IC|U12|SO-16|MAX3232|1
+74HC1G14||U13|SOT-23-5|74HC1G14|1
+SN65HVD72/75/78||U14|SO-8|SN65HVD72/75/78|1
+1M|Crystal Oscillator|Y1|XCYAI|XTAL|1
+32.768KHz||Y2|MC-146|MC-146|1

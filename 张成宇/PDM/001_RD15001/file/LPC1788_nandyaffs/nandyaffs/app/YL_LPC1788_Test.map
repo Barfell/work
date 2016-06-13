@@ -1,0 +1,1370 @@
+Product: MDK-ARM Professional 5.10
+Component: ARM Compiler 5.04 update 1 (build 49)
+Tool: armlink [5040049]
+
+==============================================================================
+
+Section Cross References
+
+    startup_lpc177x_8x.o(RESET) refers to startup_lpc177x_8x.o(STACK) for __initial_sp
+    startup_lpc177x_8x.o(RESET) refers to startup_lpc177x_8x.o(.text) for Reset_Handler
+    startup_lpc177x_8x.o(RESET) refers to main.o(.text) for SysTick_Handler
+    startup_lpc177x_8x.o(.text) refers to system_lpc177x_8x.o(.text) for SystemInit
+    startup_lpc177x_8x.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_lpc177x_8x.o(.text) refers to system_lpc177x_8x.o(.data) for SystemCoreClock
+    debug_frmwrk.o(.text) refers to lpc177x_8x_uart.o(.text) for UART_Send
+    debug_frmwrk.o(.text) refers to debug_frmwrk.o(.conststring) for .conststring
+    debug_frmwrk.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PINSEL_ConfigPin
+    debug_frmwrk.o(.text) refers to debug_frmwrk.o(.data) for _db_msg
+    lpc177x_8x_clkpwr.o(.text) refers to system_lpc177x_8x.o(.text) for SystemCoreClockUpdate
+    lpc177x_8x_clkpwr.o(.text) refers to system_lpc177x_8x.o(.data) for SystemCoreClock
+    lpc177x_8x_dac.o(.text) refers to lpc177x_8x_dac.o(.text) for DAC_GetPointer
+    lpc177x_8x_dac.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PINSEL_ConfigPin
+    lpc177x_8x_dac.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PINSEL_DacEnable
+    lpc177x_8x_dac.o(.text) refers to lpc177x_8x_dac.o(.text) for DAC_SetBias
+    lpc177x_8x_dac.o(.text) refers to lpc177x_8x_dac.o(.text) for DAC_GetPointer
+    lpc177x_8x_dac.o(.text) refers to lpc177x_8x_dac.o(.text) for DAC_GetPointer
+    lpc177x_8x_dac.o(.text) refers to lpc177x_8x_dac.o(.text) for DAC_GetPointer
+    lpc177x_8x_dac.o(.text) refers to lpc177x_8x_dac.o(.text) for DAC_GetPointer
+    lpc177x_8x_emc.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PINSEL_ConfigPin
+    lpc177x_8x_exti.o(.text) refers to lpc177x_8x_exti.o(.text) for EXTI_SetMode
+    lpc177x_8x_exti.o(.text) refers to lpc177x_8x_exti.o(.text) for EXTI_SetPolarity
+    lpc177x_8x_gpdma.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_ConfigPPWR
+    lpc177x_8x_gpdma.o(.text) refers to lpc177x_8x_gpdma.o(.data) for pGPDMACh
+    lpc177x_8x_gpdma.o(.text) refers to lpc177x_8x_gpdma.o(.constdata) for GPDMA_LUTPerAddr
+    lpc177x_8x_gpdma.o(.text) refers to lpc177x_8x_gpdma.o(.data) for pGPDMACh
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_GetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_GetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_GetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_ClearValue
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_SetValue
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_GetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_SetDir
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_SetValue
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_ClearValue
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_ReadValue
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_IntCmd
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_GetIntStatus
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_ClearInt
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for GPIO_GetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_HalfWordGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_HalfWordGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_HalfWordGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_HalfWordGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_HalfWordGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_ByteGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_ByteGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_ByteGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_ByteGetPointer
+    lpc177x_8x_gpio.o(.text) refers to lpc177x_8x_gpio.o(.text) for FIO_ByteGetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_ConfigPPWR
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_ConfigPPWR
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_GetCLK
+    lpc177x_8x_qei.o(.text) refers to uldiv.o(.text) for __aeabi_uldivmod
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_qei.o(.text) for QEI_GetPointer
+    lpc177x_8x_qei.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_GetCLK
+    lpc177x_8x_qei.o(.text) refers to uldiv.o(.text) for __aeabi_uldivmod
+    lpc177x_8x_timer.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_GetCLK
+    lpc177x_8x_timer.o(.text) refers to uldiv.o(.text) for __aeabi_uldivmod
+    lpc177x_8x_timer.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_ConfigPPWR
+    lpc177x_8x_uart.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_GetCLK
+    lpc177x_8x_uart.o(.text) refers to lpc177x_8x_uart.o(.text) for UART_TxCmd
+    lpc177x_8x_uart.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_ConfigPPWR
+    lpc177x_8x_uart.o(.text) refers to lpc177x_8x_uart.o(.text) for UART_Send
+    lpc177x_8x_uart.o(.text) refers to lpc177x_8x_uart.o(.text) for UART_RS485Send
+    lpc177x_8x_uart.o(.text) refers to lpc177x_8x_uart.o(.text) for UART_RS485Send
+    nandflash_k9f2g08u0x.o(.text) refers to lpc177x_8x_emc.o(.text) for EMC_Init
+    nandflash_k9f2g08u0x.o(.text) refers to lpc177x_8x_timer.o(.text) for TIM_Init
+    nandflash_k9f2g08u0x.o(.text) refers to main.o(.text) for Delay
+    nandflash_k9f2g08u0x.o(.text) refers to nandflash_k9f2g08u0x.o(.bss) for InvalidBlockTable
+    nandflash_k9f2g08u0x.o(.text) refers to main.o(.text) for Delay
+    nandflash_k9f2g08u0x.o(.text) refers to nandflash_k9f2g08u0x.o(.text) for NandFlash_ReadStatus
+    nandflash_k9f2g08u0x.o(.text) refers to main.o(.text) for Delay
+    nandflash_k9f2g08u0x.o(.text) refers to nandflash_k9f2g08u0x.o(.text) for NandFlash_ReadFromAddr
+    nandflash_k9f2g08u0x.o(.text) refers to nandflash_k9f2g08u0x.o(.text) for NandFlash_PageReadFromAddr
+    nandflash_k9f2g08u0x.o(.text) refers to nandflash_k9f2g08u0x.o(.bss) for InvalidBlockTable
+    nandflash_k9f2g08u0x.o(.text) refers to nandflash_k9f2g08u0x.o(.text) for NandFlash_PageReadFromAddr
+    nandflash_k9f2g08u0x.o(.text) refers to nandflash_k9f2g08u0x.o(.text) for NandFlash_PageReadFromBeginning
+    nandflash_k9f2g08u0x.o(.text) refers to nandflash_k9f2g08u0x.o(.text) for NandFlash_ReadFromAddr
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    lpc177x_8x_pinsel.o(.text) refers to lpc177x_8x_pinsel.o(.text) for PIN_GetPointer
+    main.o(.text) refers to lpc177x_8x_clkpwr.o(.text) for CLKPWR_GetCLK
+    main.o(.text) refers to yaffscfg2k.o(.text) for yaffs_StartUp
+    main.o(.text) refers to yaffsfs.o(.text) for yaffs_mount
+    main.o(.text) refers to sdram_k4s561632j.o(.text) for SDRAMInit
+    main.o(.text) refers to nandflash_k9f2g08u0x.o(.text) for NandFlash_Init
+    main.o(.text) refers to debug_frmwrk.o(.text) for debug_frmwrk_init
+    main.o(.text) refers to main.o(.constdata) for boot_msg
+    main.o(.text) refers to debug_frmwrk.o(.data) for _db_msg_
+    main.o(.text) refers to main.o(.data) for SysTickCnt
+    main.o(.text) refers to main.o(.constdata) for menu
+    main.o(.text) refers to debug_frmwrk.o(.data) for _db_msg_
+    download.o(.text) refers to download.o(.data) for download_addr
+    download.o(.text) refers to debug_frmwrk.o(.data) for _db_msg_
+    flash2k.o(.text) refers to nandflash_k9f2g08u0x.o(.text) for Nand_EraseBlockLarge
+    flash2k.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    flash2k.o(.text) refers to yaffs_packedtags2.o(.text) for yaffs_PackTags2
+    yaffs_checkptrw.o(.text) refers to yaffscfg2k.o(.text) for yaffs_malloc
+    yaffs_checkptrw.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    yaffs_checkptrw.o(.text) refers to malloc.o(i.free) for free
+    yaffs_checkptrw.o(.text) refers to yaffs_checkptrw.o(.text) for yaffs_CheckpointFlushBuffer
+    yaffs_checkptrw.o(.data) refers to yaffs_checkptrw.o(.conststring) for .conststring
+    yaffs_ecc.o(.text) refers to yaffs_ecc.o(.constdata) for column_parity_table
+    yaffs_ecc.o(.data) refers to yaffs_ecc.o(.conststring) for .conststring
+    yaffs_guts.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    yaffs_guts.o(.text) refers to yaffscfg2k.o(.text) for yaffs_malloc
+    yaffs_guts.o(.text) refers to malloc.o(i.free) for free
+    yaffs_guts.o(.text) refers to yaffs_nand.o(.text) for yaffs_ReadChunkWithTagsFromNAND
+    yaffs_guts.o(.text) refers to yaffscfg2k.o(.data) for yaffs_traceMask
+    yaffs_guts.o(.text) refers to yaffs_checkptrw.o(.text) for yaffs_CheckpointInvalidateStream
+    yaffs_guts.o(.text) refers to yaffs_tagsvalidity.o(.text) for yaffs_InitialiseTags
+    yaffs_guts.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy4
+    yaffs_guts.o(.text) refers to yaffsfs.o(.data) for yaffs_wr_attempts
+    yaffs_guts.o(.text) refers to strlen.o(.text) for strlen
+    yaffs_guts.o(.text) refers to strcpy.o(.text) for strcpy
+    yaffs_guts.o(.text) refers to strncpy.o(.text) for strncpy
+    yaffs_guts.o(.text) refers to strcat.o(.text) for strcat
+    yaffs_guts.o(.text) refers to strcmp.o(.text) for strcmp
+    yaffs_guts.o(.text) refers to strncmp.o(.text) for strncmp
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.data) for x
+    yaffs_guts.o(.text) refers to yaffs_checkptrw.o(.text) for yaffs_CheckpointWrite
+    yaffs_guts.o(.text) refers to yaffs_qsort.o(.text) for yaffs_qsort
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_MknodObject
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_MknodObject
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetEquivalentObject
+    yaffs_guts.o(.text) refers to strlen.o(.text) for strlen
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_FindObjectByName
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_FlushFilesChunkCache
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_VerifyObjects
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetEquivalentObject
+    yaffs_guts.o(.text) refers to strlen.o(.text) for strlen
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_FindObjectByName
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetEquivalentObject
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetEquivalentObject
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetEquivalentObject
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_ResizeFile
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetFileSize
+    yaffs_guts.o(.text) refers to yaffs_guts.o(.text) for yaffs_CalcCheckpointBlocksRequired
+    yaffs_guts.o(.data) refers to yaffs_guts.o(.conststring) for .conststring
+    yaffs_nand.o(.text) refers to yaffs_tagscompat.o(.text) for yaffs_TagsCompatabilityReadChunkWithTagsFromNAND
+    yaffs_nand.o(.text) refers to yaffs_guts.o(.text) for yaffs_HandleChunkError
+    yaffs_nand.o(.text) refers to yaffs_tagsvalidity.o(.text) for yaffs_ValidateTags
+    yaffs_nand.o(.text) refers to flash2k.o(.text) for yflash2_WriteChunkWithTagsToNAND
+    yaffs_nand.o(.data) refers to yaffs_nand.o(.conststring) for .conststring
+    yaffs_packedtags2.o(.text) refers to yaffs_ecc.o(.text) for yaffs_ECCCalculateOther
+    yaffs_packedtags2.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    yaffs_packedtags2.o(.text) refers to yaffs_tagsvalidity.o(.text) for yaffs_InitialiseTags
+    yaffs_tagscompat.o(.text) refers to yaffs_ecc.o(.text) for yaffs_ECCCalculate
+    yaffs_tagscompat.o(.text) refers to memseta.o(.text) for __aeabi_memset
+    yaffs_tagscompat.o(.text) refers to memcpya.o(.text) for __aeabi_memcpy
+    yaffs_tagscompat.o(.text) refers to yaffs_tagscompat.o(.constdata) for yaffs_countBitsTable
+    yaffs_tagscompat.o(.text) refers to memcmp.o(.text) for memcmp
+    yaffs_tagscompat.o(.text) refers to yaffs_tagscompat.o(.data) for init
+    yaffs_tagscompat.o(.text) refers to yaffs_tagscompat.o(.bss) for spareFF
+    yaffs_tagsvalidity.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    yaffscfg2k.o(.text) refers to malloc.o(i.malloc) for malloc
+    yaffscfg2k.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    yaffscfg2k.o(.text) refers to flash2k.o(.text) for yflash2_GetNumberOfBlocks
+    yaffscfg2k.o(.text) refers to yaffsfs.o(.text) for yaffs_initialise
+    yaffscfg2k.o(.text) refers to yaffscfg2k.o(.data) for yaffsfs_lastError
+    yaffscfg2k.o(.text) refers to yaffscfg2k.o(.bss) for flashDev
+    yaffscfg2k.o(.text) refers to yaffscfg2k.o(.data) for yaffsfs_lastError
+    yaffscfg2k.o(.text) refers to malloc.o(i.free) for free
+    yaffscfg2k.o(.data) refers to yaffscfg2k.o(.conststring) for .conststring
+    yaffscfg2k.o(.data) refers to yaffscfg2k.o(.bss) for flashDev
+    yaffsfs.o(.text) refers to strcmp.o(.text) for strcmp
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_FindObjectByName
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.bss) for yaffsfs_handle
+    yaffsfs.o(.text) refers to yaffsfs.o(.data) for yaffsfs_configurationList
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetObjectLinkCount
+    yaffsfs.o(.text) refers to debug_frmwrk.o(.data) for _db_msg_
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_GetHandlePointer
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_GetHandlePointer
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_FlushFile
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_GetHandlePointer
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetObjectFileLength
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_GetHandlePointer
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_WriteDataToFile
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindObject
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetEquivalentObject
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_GetHandlePointer
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_ResizeFile
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_GetHandlePointer
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetObjectFileLength
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindObject
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_Unlink
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_DoUnlink
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_DoUnlink
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindDirectory
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_RenameObject
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_DoStatOrLStat
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_DoStatOrLStat
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_GetHandleObject
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindObject
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindObject
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_GetHandleObject
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindDevice
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_FlushEntireDeviceCache
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_CheckpointSave
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindDevice
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_FlushEntireDeviceCache
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_CheckpointSave
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_Deinitialise
+    yaffsfs.o(.text) refers to yaffsfs.o(.bss) for yaffsfs_handle
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindDevice
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetNumberOfFreeChunks
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindDevice
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindDevice
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindObject
+    yaffsfs.o(.text) refers to memseta.o(.text) for __aeabi_memclr4
+    yaffsfs.o(.text) refers to strncpy.o(.text) for strncpy
+    yaffsfs.o(.text) refers to yaffsfs.o(.data) for search_contexts
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_GetEquivalentObject
+    yaffsfs.o(.text) refers to strlen.o(.text) for strlen
+    yaffsfs.o(.text) refers to strcpy.o(.text) for strcpy
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_DirAdvance
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_SetDirRewound
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to malloc.o(i.free) for free
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindDirectory
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_MknodSymLink
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindObject
+    yaffsfs.o(.text) refers to memseta.o(.text) for __aeabi_memclr
+    yaffsfs.o(.text) refers to strncpy.o(.text) for strncpy
+    yaffsfs.o(.text) refers to yaffscfg2k.o(.text) for yaffsfs_Lock
+    yaffsfs.o(.text) refers to yaffsfs.o(.text) for yaffsfs_FindObject
+    yaffsfs.o(.text) refers to strlen.o(.text) for strlen
+    yaffsfs.o(.text) refers to yaffs_guts.o(.text) for yaffs_Link
+    yaffsfs.o(.data) refers to yaffsfs.o(.conststring) for .conststring
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    malloc.o(i.free) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloc.o(i.malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloc.o(i.malloc) refers to startup_lpc177x_8x.o(HEAP) for __heap_base
+    mallocr.o(i.__free$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.__malloc$realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocr.o(i.__malloc$realloc) refers to startup_lpc177x_8x.o(HEAP) for __heap_base
+    mallocr.o(i.__malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocr.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocr.o(i.realloc) refers to mallocr.o(i.__free$realloc) for __free$realloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.internal_alloc) for internal_alloc
+    mallocr.o(i.realloc) refers to mallocr.o(i.__malloc$realloc) for __malloc$realloc
+    mallocr.o(i.realloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    malloca.o(i.__aligned_malloc) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__aligned_malloc) refers to startup_lpc177x_8x.o(HEAP) for __heap_base
+    malloca.o(i.__free$memalign) refers to mvars.o(.data) for __microlib_freelist
+    malloca.o(i.__malloc$memalign) refers to malloca.o(i.__aligned_malloc) for __aligned_malloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist_initialised
+    mallocra.o(i.__aligned_malloc$realloc) refers to startup_lpc177x_8x.o(HEAP) for __heap_base
+    mallocra.o(i.__aligned_malloc$realloc) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__free$realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.__malloc$realloc$memalign) refers to mallocra.o(i.__aligned_malloc$realloc) for __aligned_malloc$realloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__free$realloc$memalign) for __free$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.internal_alloc) for internal_alloc
+    mallocra.o(i.__realloc$memalign) refers to mallocra.o(i.__malloc$realloc$memalign) for __malloc$realloc$memalign
+    mallocra.o(i.__realloc$memalign) refers to mvars.o(.data) for __microlib_freelist
+    mallocra.o(i.internal_alloc) refers to memcpya.o(.text) for __aeabi_memcpy
+    mallocra.o(i.internal_alloc) refers to mvars.o(.data) for __microlib_freelist
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_lpc177x_8x.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_lpc177x_8x.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(.text) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(.text) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_lpc177x_8x.o(.text), (700 bytes).
+    Removing core_cm3.o(.emb_text), (32 bytes).
+    Removing lpc177x_8x_clkpwr.o(.text), (104 bytes).
+    Removing lpc177x_8x_clkpwr.o(.text), (16 bytes).
+    Removing lpc177x_8x_clkpwr.o(.text), (24 bytes).
+    Removing lpc177x_8x_clkpwr.o(.text), (24 bytes).
+    Removing lpc177x_8x_clkpwr.o(.text), (24 bytes).
+    Removing lpc177x_8x_clkpwr.o(.data), (8 bytes).
+    Removing lpc177x_8x_dac.o(.text), (12 bytes).
+    Removing lpc177x_8x_dac.o(.text), (36 bytes).
+    Removing lpc177x_8x_dac.o(.text), (34 bytes).
+    Removing lpc177x_8x_dac.o(.text), (36 bytes).
+    Removing lpc177x_8x_dac.o(.text), (60 bytes).
+    Removing lpc177x_8x_dac.o(.text), (20 bytes).
+    Removing lpc177x_8x_dac.o(.text), (20 bytes).
+    Removing lpc177x_8x_emc.o(.text), (28 bytes).
+    Removing lpc177x_8x_emc.o(.text), (16 bytes).
+    Removing lpc177x_8x_emc.o(.text), (24 bytes).
+    Removing lpc177x_8x_emc.o(.text), (24 bytes).
+    Removing lpc177x_8x_emc.o(.text), (24 bytes).
+    Removing lpc177x_8x_emc.o(.text), (24 bytes).
+    Removing lpc177x_8x_emc.o(.text), (24 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (12 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_emc.o(.text), (108 bytes).
+    Removing lpc177x_8x_exti.o(.text), (32 bytes).
+    Removing lpc177x_8x_exti.o(.text), (2 bytes).
+    Removing lpc177x_8x_exti.o(.text), (52 bytes).
+    Removing lpc177x_8x_exti.o(.text), (52 bytes).
+    Removing lpc177x_8x_exti.o(.text), (32 bytes).
+    Removing lpc177x_8x_exti.o(.text), (28 bytes).
+    Removing lpc177x_8x_gpdma.o(.text), (76 bytes).
+    Removing lpc177x_8x_gpdma.o(.text), (616 bytes).
+    Removing lpc177x_8x_gpdma.o(.text), (36 bytes).
+    Removing lpc177x_8x_gpdma.o(.text), (152 bytes).
+    Removing lpc177x_8x_gpdma.o(.text), (32 bytes).
+    Removing lpc177x_8x_gpdma.o(.constdata), (192 bytes).
+    Removing lpc177x_8x_gpdma.o(.data), (32 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (172 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (40 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (20 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (20 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (30 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (22 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (108 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (88 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (32 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (20 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (16 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (16 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (12 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (20 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (20 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (16 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (40 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (62 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (62 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (32 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (32 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (30 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (58 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (74 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (38 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (38 bytes).
+    Removing lpc177x_8x_gpio.o(.text), (36 bytes).
+    Removing lpc177x_8x_nvic.o(.text), (68 bytes).
+    Removing lpc177x_8x_nvic.o(.text), (84 bytes).
+    Removing lpc177x_8x_nvic.o(.text), (12 bytes).
+    Removing lpc177x_8x_qei.o(.text), (16 bytes).
+    Removing lpc177x_8x_qei.o(.text), (18 bytes).
+    Removing lpc177x_8x_qei.o(.text), (68 bytes).
+    Removing lpc177x_8x_qei.o(.text), (16 bytes).
+    Removing lpc177x_8x_qei.o(.text), (36 bytes).
+    Removing lpc177x_8x_qei.o(.text), (28 bytes).
+    Removing lpc177x_8x_qei.o(.text), (16 bytes).
+    Removing lpc177x_8x_qei.o(.text), (18 bytes).
+    Removing lpc177x_8x_qei.o(.text), (28 bytes).
+    Removing lpc177x_8x_qei.o(.text), (16 bytes).
+    Removing lpc177x_8x_qei.o(.text), (18 bytes).
+    Removing lpc177x_8x_qei.o(.text), (80 bytes).
+    Removing lpc177x_8x_qei.o(.text), (16 bytes).
+    Removing lpc177x_8x_qei.o(.text), (16 bytes).
+    Removing lpc177x_8x_qei.o(.text), (16 bytes).
+    Removing lpc177x_8x_qei.o(.text), (18 bytes).
+    Removing lpc177x_8x_qei.o(.text), (26 bytes).
+    Removing lpc177x_8x_qei.o(.text), (30 bytes).
+    Removing lpc177x_8x_qei.o(.text), (32 bytes).
+    Removing lpc177x_8x_qei.o(.text), (20 bytes).
+    Removing lpc177x_8x_qei.o(.text), (20 bytes).
+    Removing lpc177x_8x_qei.o(.text), (150 bytes).
+    Removing lpc177x_8x_timer.o(.text), (24 bytes).
+    Removing lpc177x_8x_timer.o(.text), (26 bytes).
+    Removing lpc177x_8x_timer.o(.text), (8 bytes).
+    Removing lpc177x_8x_timer.o(.text), (10 bytes).
+    Removing lpc177x_8x_timer.o(.text), (22 bytes).
+    Removing lpc177x_8x_timer.o(.text), (88 bytes).
+    Removing lpc177x_8x_timer.o(.text), (40 bytes).
+    Removing lpc177x_8x_timer.o(.text), (84 bytes).
+    Removing lpc177x_8x_timer.o(.text), (12 bytes).
+    Removing lpc177x_8x_uart.o(.text), (92 bytes).
+    Removing lpc177x_8x_uart.o(.text), (32 bytes).
+    Removing lpc177x_8x_uart.o(.text), (120 bytes).
+    Removing lpc177x_8x_uart.o(.text), (20 bytes).
+    Removing lpc177x_8x_uart.o(.text), (12 bytes).
+    Removing lpc177x_8x_uart.o(.text), (18 bytes).
+    Removing lpc177x_8x_uart.o(.text), (108 bytes).
+    Removing lpc177x_8x_uart.o(.text), (14 bytes).
+    Removing lpc177x_8x_uart.o(.text), (132 bytes).
+    Removing lpc177x_8x_uart.o(.text), (28 bytes).
+    Removing lpc177x_8x_uart.o(.text), (34 bytes).
+    Removing lpc177x_8x_uart.o(.text), (32 bytes).
+    Removing lpc177x_8x_uart.o(.text), (30 bytes).
+    Removing lpc177x_8x_uart.o(.text), (48 bytes).
+    Removing lpc177x_8x_uart.o(.text), (56 bytes).
+    Removing lpc177x_8x_uart.o(.text), (6 bytes).
+    Removing lpc177x_8x_uart.o(.text), (100 bytes).
+    Removing lpc177x_8x_uart.o(.text), (32 bytes).
+    Removing lpc177x_8x_uart.o(.text), (88 bytes).
+    Removing lpc177x_8x_uart.o(.text), (18 bytes).
+    Removing lpc177x_8x_uart.o(.text), (22 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (72 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (48 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (56 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (132 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (50 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (80 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (28 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (28 bytes).
+    Removing nandflash_k9f2g08u0x.o(.text), (32 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (40 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (46 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (46 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (46 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (42 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (46 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (126 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (54 bytes).
+    Removing lpc177x_8x_pinsel.o(.text), (74 bytes).
+    Removing main.o(.text), (28 bytes).
+    Removing download.o(.text), (284 bytes).
+    Removing download.o(.data), (8 bytes).
+    Removing yaffs_checkptrw.o(.conststring), (64 bytes).
+    Removing yaffs_checkptrw.o(.data), (4 bytes).
+    Removing yaffs_ecc.o(.conststring), (57 bytes).
+    Removing yaffs_ecc.o(.data), (4 bytes).
+    Removing yaffs_guts.o(.text), (90 bytes).
+    Removing yaffs_guts.o(.text), (8 bytes).
+    Removing yaffs_guts.o(.text), (8 bytes).
+    Removing yaffs_guts.o(.text), (48 bytes).
+    Removing yaffs_guts.o(.text), (48 bytes).
+    Removing yaffs_guts.o(.text), (54 bytes).
+    Removing yaffs_guts.o(.text), (148 bytes).
+    Removing yaffs_guts.o(.text), (84 bytes).
+    Removing yaffs_guts.o(.text), (54 bytes).
+    Removing yaffs_guts.o(.text), (42 bytes).
+    Removing yaffs_guts.o(.text), (24 bytes).
+    Removing yaffs_guts.o(.text), (16 bytes).
+    Removing yaffs_guts.o(.text), (52 bytes).
+    Removing yaffs_guts.o(.text), (40 bytes).
+    Removing yaffs_guts.o(.text), (102 bytes).
+    Removing yaffs_guts.o(.text), (74 bytes).
+    Removing yaffs_guts.o(.text), (96 bytes).
+    Removing yaffs_nand.o(.conststring), (58 bytes).
+    Removing yaffs_nand.o(.data), (4 bytes).
+    Removing yaffscfg2k.o(.text), (12 bytes).
+    Removing yaffscfg2k.o(.text), (12 bytes).
+    Removing yaffscfg2k.o(.text), (2 bytes).
+    Removing yaffscfg2k.o(.text), (2 bytes).
+    Removing yaffsfs.o(.text), (96 bytes).
+    Removing yaffsfs.o(.text), (60 bytes).
+    Removing yaffsfs.o(.text), (152 bytes).
+    Removing yaffsfs.o(.text), (132 bytes).
+    Removing yaffsfs.o(.text), (96 bytes).
+    Removing yaffsfs.o(.text), (80 bytes).
+    Removing yaffsfs.o(.text), (124 bytes).
+    Removing yaffsfs.o(.text), (156 bytes).
+    Removing yaffsfs.o(.text), (14 bytes).
+    Removing yaffsfs.o(.text), (14 bytes).
+    Removing yaffsfs.o(.text), (182 bytes).
+    Removing yaffsfs.o(.text), (18 bytes).
+    Removing yaffsfs.o(.text), (18 bytes).
+    Removing yaffsfs.o(.text), (56 bytes).
+    Removing yaffsfs.o(.text), (130 bytes).
+    Removing yaffsfs.o(.text), (60 bytes).
+    Removing yaffsfs.o(.text), (56 bytes).
+    Removing yaffsfs.o(.text), (72 bytes).
+    Removing yaffsfs.o(.text), (160 bytes).
+    Removing yaffsfs.o(.text), (62 bytes).
+    Removing yaffsfs.o(.text), (70 bytes).
+    Removing yaffsfs.o(.text), (68 bytes).
+    Removing yaffsfs.o(.text), (164 bytes).
+    Removing yaffsfs.o(.text), (148 bytes).
+    Removing yaffsfs.o(.text), (22 bytes).
+    Removing yaffsfs.o(.text), (44 bytes).
+    Removing yaffsfs.o(.text), (84 bytes).
+    Removing yaffsfs.o(.text), (102 bytes).
+    Removing yaffsfs.o(.text), (190 bytes).
+    Removing yaffsfs.o(.text), (6 bytes).
+
+208 unused section(s) (total 12541 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      228  startup_lpc177x_8x.o(RESET)
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocra.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocr.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloc.o ABSOLUTE
+    ../clib/microlib/malloc/mvars.c          0x00000000   Number         0  mvars.o ABSOLUTE
+    ../clib/microlib/string/memcmp.c         0x00000000   Number         0  memcmp.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/string/strcat.c         0x00000000   Number         0  strcat.o ABSOLUTE
+    ../clib/microlib/string/strcmp.c         0x00000000   Number         0  strcmp.o ABSOLUTE
+    ../clib/microlib/string/strcpy.c         0x00000000   Number         0  strcpy.o ABSOLUTE
+    ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
+    ../clib/microlib/string/strncmp.c        0x00000000   Number         0  strncmp.o ABSOLUTE
+    ../clib/microlib/string/strncpy.c        0x00000000   Number         0  strncpy.o ABSOLUTE
+    ..\CM3_lib\core_cm3.c                    0x00000000   Number         0  core_cm3.o ABSOLUTE
+    ..\Drivers\debug_frmwrk.c                0x00000000   Number         0  debug_frmwrk.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_clkpwr.c           0x00000000   Number         0  lpc177x_8x_clkpwr.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_dac.c              0x00000000   Number         0  lpc177x_8x_dac.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_emc.c              0x00000000   Number         0  lpc177x_8x_emc.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_exti.c             0x00000000   Number         0  lpc177x_8x_exti.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_gpdma.c            0x00000000   Number         0  lpc177x_8x_gpdma.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_gpio.c             0x00000000   Number         0  lpc177x_8x_gpio.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_nvic.c             0x00000000   Number         0  lpc177x_8x_nvic.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_pinsel.c           0x00000000   Number         0  lpc177x_8x_pinsel.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_qei.c              0x00000000   Number         0  lpc177x_8x_qei.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_timer.c            0x00000000   Number         0  lpc177x_8x_timer.o ABSOLUTE
+    ..\Drivers\lpc177x_8x_uart.c             0x00000000   Number         0  lpc177x_8x_uart.o ABSOLUTE
+    ..\Drivers\nandflash_k9f2g08u0x.c        0x00000000   Number         0  nandflash_k9f2g08u0x.o ABSOLUTE
+    ..\Drivers\sdram_k4s561632j.c            0x00000000   Number         0  sdram_k4s561632j.o ABSOLUTE
+    ..\Startup\startup_LPC177x_8x.s          0x00000000   Number         0  startup_lpc177x_8x.o ABSOLUTE
+    ..\Startup\system_LPC177x_8x.c           0x00000000   Number         0  system_lpc177x_8x.o ABSOLUTE
+    ..\\CM3_lib\\core_cm3.c                  0x00000000   Number         0  core_cm3.o ABSOLUTE
+    ..\fs\flash2K.c                          0x00000000   Number         0  flash2k.o ABSOLUTE
+    ..\fs\yaffs_checkptrw.c                  0x00000000   Number         0  yaffs_checkptrw.o ABSOLUTE
+    ..\fs\yaffs_ecc.c                        0x00000000   Number         0  yaffs_ecc.o ABSOLUTE
+    ..\fs\yaffs_guts.c                       0x00000000   Number         0  yaffs_guts.o ABSOLUTE
+    ..\fs\yaffs_nand.c                       0x00000000   Number         0  yaffs_nand.o ABSOLUTE
+    ..\fs\yaffs_packedtags2.c                0x00000000   Number         0  yaffs_packedtags2.o ABSOLUTE
+    ..\fs\yaffs_qsort.c                      0x00000000   Number         0  yaffs_qsort.o ABSOLUTE
+    ..\fs\yaffs_tagscompat.c                 0x00000000   Number         0  yaffs_tagscompat.o ABSOLUTE
+    ..\fs\yaffs_tagsvalidity.c               0x00000000   Number         0  yaffs_tagsvalidity.o ABSOLUTE
+    ..\fs\yaffscfg2k.c                       0x00000000   Number         0  yaffscfg2k.o ABSOLUTE
+    ..\fs\yaffsfs.c                          0x00000000   Number         0  yaffsfs.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    download.c                               0x00000000   Number         0  download.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x000000e4   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x000000e4   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x000000e8   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x000000ec   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x000000ec   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x000000ec   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x000000f4   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x000000f4   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x000000f4   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x000000f4   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x000000f8   Section       36  startup_lpc177x_8x.o(.text)
+    .text                                    0x0000011c   Section        0  system_lpc177x_8x.o(.text)
+    .text                                    0x000001e8   Section        0  lpc177x_8x_clkpwr.o(.text)
+    .text                                    0x00000258   Section        0  lpc177x_8x_pinsel.o(.text)
+    PIN_GetPointer                           0x00000259   Thumb Code    18  lpc177x_8x_pinsel.o(.text)
+    .text                                    0x00000298   Section        0  yaffs_guts.o(.text)
+    .text                                    0x000002b8   Section        0  yaffs_tagsvalidity.o(.text)
+    .text                                    0x000002ea   Section        0  strlen.o(.text)
+    i.__scatterload_null                     0x000002f8   Section        2  handlers.o(i.__scatterload_null)
+    .ARM.__at_0x02FC                         0x000002fc   Section        4  startup_lpc177x_8x.o(.ARM.__at_0x02FC)
+    .text                                    0x00000300   Section        0  debug_frmwrk.o(.text)
+    .text                                    0x000009a0   Section        0  lpc177x_8x_emc.o(.text)
+    .text                                    0x00000c30   Section        0  sdram_k4s561632j.o(.text)
+    .text                                    0x00000e50   Section        0  lpc177x_8x_timer.o(.text)
+    getPClock                                0x00000e51   Thumb Code    16  lpc177x_8x_timer.o(.text)
+    converUSecToVal                          0x00000e61   Thumb Code    50  lpc177x_8x_timer.o(.text)
+    converPtrToTimeNum                       0x00000e93   Thumb Code    46  lpc177x_8x_timer.o(.text)
+    .text                                    0x000010c8   Section        0  lpc177x_8x_uart.o(.text)
+    uart_set_divisors                        0x000010c9   Thumb Code   308  lpc177x_8x_uart.o(.text)
+    .text                                    0x000014b4   Section        0  nandflash_k9f2g08u0x.o(.text)
+    .text                                    0x000016b4   Section        0  main.o(.text)
+    .text                                    0x00001928   Section        0  flash2k.o(.text)
+    .text                                    0x00001a28   Section        0  yaffs_checkptrw.o(.text)
+    yaffs_GetBlockInfo                       0x00001a29   Thumb Code    38  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointSpaceOk                  0x00001a4f   Thumb Code    26  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointErase                    0x00001a69   Thumb Code   136  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointFindNextErasedBlock      0x00001af1   Thumb Code   116  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointFindNextCheckpointBlock  0x00001b65   Thumb Code   126  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointFlushBuffer              0x00001cb9   Thumb Code   198  yaffs_checkptrw.o(.text)
+    .text                                    0x00001f4c   Section        0  yaffs_checkptrw.o(.text)
+    .text                                    0x00001fcc   Section        0  yaffs_ecc.o(.text)
+    yaffs_CountBits                          0x00001fcd   Thumb Code    22  yaffs_ecc.o(.text)
+    yaffs_CountBits32                        0x00001fe3   Thumb Code    22  yaffs_ecc.o(.text)
+    .text                                    0x00002358   Section        0  yaffs_guts.o(.text)
+    ylist_add                                0x00002359   Thumb Code    12  yaffs_guts.o(.text)
+    ylist_del_init                           0x00002365   Thumb Code    18  yaffs_guts.o(.text)
+    yaffs_GetBlockInfo                       0x00002377   Thumb Code    38  yaffs_guts.o(.text)
+    yaffs_AddrToChunk                        0x0000239d   Thumb Code    56  yaffs_guts.o(.text)
+    ShiftsGE                                 0x000023d5   Thumb Code    32  yaffs_guts.o(.text)
+    Shifts                                   0x000023f5   Thumb Code    28  yaffs_guts.o(.text)
+    yaffs_InitialiseTempBuffers              0x00002411   Thumb Code    76  yaffs_guts.o(.text)
+    yaffs_BlockBits                          0x00002573   Thumb Code    42  yaffs_guts.o(.text)
+    yaffs_VerifyChunkBitId                   0x0000259d   Thumb Code    32  yaffs_guts.o(.text)
+    yaffs_SetChunkBit                        0x000025bd   Thumb Code    66  yaffs_guts.o(.text)
+    yaffs_CheckChunkBit                      0x000025ff   Thumb Code    64  yaffs_guts.o(.text)
+    yaffs_CountChunkBits                     0x0000263f   Thumb Code    60  yaffs_guts.o(.text)
+    yaffs_SkipVerification                   0x0000267b   Thumb Code    20  yaffs_guts.o(.text)
+    yaffs_SkipFullVerification               0x0000268f   Thumb Code    14  yaffs_guts.o(.text)
+    yaffs_SkipNANDVerification               0x0000269d   Thumb Code    14  yaffs_guts.o(.text)
+    yaffs_VerifyBlock                        0x000026ab   Thumb Code   210  yaffs_guts.o(.text)
+    yaffs_VerifyCollectedBlock               0x0000277d   Thumb Code    44  yaffs_guts.o(.text)
+    yaffs_VerifyBlocks                       0x000027a9   Thumb Code   186  yaffs_guts.o(.text)
+    yaffs_VerifyObjectHeader                 0x00002863   Thumb Code   150  yaffs_guts.o(.text)
+    yaffs_GetChunkGroupBase                  0x000028f9   Thumb Code    86  yaffs_guts.o(.text)
+    yaffs_VerifyTnodeWorker                  0x0000294f   Thumb Code   148  yaffs_guts.o(.text)
+    yaffs_FindLevel0Tnode                    0x000029e3   Thumb Code    92  yaffs_guts.o(.text)
+    yaffs_VerifyFile                         0x00002a3f   Thumb Code   182  yaffs_guts.o(.text)
+    yaffs_VerifyHardLink                     0x00002af5   Thumb Code    20  yaffs_guts.o(.text)
+    yaffs_VerifySymlink                      0x00002b09   Thumb Code    20  yaffs_guts.o(.text)
+    yaffs_VerifySpecial                      0x00002b1d   Thumb Code    20  yaffs_guts.o(.text)
+    yaffs_VerifyObjectInDirectory            0x00002b31   Thumb Code    94  yaffs_guts.o(.text)
+    yaffs_VerifyDirectory                    0x00002b8f   Thumb Code    66  yaffs_guts.o(.text)
+    yaffs_VerifyObject                       0x00002bd1   Thumb Code   352  yaffs_guts.o(.text)
+    yaffs_VerifyObjects                      0x00002d31   Thumb Code    76  yaffs_guts.o(.text)
+    yaffs_HashFunction                       0x00002d7d   Thumb Code    30  yaffs_guts.o(.text)
+    yaffs_CheckChunkErased                   0x00002db7   Thumb Code    88  yaffs_guts.o(.text)
+    yaffs_HandleWriteChunkOk                 0x00002e0f   Thumb Code     2  yaffs_guts.o(.text)
+    yaffs_InvalidateCheckpoint               0x00002e11   Thumb Code    46  yaffs_guts.o(.text)
+    yaffs_RetireBlock                        0x00002e3f   Thumb Code   176  yaffs_guts.o(.text)
+    yaffs_BlockBecameDirty                   0x00002eef   Thumb Code   238  yaffs_guts.o(.text)
+    yaffs_HandleUpdateChunk                  0x00002fdd   Thumb Code     2  yaffs_guts.o(.text)
+    yaffs_HandleWriteChunkError              0x0000315f   Thumb Code    70  yaffs_guts.o(.text)
+    yaffs_CalcCheckpointBlocksRequired       0x000031a5   Thumb Code   110  yaffs_guts.o(.text)
+    yaffs_CheckSpaceForAllocation            0x00003213   Thumb Code    60  yaffs_guts.o(.text)
+    yaffs_FindBlockForAllocation             0x0000324f   Thumb Code   168  yaffs_guts.o(.text)
+    yaffs_AllocateChunk                      0x000032f7   Thumb Code   200  yaffs_guts.o(.text)
+    yaffs_WriteNewChunkWithTagsToNAND        0x000033bf   Thumb Code   222  yaffs_guts.o(.text)
+    yaffs_CalcNameSum                        0x0000349d   Thumb Code    38  yaffs_guts.o(.text)
+    yaffs_SetObjectName                      0x000034c3   Thumb Code    16  yaffs_guts.o(.text)
+    yaffs_CreateTnodes                       0x000034d3   Thumb Code   170  yaffs_guts.o(.text)
+    yaffs_GetTnodeRaw                        0x0000357d   Thumb Code    58  yaffs_guts.o(.text)
+    yaffs_GetTnode                           0x000035b7   Thumb Code    38  yaffs_guts.o(.text)
+    yaffs_FreeTnode                          0x000035dd   Thumb Code    30  yaffs_guts.o(.text)
+    yaffs_DeinitialiseTnodes                 0x000035fb   Thumb Code    52  yaffs_guts.o(.text)
+    yaffs_InitialiseTnodes                   0x0000362f   Thumb Code    20  yaffs_guts.o(.text)
+    yaffs_AddOrFindLevel0Tnode               0x000036d1   Thumb Code   252  yaffs_guts.o(.text)
+    yaffs_TagsMatch                          0x000037cd   Thumb Code    26  yaffs_guts.o(.text)
+    yaffs_FindChunkInGroup                   0x000037e7   Thumb Code   106  yaffs_guts.o(.text)
+    yaffs_DeleteWorker                       0x00003851   Thumb Code   262  yaffs_guts.o(.text)
+    yaffs_SoftDeleteChunk                    0x00003957   Thumb Code    56  yaffs_guts.o(.text)
+    yaffs_SoftDeleteWorker                   0x0000398f   Thumb Code   158  yaffs_guts.o(.text)
+    yaffs_UnhashObject                       0x00003a2d   Thumb Code    64  yaffs_guts.o(.text)
+    yaffs_FreeObject                         0x00003a6d   Thumb Code    42  yaffs_guts.o(.text)
+    yaffs_RemoveObjectFromDirectory          0x00003a97   Thumb Code    52  yaffs_guts.o(.text)
+    yaffs_ObjectHasCachedWriteData           0x00003acb   Thumb Code    50  yaffs_guts.o(.text)
+    yaffs_CloneString                        0x00003afd   Thumb Code    42  yaffs_guts.o(.text)
+    yaffs_CheckObjectDetailsLoaded           0x00003b27   Thumb Code   164  yaffs_guts.o(.text)
+    yaffs_GetErasedChunks                    0x00003bcb   Thumb Code    32  yaffs_guts.o(.text)
+    yaffs_FindChunkInFile                    0x00003c31   Thumb Code    78  yaffs_guts.o(.text)
+    yaffs_PutChunkIntoFile                   0x00003c7f   Thumb Code   226  yaffs_guts.o(.text)
+    yaffs_GarbageCollectBlock                0x00003d61   Thumb Code   720  yaffs_guts.o(.text)
+    yaffs_BlockNotDisqualifiedFromGC         0x00004031   Thumb Code   128  yaffs_guts.o(.text)
+    yaffs_FindBlockForGarbageCollection      0x000040b1   Thumb Code   400  yaffs_guts.o(.text)
+    yaffs_CheckGarbageCollection             0x00004241   Thumb Code   190  yaffs_guts.o(.text)
+    yaffs_UpdateObjectHeader                 0x000042ff   Thumb Code   580  yaffs_guts.o(.text)
+    yaffs_AddObjectToDirectory               0x00004543   Thumb Code   128  yaffs_guts.o(.text)
+    yaffs_ChangeObjectName                   0x00004733   Thumb Code   216  yaffs_guts.o(.text)
+    yaffs_InvalidateWholeChunkCache          0x0000480b   Thumb Code    56  yaffs_guts.o(.text)
+    yaffs_DoGenericObjectDeletion            0x00004843   Thumb Code    82  yaffs_guts.o(.text)
+    yaffs_SoftDeleteFile                     0x00004895   Thumb Code    82  yaffs_guts.o(.text)
+    yaffs_PruneWorker                        0x000048e7   Thumb Code    92  yaffs_guts.o(.text)
+    yaffs_PruneFileStructure                 0x00004943   Thumb Code    98  yaffs_guts.o(.text)
+    yaffs_CreateFreeObjects                  0x000049a5   Thumb Code   162  yaffs_guts.o(.text)
+    yaffs_AllocateEmptyObject                0x00004a47   Thumb Code   174  yaffs_guts.o(.text)
+    yaffs_HashObject                         0x00004af5   Thumb Code    66  yaffs_guts.o(.text)
+    yaffs_FindNiceObjectBucket               0x00004b37   Thumb Code   186  yaffs_guts.o(.text)
+    yaffs_CreateNewObjectNumber              0x00004bf1   Thumb Code   104  yaffs_guts.o(.text)
+    yaffs_CreateNewObject                    0x00004c59   Thumb Code   180  yaffs_guts.o(.text)
+    yaffs_CreateFakeDirectory                0x00004d0d   Thumb Code    80  yaffs_guts.o(.text)
+    yaffs_DeinitialiseObjects                0x00004d5d   Thumb Code    52  yaffs_guts.o(.text)
+    yaffs_InitialiseObjects                  0x00004d91   Thumb Code    86  yaffs_guts.o(.text)
+    yaffs_FindOrCreateObjectByNumber         0x00004de7   Thumb Code    46  yaffs_guts.o(.text)
+    yaffs_DeleteHardLink                     0x00004e15   Thumb Code    20  yaffs_guts.o(.text)
+    yaffs_DeleteSymLink                      0x00004e29   Thumb Code    18  yaffs_guts.o(.text)
+    yaffs_DeleteDirectory                    0x00004e3b   Thumb Code    26  yaffs_guts.o(.text)
+    yaffs_WriteChunkDataToObject             0x00004e55   Thumb Code   142  yaffs_guts.o(.text)
+    yaffs_ReadChunkDataFromObject            0x00004ee3   Thumb Code    60  yaffs_guts.o(.text)
+    yaffs_FindAndDeleteChunkInFile           0x00004f1f   Thumb Code    96  yaffs_guts.o(.text)
+    yaffs_PruneResizedChunks                 0x00004f7f   Thumb Code   124  yaffs_guts.o(.text)
+    yaffs_FlushFilesChunkCache               0x00004ffb   Thumb Code   158  yaffs_guts.o(.text)
+    yaffs_UnlinkFile                         0x00005175   Thumb Code   108  yaffs_guts.o(.text)
+    yaffs_DestroyObject                      0x0000525f   Thumb Code    68  yaffs_guts.o(.text)
+    yaffs_MknodObject                        0x000052a3   Thumb Code   254  yaffs_guts.o(.text)
+    yaffs_UnlinkWorker                       0x0000541b   Thumb Code   160  yaffs_guts.o(.text)
+    yaffs_UnlinkObject                       0x000054bb   Thumb Code    26  yaffs_guts.o(.text)
+    yaffs_InitialiseBlocks                   0x000054d5   Thumb Code   200  yaffs_guts.o(.text)
+    yaffs_DeinitialiseBlocks                 0x0000559d   Thumb Code   130  yaffs_guts.o(.text)
+    yaffs_GrabChunkCacheWorker               0x0000561f   Thumb Code    52  yaffs_guts.o(.text)
+    yaffs_GrabChunkCache                     0x00005653   Thumb Code   170  yaffs_guts.o(.text)
+    yaffs_FindChunkCache                     0x000056fd   Thumb Code    88  yaffs_guts.o(.text)
+    yaffs_UseChunkCache                      0x00005755   Thumb Code    88  yaffs_guts.o(.text)
+    yaffs_InvalidateChunkCache               0x000057ad   Thumb Code    34  yaffs_guts.o(.text)
+    yaffs_WriteCheckpointValidityMarker      0x000057cf   Thumb Code    62  yaffs_guts.o(.text)
+    yaffs_ReadCheckpointValidityMarker       0x0000580d   Thumb Code    84  yaffs_guts.o(.text)
+    yaffs_DeviceToCheckpointDevice           0x00005861   Thumb Code    54  yaffs_guts.o(.text)
+    yaffs_CheckpointDeviceToDevice           0x00005897   Thumb Code    54  yaffs_guts.o(.text)
+    yaffs_WriteCheckpointDevice              0x000058cd   Thumb Code   122  yaffs_guts.o(.text)
+    yaffs_ReadCheckpointDevice               0x00005947   Thumb Code   136  yaffs_guts.o(.text)
+    yaffs_ObjectToCheckpointObject           0x000059cf   Thumb Code   136  yaffs_guts.o(.text)
+    yaffs_CheckpointObjectToObject           0x00005a57   Thumb Code   216  yaffs_guts.o(.text)
+    yaffs_CheckpointTnodeWorker              0x00005b2f   Thumb Code   162  yaffs_guts.o(.text)
+    yaffs_WriteCheckpointTnodes              0x00005bd1   Thumb Code    68  yaffs_guts.o(.text)
+    yaffs_ReadCheckpointTnodes               0x00005c15   Thumb Code   174  yaffs_guts.o(.text)
+    yaffs_WriteCheckpointObjects             0x00005cc3   Thumb Code   176  yaffs_guts.o(.text)
+    yaffs_HardlinkFixup                      0x00005d73   Thumb Code    66  yaffs_guts.o(.text)
+    yaffs_ReadCheckpointObjects              0x00005db5   Thumb Code   174  yaffs_guts.o(.text)
+    yaffs_WriteCheckpointSum                 0x00005e63   Thumb Code    44  yaffs_guts.o(.text)
+    yaffs_ReadCheckpointSum                  0x00005e8f   Thumb Code    56  yaffs_guts.o(.text)
+    yaffs_WriteCheckpointData                0x00005ec7   Thumb Code   136  yaffs_guts.o(.text)
+    yaffs_ReadCheckpointData                 0x00005f4f   Thumb Code   144  yaffs_guts.o(.text)
+    yaffs_CountFreeChunks                    0x00005fdf   Thumb Code    96  yaffs_guts.o(.text)
+    yaffs_VerifyFreeChunks                   0x0000603f   Thumb Code    48  yaffs_guts.o(.text)
+    yaffs_HandleShadowedObject               0x000063b9   Thumb Code    70  yaffs_guts.o(.text)
+    ybicmp                                   0x000063ff   Thumb Code    24  yaffs_guts.o(.text)
+    yaffs_StripDeletedObjects                0x00006417   Thumb Code   100  yaffs_guts.o(.text)
+    yaffs_Scan                               0x0000647b   Thumb Code  1248  yaffs_guts.o(.text)
+    yaffs_ScanBackwards                      0x0000695b   Thumb Code  1756  yaffs_guts.o(.text)
+    yaffs_CheckDevFunctions                  0x00007065   Thumb Code    78  yaffs_guts.o(.text)
+    yaffs_CreateInitialDirectories           0x000070b3   Thumb Code   128  yaffs_guts.o(.text)
+    yaffs_CheckStructures                    0x000071df   Thumb Code    12  yaffs_guts.o(.text)
+    ylist_empty                              0x000075a5   Thumb Code    16  yaffs_guts.o(.text)
+    yaffs_ClearChunkBits                     0x000075b5   Thumb Code    28  yaffs_guts.o(.text)
+    .text                                    0x000075d0   Section        0  yaffs_nand.o(.text)
+    .text                                    0x00007728   Section        0  yaffs_packedtags2.o(.text)
+    yaffs_DumpPackedTags2TagsPart            0x00007729   Thumb Code     6  yaffs_packedtags2.o(.text)
+    yaffs_DumpPackedTags2                    0x0000772f   Thumb Code    12  yaffs_packedtags2.o(.text)
+    yaffs_DumpTags2                          0x0000773b   Thumb Code     6  yaffs_packedtags2.o(.text)
+    .text                                    0x000078d2   Section        0  yaffs_qsort.o(.text)
+    swapfunc                                 0x000078d3   Thumb Code    68  yaffs_qsort.o(.text)
+    med3                                     0x00007917   Thumb Code    88  yaffs_qsort.o(.text)
+    .text                                    0x00007c44   Section        0  yaffs_tagscompat.o(.text)
+    yaffs_LoadTagsIntoSpare                  0x00007cf5   Thumb Code    48  yaffs_tagscompat.o(.text)
+    yaffs_GetTagsFromSpare                   0x00007d25   Thumb Code    90  yaffs_tagscompat.o(.text)
+    yaffs_SpareInitialise                    0x00007d7f   Thumb Code    16  yaffs_tagscompat.o(.text)
+    yaffs_WriteChunkToNAND                   0x00007d8f   Thumb Code    58  yaffs_tagscompat.o(.text)
+    yaffs_HandleReadDataError                0x00007dc9   Thumb Code    68  yaffs_tagscompat.o(.text)
+    yaffs_ReadChunkFromNAND                  0x00007e0d   Thumb Code   406  yaffs_tagscompat.o(.text)
+    .text                                    0x000081d8   Section        0  yaffscfg2k.o(.text)
+    .text                                    0x0000828c   Section        0  yaffsfs.o(.text)
+    yaffsfs_InitHandles                      0x0000828d   Thumb Code    50  yaffsfs.o(.text)
+    yaffsfs_GetHandle                        0x000082f7   Thumb Code    56  yaffsfs.o(.text)
+    yaffsfs_PutHandle                        0x0000832f   Thumb Code    30  yaffsfs.o(.text)
+    yaffsfs_FindDevice                       0x00008377   Thumb Code   172  yaffsfs.o(.text)
+    yaffsfs_FindRoot                         0x00008423   Thumb Code    34  yaffsfs.o(.text)
+    yaffsfs_DoFindDirectory                  0x00008445   Thumb Code   210  yaffsfs.o(.text)
+    yaffsfs_FindDirectory                    0x00008517   Thumb Code    28  yaffsfs.o(.text)
+    yaffsfs_FindObject                       0x00008533   Thumb Code    44  yaffsfs.o(.text)
+    yaffsfs_FollowLink                       0x0000855f   Thumb Code    64  yaffsfs.o(.text)
+    yaffsfs_DoStat                           0x00008915   Thumb Code   162  yaffsfs.o(.text)
+    yaffsfs_DoStatOrLStat                    0x000089b7   Thumb Code    76  yaffsfs.o(.text)
+    yaffsfs_DoChMod                          0x00008a03   Thumb Code    58  yaffsfs.o(.text)
+    yaffsfs_DirAdvance                       0x00008b2f   Thumb Code    88  yaffsfs.o(.text)
+    yaffsfs_RemoveObjectCallback             0x00008b87   Thumb Code    50  yaffsfs.o(.text)
+    yaffsfs_SetDirRewound                    0x00008be9   Thumb Code    66  yaffsfs.o(.text)
+    ylist_empty                              0x00008c2b   Thumb Code    16  yaffsfs.o(.text)
+    .text                                    0x00008ca0   Section        0  uldiv.o(.text)
+    .text                                    0x00008d02   Section        0  memcpya.o(.text)
+    .text                                    0x00008d26   Section        0  memseta.o(.text)
+    .text                                    0x00008d4a   Section        0  strcat.o(.text)
+    .text                                    0x00008d62   Section        0  strncpy.o(.text)
+    .text                                    0x00008d7a   Section        0  strcmp.o(.text)
+    .text                                    0x00008d96   Section        0  memcmp.o(.text)
+    .text                                    0x00008db0   Section        0  strcpy.o(.text)
+    .text                                    0x00008dc2   Section        0  strncmp.o(.text)
+    .text                                    0x00008de0   Section        0  llshl.o(.text)
+    .text                                    0x00008dfe   Section        0  llushr.o(.text)
+    .text                                    0x00008e20   Section       36  init.o(.text)
+    i.__scatterload_copy                     0x00008e44   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_zeroinit                 0x00008e52   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.free                                   0x00008e60   Section        0  malloc.o(i.free)
+    i.malloc                                 0x00008eb0   Section        0  malloc.o(i.malloc)
+    .constdata                               0x00008f1c   Section      539  main.o(.constdata)
+    .constdata                               0x00009137   Section      256  yaffs_ecc.o(.constdata)
+    column_parity_table                      0x00009137   Data         256  yaffs_ecc.o(.constdata)
+    .constdata                               0x00009237   Section      256  yaffs_tagscompat.o(.constdata)
+    yaffs_countBitsTable                     0x00009237   Data         256  yaffs_tagscompat.o(.constdata)
+    .conststring                             0x00009338   Section       89  debug_frmwrk.o(.conststring)
+    .conststring                             0x00009394   Section      162  yaffs_guts.o(.conststring)
+    .conststring                             0x00009438   Section        3  yaffscfg2k.o(.conststring)
+    .conststring                             0x0000943c   Section       56  yaffsfs.o(.conststring)
+    .data                                    0x10000000   Section       20  system_lpc177x_8x.o(.data)
+    .data                                    0x10000014   Section       60  debug_frmwrk.o(.data)
+    .data                                    0x10000050   Section        8  main.o(.data)
+    .data                                    0x10000058   Section       52  yaffs_guts.o(.data)
+    blockStateName                           0x1000005c   Data          40  yaffs_guts.o(.data)
+    yaffs_freeVerificationFailures           0x10000084   Data           4  yaffs_guts.o(.data)
+    x                                        0x10000088   Data           4  yaffs_guts.o(.data)
+    .data                                    0x1000008c   Section        8  yaffs_tagscompat.o(.data)
+    init                                     0x1000008c   Data           4  yaffs_tagscompat.o(.data)
+    init                                     0x10000090   Data           4  yaffs_tagscompat.o(.data)
+    .data                                    0x10000094   Section       36  yaffscfg2k.o(.data)
+    yaffsfs_lastError                        0x10000098   Data           4  yaffscfg2k.o(.data)
+    yaffs_kill_alloc                         0x1000009c   Data           4  yaffscfg2k.o(.data)
+    total_malloced                           0x100000a0   Data           4  yaffscfg2k.o(.data)
+    malloc_limit                             0x100000a4   Data           4  yaffscfg2k.o(.data)
+    yaffsfs_config                           0x100000a8   Data          16  yaffscfg2k.o(.data)
+    .data                                    0x100000b8   Section       20  yaffsfs.o(.data)
+    yaffsfs_configurationList                0x100000bc   Data           4  yaffsfs.o(.data)
+    search_contexts                          0x100000c4   Data           8  yaffsfs.o(.data)
+    .data                                    0x100000cc   Section        4  mvars.o(.data)
+    .data                                    0x100000d0   Section        4  mvars.o(.data)
+    .bss                                     0xa0000000   Section     2048  nandflash_k9f2g08u0x.o(.bss)
+    .bss                                     0xa0000800   Section       32  yaffs_tagscompat.o(.bss)
+    spareFF                                  0xa0000800   Data          16  yaffs_tagscompat.o(.bss)
+    spareFF                                  0xa0000810   Data          16  yaffs_tagscompat.o(.bss)
+    .bss                                     0xa0000820   Section     3608  yaffscfg2k.o(.bss)
+    flashDev                                 0xa0000820   Data        3608  yaffscfg2k.o(.bss)
+    .bss                                     0xa0001638   Section     2400  yaffsfs.o(.bss)
+    yaffsfs_handle                           0xa0001638   Data        2400  yaffsfs.o(.bss)
+    HEAP                                     0xa0001f98   Section    262144  startup_lpc177x_8x.o(HEAP)
+    STACK                                    0xa0041f98   Section    32768  startup_lpc177x_8x.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_lpc177x_8x.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __main                                   0x000000e5   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x000000e5   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x000000e9   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x000000ed   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x000000ed   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x000000ed   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x000000ed   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x000000f5   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x000000f5   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x000000f9   Thumb Code     8  startup_lpc177x_8x.o(.text)
+    NMI_Handler                              0x00000101   Thumb Code     2  startup_lpc177x_8x.o(.text)
+    HardFault_Handler                        0x00000103   Thumb Code     2  startup_lpc177x_8x.o(.text)
+    MemManage_Handler                        0x00000105   Thumb Code     2  startup_lpc177x_8x.o(.text)
+    BusFault_Handler                         0x00000107   Thumb Code     2  startup_lpc177x_8x.o(.text)
+    UsageFault_Handler                       0x00000109   Thumb Code     2  startup_lpc177x_8x.o(.text)
+    SVC_Handler                              0x0000010b   Thumb Code     2  startup_lpc177x_8x.o(.text)
+    DebugMon_Handler                         0x0000010d   Thumb Code     2  startup_lpc177x_8x.o(.text)
+    PendSV_Handler                           0x0000010f   Thumb Code     2  startup_lpc177x_8x.o(.text)
+    ADC_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    BOD_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    CANActivity_IRQHandler                   0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    CAN_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    DMA_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    EEPROM_IRQHandler                        0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    EINT0_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    EINT1_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    EINT2_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    EINT3_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    ENET_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    GPIO_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    I2C0_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    I2C1_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    I2C2_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    I2S_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    LCD_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    MCI_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    MCPWM_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    PLL0_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    PLL1_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    PWM0_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    PWM1_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    QEI_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    RTC_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    SPIFI_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    SSP0_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    SSP1_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    SSP2_IRQHandler                          0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    TIMER0_IRQHandler                        0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    TIMER1_IRQHandler                        0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    TIMER2_IRQHandler                        0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    TIMER3_IRQHandler                        0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    UART0_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    UART1_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    UART2_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    UART3_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    UART4_IRQHandler                         0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    USBActivity_IRQHandler                   0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    USB_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    WDT_IRQHandler                           0x00000113   Thumb Code     0  startup_lpc177x_8x.o(.text)
+    SystemInit                               0x0000011d   Thumb Code   188  system_lpc177x_8x.o(.text)
+    CLKPWR_GetCLK                            0x000001e9   Thumb Code    50  lpc177x_8x_clkpwr.o(.text)
+    CLKPWR_ConfigPPWR                        0x0000021b   Thumb Code    38  lpc177x_8x_clkpwr.o(.text)
+    PINSEL_ConfigPin                         0x0000026b   Thumb Code    40  lpc177x_8x_pinsel.o(.text)
+    yaffs_GetObjectLinkCount                 0x00000299   Thumb Code    32  yaffs_guts.o(.text)
+    yaffs_InitialiseTags                     0x000002b9   Thumb Code    24  yaffs_tagsvalidity.o(.text)
+    yaffs_ValidateTags                       0x000002d1   Thumb Code    26  yaffs_tagsvalidity.o(.text)
+    strlen                                   0x000002eb   Thumb Code    14  strlen.o(.text)
+    __scatterload_null                       0x000002f9   Thumb Code     2  handlers.o(i.__scatterload_null)
+    UARTPutChar                              0x00000301   Thumb Code    18  debug_frmwrk.o(.text)
+    UARTGetKey                               0x00000313   Thumb Code    26  debug_frmwrk.o(.text)
+    UARTGetChar                              0x0000032d   Thumb Code    26  debug_frmwrk.o(.text)
+    UARTPuts                                 0x00000347   Thumb Code    28  debug_frmwrk.o(.text)
+    UARTGetValue                             0x00000363   Thumb Code   348  debug_frmwrk.o(.text)
+    UARTPuts_                                0x000004bf   Thumb Code    24  debug_frmwrk.o(.text)
+    UARTPutDec                               0x000004d7   Thumb Code    66  debug_frmwrk.o(.text)
+    UARTPutDec16                             0x00000519   Thumb Code   148  debug_frmwrk.o(.text)
+    UARTPutDec32                             0x000005ad   Thumb Code   280  debug_frmwrk.o(.text)
+    UARTPutHex_                              0x000006c5   Thumb Code    58  debug_frmwrk.o(.text)
+    UARTPutHex                               0x000006ff   Thumb Code    66  debug_frmwrk.o(.text)
+    UARTPutHex16_                            0x00000741   Thumb Code    58  debug_frmwrk.o(.text)
+    UARTPutHex16                             0x0000077b   Thumb Code    66  debug_frmwrk.o(.text)
+    UARTPutHex32_                            0x000007bd   Thumb Code    58  debug_frmwrk.o(.text)
+    UARTPutHex32                             0x000007f7   Thumb Code   188  debug_frmwrk.o(.text)
+    debug_frmwrk_init                        0x000008b3   Thumb Code   172  debug_frmwrk.o(.text)
+    EMC_Init                                 0x000009a1   Thumb Code   160  lpc177x_8x_emc.o(.text)
+    EMC_StaMemConfigMW                       0x00000a41   Thumb Code    98  lpc177x_8x_emc.o(.text)
+    EMC_StaMemConfigPB                       0x00000aa3   Thumb Code    98  lpc177x_8x_emc.o(.text)
+    EMC_SetStaMemoryParameter                0x00000b05   Thumb Code   284  lpc177x_8x_emc.o(.text)
+    SDRAMInit                                0x00000c31   Thumb Code   510  sdram_k4s561632j.o(.text)
+    TIM_Init                                 0x00000ec1   Thumb Code   182  lpc177x_8x_timer.o(.text)
+    TIM_Cmd                                  0x00000f77   Thumb Code    24  lpc177x_8x_timer.o(.text)
+    TIM_ResetCounter                         0x00000f8f   Thumb Code    18  lpc177x_8x_timer.o(.text)
+    TIM_ConfigMatch                          0x00000fa1   Thumb Code   172  lpc177x_8x_timer.o(.text)
+    TIM_Waitus                               0x0000104d   Thumb Code    88  lpc177x_8x_timer.o(.text)
+    TIM_Waitms                               0x000010a5   Thumb Code    18  lpc177x_8x_timer.o(.text)
+    UART_Init                                0x000011fd   Thumb Code   308  lpc177x_8x_uart.o(.text)
+    UART_TxCmd                               0x00001331   Thumb Code    68  lpc177x_8x_uart.o(.text)
+    UART_ConfigStructInit                    0x00001375   Thumb Code    18  lpc177x_8x_uart.o(.text)
+    UART_SendByte                            0x00001387   Thumb Code    14  lpc177x_8x_uart.o(.text)
+    UART_ReceiveByte                         0x00001395   Thumb Code    16  lpc177x_8x_uart.o(.text)
+    UART_Send                                0x000013a5   Thumb Code   152  lpc177x_8x_uart.o(.text)
+    UART_Receive                             0x0000143d   Thumb Code    98  lpc177x_8x_uart.o(.text)
+    NandFlash_Init                           0x000014b5   Thumb Code   134  nandflash_k9f2g08u0x.o(.text)
+    NandFlash_Reset                          0x0000153b   Thumb Code    16  nandflash_k9f2g08u0x.o(.text)
+    Nand_EraseBlockLarge                     0x0000154b   Thumb Code    42  nandflash_k9f2g08u0x.o(.text)
+    Nand_WritePageWithSpare2048              0x00001575   Thumb Code   146  nandflash_k9f2g08u0x.o(.text)
+    Nand_ReadPageWithSpare2048               0x00001607   Thumb Code   158  nandflash_k9f2g08u0x.o(.text)
+    print_boot_msg                           0x000016b5   Thumb Code    14  main.o(.text)
+    init_systick                             0x000016c3   Thumb Code    90  main.o(.text)
+    SysTick_Handler                          0x0000171d   Thumb Code    12  main.o(.text)
+    Delay                                    0x00001729   Thumb Code    18  main.o(.text)
+    fstest                                   0x0000173b   Thumb Code   248  main.o(.text)
+    main                                     0x00001833   Thumb Code    36  main.o(.text)
+    yflash2_EraseBlockInNAND                 0x00001929   Thumb Code    38  flash2k.o(.text)
+    yflash2_WriteChunkWithTagsToNAND         0x0000194f   Thumb Code    62  flash2k.o(.text)
+    yflash2_ReadChunkWithTagsFromNAND        0x0000198d   Thumb Code    62  flash2k.o(.text)
+    yflash2_GetNumberOfBlocks                0x000019cb   Thumb Code     6  flash2k.o(.text)
+    yflash2_InitialiseNAND                   0x000019d1   Thumb Code     6  flash2k.o(.text)
+    yflash2_MarkNANDBlockBad                 0x000019d7   Thumb Code     6  flash2k.o(.text)
+    yflash2_QueryNANDBlock                   0x000019dd   Thumb Code    76  flash2k.o(.text)
+    yaffs_CheckpointOpen                     0x00001be3   Thumb Code   194  yaffs_checkptrw.o(.text)
+    yaffs_GetCheckpointSum                   0x00001ca5   Thumb Code    20  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointRead                     0x00001d7f   Thumb Code   268  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointClose                    0x00001e8b   Thumb Code   166  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointInvalidateStream         0x00001f31   Thumb Code    28  yaffs_checkptrw.o(.text)
+    yaffs_CheckpointWrite                    0x00001f4d   Thumb Code   126  yaffs_checkptrw.o(.text)
+    yaffs_ECCCalculate                       0x00001ff9   Thumb Code   332  yaffs_ecc.o(.text)
+    yaffs_ECCCorrect                         0x00002145   Thumb Code   270  yaffs_ecc.o(.text)
+    yaffs_ECCCalculateOther                  0x00002253   Thumb Code    74  yaffs_ecc.o(.text)
+    yaffs_ECCCorrectOther                    0x0000229d   Thumb Code   184  yaffs_ecc.o(.text)
+    yaffs_GetTempBuffer                      0x0000245d   Thumb Code   186  yaffs_guts.o(.text)
+    yaffs_ReleaseTempBuffer                  0x00002517   Thumb Code    92  yaffs_guts.o(.text)
+    yaffs_CheckFF                            0x00002d9b   Thumb Code    28  yaffs_guts.o(.text)
+    yaffs_DeleteChunk                        0x00002fdf   Thumb Code   316  yaffs_guts.o(.text)
+    yaffs_HandleChunkError                   0x0000311b   Thumb Code    68  yaffs_guts.o(.text)
+    yaffs_PutLevel0Tnode                     0x00003643   Thumb Code   142  yaffs_guts.o(.text)
+    yaffs_FindObjectByNumber                 0x00003beb   Thumb Code    70  yaffs_guts.o(.text)
+    yaffs_GetObjectName                      0x000045c3   Thumb Code   200  yaffs_guts.o(.text)
+    yaffs_FindObjectByName                   0x0000468b   Thumb Code   168  yaffs_guts.o(.text)
+    yaffs_ResizeFile                         0x00005099   Thumb Code   220  yaffs_guts.o(.text)
+    yaffs_DeleteFile                         0x000051e1   Thumb Code   126  yaffs_guts.o(.text)
+    yaffs_MknodFile                          0x000053a1   Thumb Code    48  yaffs_guts.o(.text)
+    yaffs_MknodDirectory                     0x000053d1   Thumb Code    48  yaffs_guts.o(.text)
+    yaffs_GetEquivalentObject                0x00005401   Thumb Code    26  yaffs_guts.o(.text)
+    yaffs_CheckpointRestore                  0x0000606f   Thumb Code    48  yaffs_guts.o(.text)
+    yaffs_ReadDataFromFile                   0x0000609f   Thumb Code   252  yaffs_guts.o(.text)
+    yaffs_WriteDataToFile                    0x0000619b   Thumb Code   484  yaffs_guts.o(.text)
+    yaffs_FlushFile                          0x0000637f   Thumb Code    58  yaffs_guts.o(.text)
+    yaffs_GetObjectFileLength                0x00007037   Thumb Code    46  yaffs_guts.o(.text)
+    yaffs_Deinitialise                       0x00007133   Thumb Code   172  yaffs_guts.o(.text)
+    yaffs_GutsInitialise                     0x000071eb   Thumb Code   954  yaffs_guts.o(.text)
+    yaffs_ReadChunkWithTagsFromNAND          0x000075d1   Thumb Code   128  yaffs_nand.o(.text)
+    yaffs_WriteChunkWithTagsToNAND           0x00007651   Thumb Code    78  yaffs_nand.o(.text)
+    yaffs_MarkBlockBad                       0x0000769f   Thumb Code    36  yaffs_nand.o(.text)
+    yaffs_QueryInitialBlockState             0x000076c3   Thumb Code    54  yaffs_nand.o(.text)
+    yaffs_EraseBlockInNAND                   0x000076f9   Thumb Code    36  yaffs_nand.o(.text)
+    yaffs_InitialiseNAND                     0x0000771d   Thumb Code    12  yaffs_nand.o(.text)
+    yaffs_PackTags2TagsPart                  0x00007741   Thumb Code   128  yaffs_packedtags2.o(.text)
+    yaffs_PackTags2                          0x000077c1   Thumb Code    28  yaffs_packedtags2.o(.text)
+    yaffs_UnpackTags2TagsPart                0x000077dd   Thumb Code   148  yaffs_packedtags2.o(.text)
+    yaffs_UnpackTags2                        0x00007871   Thumb Code    98  yaffs_packedtags2.o(.text)
+    yaffs_qsort                              0x0000796f   Thumb Code   724  yaffs_qsort.o(.text)
+    yaffs_CountBits                          0x00007c45   Thumb Code     8  yaffs_tagscompat.o(.text)
+    yaffs_CalcECC                            0x00007c4d   Thumb Code    30  yaffs_tagscompat.o(.text)
+    yaffs_CalcTagsECC                        0x00007c6b   Thumb Code    60  yaffs_tagscompat.o(.text)
+    yaffs_CheckECCOnTags                     0x00007ca7   Thumb Code    78  yaffs_tagscompat.o(.text)
+    yaffs_TagsCompatabilityWriteChunkWithTagsToNAND 0x00007fa3   Thumb Code   150  yaffs_tagscompat.o(.text)
+    yaffs_TagsCompatabilityReadChunkWithTagsFromNAND 0x00008039   Thumb Code   200  yaffs_tagscompat.o(.text)
+    yaffs_TagsCompatabilityMarkNANDBlockBad  0x00008101   Thumb Code    60  yaffs_tagscompat.o(.text)
+    yaffs_TagsCompatabilityQueryNANDBlock    0x0000813d   Thumb Code   140  yaffs_tagscompat.o(.text)
+    yaffsfs_SetError                         0x000081d9   Thumb Code     6  yaffscfg2k.o(.text)
+    yaffsfs_Lock                             0x000081df   Thumb Code     2  yaffscfg2k.o(.text)
+    yaffsfs_Unlock                           0x000081e1   Thumb Code     2  yaffscfg2k.o(.text)
+    yaffsfs_CurrentTime                      0x000081e3   Thumb Code     4  yaffscfg2k.o(.text)
+    yaffs_malloc                             0x000081e7   Thumb Code    16  yaffscfg2k.o(.text)
+    yaffs_StartUp                            0x000081f7   Thumb Code   106  yaffscfg2k.o(.text)
+    yaffsfs_GetHandlePointer                 0x000082bf   Thumb Code    26  yaffsfs.o(.text)
+    yaffsfs_GetHandleObject                  0x000082d9   Thumb Code    30  yaffsfs.o(.text)
+    yaffsfs_Match                            0x0000834d   Thumb Code    14  yaffsfs.o(.text)
+    yaffsfs_IsPathDivider                    0x0000835b   Thumb Code    28  yaffsfs.o(.text)
+    yaffs_open                               0x0000859f   Thumb Code   500  yaffsfs.o(.text)
+    yaffs_close                              0x00008793   Thumb Code   100  yaffsfs.o(.text)
+    yaffs_pread                              0x000087f7   Thumb Code   146  yaffsfs.o(.text)
+    yaffs_write                              0x00008889   Thumb Code   140  yaffsfs.o(.text)
+    yaffs_mkdir                              0x00008a3d   Thumb Code   146  yaffsfs.o(.text)
+    yaffs_mount                              0x00008acf   Thumb Code    96  yaffsfs.o(.text)
+    yaffs_initialise                         0x00008bb9   Thumb Code    48  yaffsfs.o(.text)
+    __aeabi_uldivmod                         0x00008ca1   Thumb Code    98  uldiv.o(.text)
+    __aeabi_memcpy                           0x00008d03   Thumb Code    36  memcpya.o(.text)
+    __aeabi_memcpy4                          0x00008d03   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memcpy8                          0x00008d03   Thumb Code     0  memcpya.o(.text)
+    __aeabi_memset                           0x00008d27   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x00008d27   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x00008d27   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x00008d35   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x00008d35   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x00008d35   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x00008d39   Thumb Code    18  memseta.o(.text)
+    strcat                                   0x00008d4b   Thumb Code    24  strcat.o(.text)
+    strncpy                                  0x00008d63   Thumb Code    24  strncpy.o(.text)
+    strcmp                                   0x00008d7b   Thumb Code    28  strcmp.o(.text)
+    memcmp                                   0x00008d97   Thumb Code    26  memcmp.o(.text)
+    strcpy                                   0x00008db1   Thumb Code    18  strcpy.o(.text)
+    strncmp                                  0x00008dc3   Thumb Code    30  strncmp.o(.text)
+    __aeabi_llsl                             0x00008de1   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x00008de1   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x00008dff   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x00008dff   Thumb Code     0  llushr.o(.text)
+    __scatterload                            0x00008e21   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00008e21   Thumb Code     0  init.o(.text)
+    __scatterload_copy                       0x00008e45   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_zeroinit                   0x00008e53   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    free                                     0x00008e61   Thumb Code    76  malloc.o(i.free)
+    malloc                                   0x00008eb1   Thumb Code    92  malloc.o(i.malloc)
+    boot_msg                                 0x00008f1c   Data         281  main.o(.constdata)
+    menu                                     0x00009035   Data         258  main.o(.constdata)
+    Region$$Table$$Base                      0x00009474   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00009494   Number         0  anon$$obj.o(Region$$Table)
+    SystemCoreClock                          0x10000000   Data           4  system_lpc177x_8x.o(.data)
+    PeripheralClock                          0x10000004   Data           4  system_lpc177x_8x.o(.data)
+    EMCClock                                 0x10000008   Data           4  system_lpc177x_8x.o(.data)
+    USBClock                                 0x1000000c   Data           4  system_lpc177x_8x.o(.data)
+    SPIFIClock                               0x10000010   Data           4  system_lpc177x_8x.o(.data)
+    _db_msg                                  0x10000014   Data           4  debug_frmwrk.o(.data)
+    _db_msg_                                 0x10000018   Data           4  debug_frmwrk.o(.data)
+    _db_char                                 0x1000001c   Data           4  debug_frmwrk.o(.data)
+    _db_dec                                  0x10000020   Data           4  debug_frmwrk.o(.data)
+    _db_dec_16                               0x10000024   Data           4  debug_frmwrk.o(.data)
+    _db_dec_32                               0x10000028   Data           4  debug_frmwrk.o(.data)
+    _db_hex                                  0x1000002c   Data           4  debug_frmwrk.o(.data)
+    _db_hex_16                               0x10000030   Data           4  debug_frmwrk.o(.data)
+    _db_hex_32                               0x10000034   Data           4  debug_frmwrk.o(.data)
+    _db_hex_                                 0x10000038   Data           4  debug_frmwrk.o(.data)
+    _db_hex_16_                              0x1000003c   Data           4  debug_frmwrk.o(.data)
+    _db_hex_32_                              0x10000040   Data           4  debug_frmwrk.o(.data)
+    _db_get_key                              0x10000044   Data           4  debug_frmwrk.o(.data)
+    _db_get_char                             0x10000048   Data           4  debug_frmwrk.o(.data)
+    _db_get_val                              0x1000004c   Data           4  debug_frmwrk.o(.data)
+    ptr                                      0x10000050   Data           4  main.o(.data)
+    SysTickCnt                               0x10000054   Data           4  main.o(.data)
+    yaffs_guts_c_version                     0x10000058   Data           4  yaffs_guts.o(.data)
+    yaffs_traceMask                          0x10000094   Data           4  yaffscfg2k.o(.data)
+    yaffsfs_c_version                        0x100000b8   Data           4  yaffsfs.o(.data)
+    yaffs_wr_attempts                        0x100000c0   Data           4  yaffsfs.o(.data)
+    __microlib_freelist                      0x100000cc   Data           4  mvars.o(.data)
+    __microlib_freelist_initialised          0x100000d0   Data           4  mvars.o(.data)
+    InvalidBlockTable                        0xa0000000   Data        2048  nandflash_k9f2g08u0x.o(.bss)
+    __heap_base                              0xa0001f98   Data           0  startup_lpc177x_8x.o(HEAP)
+    __heap_limit                             0xa0041f98   Data           0  startup_lpc177x_8x.o(HEAP)
+    __initial_sp                             0xa0049f98   Data           0  startup_lpc177x_8x.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000e5
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00009568, Max: 0x00080000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x00009494, Max: 0x00080000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000e4   Data   RO            3    RESET               startup_lpc177x_8x.o
+    0x000000e4   0x00000000   Code   RO         1760  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x000000e4   0x00000004   Code   RO         1813    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x000000e8   0x00000004   Code   RO         1816    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x000000ec   0x00000000   Code   RO         1818    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x000000ec   0x00000000   Code   RO         1820    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x000000ec   0x00000008   Code   RO         1821    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x000000f4   0x00000000   Code   RO         1823    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x000000f4   0x00000000   Code   RO         1825    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x000000f4   0x00000004   Code   RO         1814    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x000000f8   0x00000024   Code   RO            5    .text               startup_lpc177x_8x.o
+    0x0000011c   0x000000cc   Code   RO           14    .text               system_lpc177x_8x.o
+    0x000001e8   0x00000070   Code   RO           87    .text               lpc177x_8x_clkpwr.o
+    0x00000258   0x00000040   Code   RO         1053    .text               lpc177x_8x_pinsel.o
+    0x00000298   0x00000020   Code   RO         1289    .text               yaffs_guts.o
+    0x000002b8   0x00000032   Code   RO         1484    .text               yaffs_tagsvalidity.o
+    0x000002ea   0x0000000e   Code   RO         1773    .text               mc_w.l(strlen.o)
+    0x000002f8   0x00000002   Code   RO         1838    i.__scatterload_null  mc_w.l(handlers.o)
+    0x000002fa   0x00000002   PAD
+    0x000002fc   0x00000004   Code   RO            4    .ARM.__at_0x02FC    startup_lpc177x_8x.o
+    0x00000300   0x000006a0   Code   RO           58    .text               debug_frmwrk.o
+    0x000009a0   0x00000290   Code   RO          188    .text               lpc177x_8x_emc.o
+    0x00000c30   0x00000220   Code   RO          581    .text               sdram_k4s561632j.o
+    0x00000e50   0x00000278   Code   RO          773    .text               lpc177x_8x_timer.o
+    0x000010c8   0x000003ec   Code   RO          839    .text               lpc177x_8x_uart.o
+    0x000014b4   0x00000200   Code   RO          977    .text               nandflash_k9f2g08u0x.o
+    0x000016b4   0x00000274   Code   RO         1119    .text               main.o
+    0x00001928   0x00000100   Code   RO         1202    .text               flash2k.o
+    0x00001a28   0x00000524   Code   RO         1229    .text               yaffs_checkptrw.o
+    0x00001f4c   0x0000007e   Code   RO         1230    .text               yaffs_checkptrw.o
+    0x00001fca   0x00000002   PAD
+    0x00001fcc   0x0000038c   Code   RO         1257    .text               yaffs_ecc.o
+    0x00002358   0x00005278   Code   RO         1277    .text               yaffs_guts.o
+    0x000075d0   0x00000158   Code   RO         1422    .text               yaffs_nand.o
+    0x00007728   0x000001aa   Code   RO         1444    .text               yaffs_packedtags2.o
+    0x000078d2   0x00000370   Code   RO         1456    .text               yaffs_qsort.o
+    0x00007c42   0x00000002   PAD
+    0x00007c44   0x00000594   Code   RO         1468    .text               yaffs_tagscompat.o
+    0x000081d8   0x000000b4   Code   RO         1496    .text               yaffscfg2k.o
+    0x0000828c   0x00000a14   Code   RO         1547    .text               yaffsfs.o
+    0x00008ca0   0x00000062   Code   RO         1763    .text               mc_w.l(uldiv.o)
+    0x00008d02   0x00000024   Code   RO         1765    .text               mc_w.l(memcpya.o)
+    0x00008d26   0x00000024   Code   RO         1767    .text               mc_w.l(memseta.o)
+    0x00008d4a   0x00000018   Code   RO         1769    .text               mc_w.l(strcat.o)
+    0x00008d62   0x00000018   Code   RO         1771    .text               mc_w.l(strncpy.o)
+    0x00008d7a   0x0000001c   Code   RO         1775    .text               mc_w.l(strcmp.o)
+    0x00008d96   0x0000001a   Code   RO         1777    .text               mc_w.l(memcmp.o)
+    0x00008db0   0x00000012   Code   RO         1779    .text               mc_w.l(strcpy.o)
+    0x00008dc2   0x0000001e   Code   RO         1781    .text               mc_w.l(strncmp.o)
+    0x00008de0   0x0000001e   Code   RO         1827    .text               mc_w.l(llshl.o)
+    0x00008dfe   0x00000020   Code   RO         1829    .text               mc_w.l(llushr.o)
+    0x00008e1e   0x00000002   PAD
+    0x00008e20   0x00000024   Code   RO         1833    .text               mc_w.l(init.o)
+    0x00008e44   0x0000000e   Code   RO         1837    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00008e52   0x0000000e   Code   RO         1839    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00008e60   0x00000050   Code   RO         1785    i.free              mc_w.l(malloc.o)
+    0x00008eb0   0x0000006c   Code   RO         1786    i.malloc            mc_w.l(malloc.o)
+    0x00008f1c   0x0000021b   Data   RO         1121    .constdata          main.o
+    0x00009137   0x00000100   Data   RO         1258    .constdata          yaffs_ecc.o
+    0x00009237   0x00000100   Data   RO         1470    .constdata          yaffs_tagscompat.o
+    0x00009337   0x00000001   PAD
+    0x00009338   0x00000059   Data   RO           59    .conststring        debug_frmwrk.o
+    0x00009391   0x00000003   PAD
+    0x00009394   0x000000a2   Data   RO         1296    .conststring        yaffs_guts.o
+    0x00009436   0x00000002   PAD
+    0x00009438   0x00000003   Data   RO         1502    .conststring        yaffscfg2k.o
+    0x0000943b   0x00000001   PAD
+    0x0000943c   0x00000038   Data   RO         1579    .conststring        yaffsfs.o
+    0x00009474   0x00000020   Data   RO         1835    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x10000000, Size: 0x000000d4, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000000   0x00000014   Data   RW           15    .data               system_lpc177x_8x.o
+    0x10000014   0x0000003c   Data   RW           60    .data               debug_frmwrk.o
+    0x10000050   0x00000008   Data   RW         1122    .data               main.o
+    0x10000058   0x00000034   Data   RW         1297    .data               yaffs_guts.o
+    0x1000008c   0x00000008   Data   RW         1471    .data               yaffs_tagscompat.o
+    0x10000094   0x00000024   Data   RW         1503    .data               yaffscfg2k.o
+    0x100000b8   0x00000014   Data   RW         1580    .data               yaffsfs.o
+    0x100000cc   0x00000004   Data   RW         1831    .data               mc_w.l(mvars.o)
+    0x100000d0   0x00000004   Data   RW         1832    .data               mc_w.l(mvars.o)
+
+
+    Execution Region RW_RAM1 (Base: 0xa0000000, Size: 0x00049f98, Max: 0x02000000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0xa0000000   0x00000800   Zero   RW          987    .bss                nandflash_k9f2g08u0x.o
+    0xa0000800   0x00000020   Zero   RW         1469    .bss                yaffs_tagscompat.o
+    0xa0000820   0x00000e18   Zero   RW         1501    .bss                yaffscfg2k.o
+    0xa0001638   0x00000960   Zero   RW         1578    .bss                yaffsfs.o
+    0xa0001f98   0x00040000   Zero   RW            2    HEAP                startup_lpc177x_8x.o
+    0xa0041f98   0x00008000   Zero   RW            1    STACK               startup_lpc177x_8x.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      1696        200         89         60          0      14479   debug_frmwrk.o
+       256          0          0          0          0       4067   flash2k.o
+       112         30          0          0          0        822   lpc177x_8x_clkpwr.o
+       656         40          0          0          0       5247   lpc177x_8x_emc.o
+        64          6          0          0          0       1631   lpc177x_8x_pinsel.o
+       632         18          0          0          0       2894   lpc177x_8x_timer.o
+      1004         22          0          0          0       3779   lpc177x_8x_uart.o
+       628        210        539          8          0      34251   main.o
+       512         16          0          0       2048       2917   nandflash_k9f2g08u0x.o
+       544         34          0          0          0       3944   sdram_k4s561632j.o
+        40         12        228          0     294912       1072   startup_lpc177x_8x.o
+       204         16          0         20          0      27024   system_lpc177x_8x.o
+      1442          0          0          0          0       6074   yaffs_checkptrw.o
+       908          4        256          0          0       3626   yaffs_ecc.o
+     21144        162        162         52          0      76592   yaffs_guts.o
+       344          0          0          0          0       3257   yaffs_nand.o
+       426          0          0          0          0       2526   yaffs_packedtags2.o
+       880          0          0          0          0       2642   yaffs_qsort.o
+      1428         22        256          8         32       6462   yaffs_tagscompat.o
+        50          0          0          0          0        794   yaffs_tagsvalidity.o
+       180         44          3         36       3608       2220   yaffscfg2k.o
+      2580        122         56         20       2400      25035   yaffsfs.o
+
+    ----------------------------------------------------------------------
+     35734        958       1628        204     303000     231355   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         4          0          7          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+        30          0          0          0          0         68   llshl.o
+        32          0          0          0          0         68   llushr.o
+       188         20          0          0          0        160   malloc.o
+        26          0          0          0          0         80   memcmp.o
+        36          0          0          0          0         68   memcpya.o
+        36          0          0          0          0        108   memseta.o
+         0          0          0          8          0          0   mvars.o
+        24          0          0          0          0         68   strcat.o
+        28          0          0          0          0         76   strcmp.o
+        18          0          0          0          0         68   strcpy.o
+        14          0          0          0          0         68   strlen.o
+        30          0          0          0          0         80   strncmp.o
+        24          0          0          0          0         76   strncpy.o
+        98          0          0          0          0         92   uldiv.o
+
+    ----------------------------------------------------------------------
+       674         36          0          8          0       1148   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       670         36          0          8          0       1148   mc_w.l
+
+    ----------------------------------------------------------------------
+       674         36          0          8          0       1148   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     36408        994       1628        212     303000     230263   Grand Totals
+     36408        994       1628        212     303000     230263   ELF Image Totals
+     36408        994       1628        212          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                38036 (  37.14kB)
+    Total RW  Size (RW Data + ZI Data)            303212 ( 296.11kB)
+    Total ROM Size (Code + RO Data + RW Data)      38248 (  37.35kB)
+
+==============================================================================
+

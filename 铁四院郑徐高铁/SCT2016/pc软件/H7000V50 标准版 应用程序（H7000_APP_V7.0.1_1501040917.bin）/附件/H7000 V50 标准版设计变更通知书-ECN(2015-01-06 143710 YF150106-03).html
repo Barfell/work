@@ -1,0 +1,377 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=gb2312"><script>
+//定义全局变量
+var g_run_id = "11746";       //流水号
+var g_flow_id = "58";     //流程ID
+var g_form_view = 2;                 //打印表单
+var doPrint = "";    
+var printView = "";
+
+//用户自定义js脚本
+
+var sign_info_object="";
+var cursor = "";
+function LoadSignDataSign(data,count,content,version)
+{
+  var vDWebSignSeal=document.getElementById("DWebSignSeal");
+	if(!vDWebSignSeal)
+	   return;
+  vDWebSignSeal.SetStoreData(data);
+
+  var strObjectName ;
+  strObjectName = vDWebSignSeal.FindSeal(cursor,0);
+	while(strObjectName  != "")
+	{
+		if(strObjectName.indexOf("SIGN_INFO")>=0)
+		{
+		   vDWebSignSeal.MoveSealPosition(strObjectName,0, -30, "personal_sign"+count);
+		   break;
+		}
+	  strObjectName = vDWebSignSeal.FindSeal(strObjectName,0);
+	}
+	  
+	vDWebSignSeal.ShowWebSeals();
+  if(version==0)
+    vDWebSignSeal.SetSealSignData (strObjectName,"中国兵器工业信息中心");
+  else
+    vDWebSignSeal.SetSealSignData (strObjectName,content);
+  vDWebSignSeal.SetMenuItem(strObjectName,4);
+  sign_info_object += strObjectName+",";
+  strObjectName = vDWebSignSeal.FindSeal(strObjectName,0);
+}
+
+function print_view()		
+{
+	 window.focus();
+	 try{
+	    document.getElementById("WebBrowser").ExecWB(7,1);
+	  }catch(e)
+	  {
+	  	alert("如不能打印预览，请调整安全级别！具体方法如下：\n根据当前页面所属安全区域，自定义安全设置，找到设置项“对未标记为可安全执行的脚本的Activex控件进行初始化并执行脚本”，将其设置为“提示”即可。");
+	  }
+}
+</script>
+</head>
+
+<body style="background:none;" topmargin="5">
+<form name="form1" method="post" action=""><!--{13752582983120}--><!--{13752582983121}--><?xml:namespace prefix = fck /><fck:meta http-equiv="Content-Type" content="text/html; charset=gb2312"></fck:meta><fck:meta content="Word.Document" name="ProgId"></fck:meta><fck:meta content="Microsoft Word 12" name="Generator"></fck:meta><fck:meta content="Microsoft Word 12" name="Originator"></fck:meta><LINK href="设计变更通知书.files/filelist.xml" rel=File-List><!--{13752582983122}--><LINK target=设计变更通知书.files/props0008.xml href="设计变更通知书.files/item0007.xml" rel=dataStoreItem><LINK href="设计变更通知书.files/themedata.thmx" rel=themeData><LINK href="设计变更通知书.files/colorschememapping.xml" rel=colorSchemeMapping><!--{13752582983123}--><!--{13752582983124}--><!--{13752582983125}--><!--{13752582983126}--><!--{13752582983127}-->
+<DIV class=Section1 style="LAYOUT-GRID:  18pt none">
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 22pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;</SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN style="FONT-SIZE: 22pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">设计变更通知书（<SPAN lang=EN-US>ECN</SPAN>）<SPAN lang=EN-US></SPAN></SPAN></B><B style="mso-bidi-font-weight: normal"><SPAN lang=EN-US style="FONT-SIZE: 22pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;</SPAN></B></P>
+<DIV align=center>
+<TABLE class=MsoNormalTable style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 1184; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext" cellSpacing=0 cellPadding=0 border=1>
+<TBODY>
+<TR style="HEIGHT: 42.55pt; mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 42.55pt; mso-border-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">产品型号<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 42.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt" vAlign=top width=701 colSpan=10>H7000 V50 DTU<input type=hidden name=DATA_1 value='H7000 V50 DTU' title='产品型号'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 42.55pt" width=4 height=57><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 1">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">填写日期<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=701 colSpan=10>2015-01-06<input type=hidden name=DATA_85 value='2015-01-06' title='填写日期'><input type=hidden name=DATA_ value='' title='日期控件:填写日期'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.75pt; mso-yfti-irow: 2">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.75pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">变更范围<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.75pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=701 colSpan=10>
+<P class=MsoNormal style="TEXT-JUSTIFY: inter-ideograph; MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: justify; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"><input type=checkbox checked onclick='this.checked=1;'><input type=hidden name=DATA_2 value='on' title='软件'>软件<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_3 value='' title='硬件'>硬件<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</SPAN><SPAN style="mso-spacerun: yes">&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_4 value='' title='物料替换'>物料替换<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</SPAN><SPAN style="mso-spacerun: yes"></SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_5 value='' title='产品资料'>产品资料<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_6 value='' title='其它'>其它</SPAN><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: " times="" new="" roman?,?serif?;="" mso-fareast-font-family:宋体?=""> </SPAN><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">（□可多选√）<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.75pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 1cm; mso-yfti-irow: 3">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">变更原因<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=701 colSpan=10>因供应商暂时停产我司使用的ARM7（LPC2220-FET144）芯片，导致当前供货不足，现使用DLJM暂时替代进行供货，同时为降低成本研发出新型硬件平台V50，由于硬件平台改变，所以需要变更软件适应新的硬件平台。<input type=hidden name=DATA_42 value='因供应商暂时停产我司使用的ARM7（LPC2220-FET144）芯片，导致当前供货不足，现使用DLJM暂时替代进行供货，同时为降低成本研发出新型硬件平台V50，由于硬件平台改变，所以需要变更软件适应新的硬件平台。' title='变更原因'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 1cm" width=4 height=38><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 4">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=20 rowSpan=8>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">变<SPAN lang=EN-US><BR></SPAN>更<SPAN lang=EN-US><BR></SPAN>内<SPAN lang=EN-US><BR></SPAN>容<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=160>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">代码<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=187 colSpan=3>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">名称<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=195 colSpan=3>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">规格型号<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=105>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">位号<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=72>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">变前<SPAN lang=EN-US><BR></SPAN>用量<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=45>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">变后<SPAN lang=EN-US><BR></SPAN>用量<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=97>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">老物料<SPAN lang=EN-US></SPAN></SPAN></B></P>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">处理方式</SPAN></B><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: " times="" new="" roman?,?serif?;="" mso-fareast-font-family:宋体?="">&nbsp;</SPAN><B><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 5">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=160><input type=hidden name=DATA_7 value='' title='物料代码'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=187 colSpan=3><input type=hidden name=DATA_8 value='' title='物料名称'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=195 colSpan=3><input type=hidden name=DATA_9 value='' title='规格型号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=105><input type=hidden name=DATA_10 value='' title='位号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=72><input type=hidden name=DATA_11 value='' title='变更前用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=45><input type=hidden name=DATA_12 value='' title='变更后用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=97>&nbsp;<input type=hidden name=DATA_13 value='&amp;nbsp;' title='老物料处理方式'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 6">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=160><input type=hidden name=DATA_14 value='' title='物料代码'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=187 colSpan=3><input type=hidden name=DATA_18 value='' title='物料名称'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=195 colSpan=3><input type=hidden name=DATA_76 value='' title='规格型号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=105><input type=hidden name=DATA_26 value='' title='位号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=72><input type=hidden name=DATA_87 value='' title='变更前用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=45><input type=hidden name=DATA_34 value='' title='变更后用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=97>&nbsp;<input type=hidden name=DATA_38 value='&amp;nbsp;' title='老物料处理方式'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 7">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=160><input type=hidden name=DATA_15 value='' title='物料代码'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=187 colSpan=3><input type=hidden name=DATA_19 value='' title='物料名称'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=195 colSpan=3><input type=hidden name=DATA_77 value='' title='规格型号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=105><input type=hidden name=DATA_27 value='' title='位号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=72><input type=hidden name=DATA_88 value='' title='变更前用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=45><input type=hidden name=DATA_35 value='' title='变更后用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=97>&nbsp;<input type=hidden name=DATA_39 value='&amp;nbsp;' title='老物料处理方式'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 8">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=160><input type=hidden name=DATA_16 value='' title='物料代码'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=187 colSpan=3><input type=hidden name=DATA_20 value='' title='物料名称'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=195 colSpan=3><input type=hidden name=DATA_78 value='' title='规格型号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=105><input type=hidden name=DATA_28 value='' title='位号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=72><input type=hidden name=DATA_89 value='' title='变更前用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=45><input type=hidden name=DATA_36 value='' title='变更后用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=97>&nbsp;<input type=hidden name=DATA_40 value='&amp;nbsp;' title='老物料处理方式'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 9">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=160><input type=hidden name=DATA_17 value='' title='物料代码'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=187 colSpan=3><input type=hidden name=DATA_21 value='' title='物料名称'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=195 colSpan=3><input type=hidden name=DATA_79 value='' title='规格型号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=105><input type=hidden name=DATA_29 value='' title='位号'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=72><input type=hidden name=DATA_90 value='' title='变更前用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=45><input type=hidden name=DATA_37 value='' title='变更后用量'></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; TEXT-ALIGN: center; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=97>&nbsp;<input type=hidden name=DATA_41 value='&amp;nbsp;' title='老物料处理方式'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 70.9pt; mso-yfti-irow: 10">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 70.9pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=160>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">修改内容说明<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 70.9pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=701 colSpan=10><br>兼容V50和DLJM硬件平台，与S507业务功能保持一致。<br><br>停用H7000_FW_V7.0.0_1412081659.bin版本 <br><br>DLJM硬件平台备注： <br>1、由于DLJM硬件设计，该版本的网络灯由模块控制，软件无法进行控制，所以网络灯闪与当前S507版本将会不同。 <br>2、程序进行本地升级后，沿用原来DLJM设定，需要手动上电重启，此处也与当前S507版本不同。 <br>3、由于芯片限制，DLJM外置版的4、6端子口只能作为输入，9端子口只能作为输出。 <br>4、串口使用跟V32一致，即没有双串口，只有单串口。<br><br>V50硬件平台备注：<br>1、端子口4、6可输入输出，但是通过RDP协议和DDP协议获取GPIO信息时，引脚方向和引脚电平与S507相反。<br>2、端子口7、8与V32不同，作为GPIO输出且只能输出<br>3、网络灯与S507一致，由程序控制<br>4、本地升级后需要手动重启<br>5、单串口<br><input type=hidden name=DATA_43 value='
+兼容V50和DLJM硬件平台，与S507业务功能保持一致。
+
+停用H7000_FW_V7.0.0_1412081659.bin版本 
+
+DLJM硬件平台备注： 
+1、由于DLJM硬件设计，该版本的网络灯由模块控制，软件无法进行控制，所以网络灯闪与当前S507版本将会不同。 
+2、程序进行本地升级后，沿用原来DLJM设定，需要手动上电重启，此处也与当前S507版本不同。 
+3、由于芯片限制，DLJM外置版的4、6端子口只能作为输入，9端子口只能作为输出。 
+4、串口使用跟V32一致，即没有双串口，只有单串口。
+
+V50硬件平台备注：
+1、端子口4、6可输入输出，但是通过RDP协议和DDP协议获取GPIO信息时，引脚方向和引脚电平与S507相反。
+2、端子口7、8与V32不同，作为GPIO输出且只能输出
+3、网络灯与S507一致，由程序控制
+4、本地升级后需要手动重启
+5、单串口
+' title='修改内容说明'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 70.9pt" width=4 height=95><BR></TD></TR>
+<TR style="HEIGHT: 22.5pt; mso-yfti-irow: 11">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 22.5pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=160>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">软件名称<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 22.5pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=295 colSpan=5>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">　</SPAN></B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">H7000_APP_V7.0.1_1501040917.bin<br>&nbsp;&nbsp;H7000_FW_V7.0.1_1501040917.bin<input type=hidden name=DATA_84 value='H7000_APP_V7.0.1_1501040917.bin
+  H7000_FW_V7.0.1_1501040917.bin' title='软件名称'></SPAN><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"><SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 22.5pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=192 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">软件版本类型<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 22.5pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=214 colSpan=3>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"><input type=checkbox checked onclick='this.checked=1;'><input type=hidden name=DATA_45 value='on' title='标准'>标准<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_46 value='' title='特殊'>特殊<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 22.5pt" width=4 height=30><BR></TD></TR>
+<TR style="HEIGHT: 42.55pt; mso-yfti-irow: 12">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 42.55pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2 rowSpan=3>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">影响产品说明<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 42.55pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" vAlign=top width=701 colSpan=10 rowSpan=3>H7000 V50 DTU和使用H7000_FW_V7.0.0_1412081659.bin软件版本发出的DLJM V13 DTU<input type=hidden name=DATA_47 value='H7000 V50 DTU和使用H7000_FW_V7.0.0_1412081659.bin软件版本发出的DLJM V13 DTU' title='影响产品说明'></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 42.55pt" width=4 height=57><BR></TD></TR>
+<TR style="HEIGHT: 15.6pt; mso-yfti-irow: 13">
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 15.6pt" width=4 height=21><BR></TD></TR>
+<TR style="HEIGHT: 15.6pt; mso-yfti-irow: 14">
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 15.6pt" width=4 height=21><BR></TD></TR>
+<TR style="HEIGHT: 22.5pt; mso-yfti-irow: 15">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 22.5pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">影响受控<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 22.5pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=701 colSpan=10>
+<P class=MsoNormal style="TEXT-JUSTIFY: inter-ideograph; MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: justify; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"><input type=checkbox checked onclick='this.checked=1;'><input type=hidden name=DATA_48 value='on' title='软件'>软件<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_49 value='' title='原理图'>原理图<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_50 value='' title='BOM'><SPAN lang=EN-US>BOM<SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_51 value='' title='摆位图'>摆位图<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_52 value='' title='样机样板'>样机样板<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp; </SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_53 value='' title='外壳'>外壳<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_54 value='' title='标签'>标签<SPAN lang=EN-US></SPAN></SPAN></P>
+<P class=MsoNormal style="TEXT-JUSTIFY: inter-ideograph; MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: justify; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_55 value='' title='产品生产版本说明表'>产品生产版本说明表<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_56 value='' title='生产测试指导书'>生产测试指导书<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_57 value='' title='光盘资料'>光盘资料&nbsp;<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;</SPAN></SPAN>&nbsp;<input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_94 value='' title='使用说明书'>使用说明书&nbsp;&nbsp;<input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_58 value='' title='其它'>其它&nbsp;&nbsp;</SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 22.5pt" width=4 height=30><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 16">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">导入方式<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=382 colSpan=6>
+<P class=MsoNormal style="TEXT-JUSTIFY: inter-ideograph; MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: justify; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"><input type=checkbox checked onclick='this.checked=1;'><input type=hidden name=DATA_59 value='on' title='立即执行'>立即执行<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN style="mso-spacerun: yes"></SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_60 value='' title='中途变更'>中途变更<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=319 colSpan=4>
+<P class=MsoNormal style="TEXT-JUSTIFY: inter-ideograph; MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: justify; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"><SPAN style="mso-spacerun: yes"><input type=hidden name=DATA_86 value='' title='变更时间'><input type=hidden name=DATA_ value='' title='日期控件:变更时间'></SPAN></SPAN><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">后开始变更<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 17">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">库存数据<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=83>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">成品<SPAN lang=EN-US></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">数量<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=157 colSpan=3>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;无库存<input type=hidden name=DATA_61 value='无库存' title='成品数量'></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=55>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">半成品<SPAN lang=EN-US></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">数量<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=87>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;<input type=hidden name=DATA_62 value='' title='半成品数量'></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=105>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">在制品<SPAN lang=EN-US></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">数量<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=72>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;<input type=hidden name=DATA_63 value='' title='在制品数量'></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=45>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">芯片烧<SPAN lang=EN-US></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">录数量<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=97>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;<input type=hidden name=DATA_64 value='' title='芯片烧录数量'></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 18">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2 rowSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">库存产品建议处理方式<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=701 colSpan=10>
+<P class=MsoNormal style="TEXT-JUSTIFY: inter-ideograph; MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: justify; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体"><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_65 value='' title='无旧品'>无旧品<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_66 value='' title='不用处理'>不用处理,继续用完<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><input type=checkbox checked onclick='this.checked=1;'><input type=hidden name=DATA_67 value='on' title='更新后使用'>更新后使用<SPAN lang=EN-US><SPAN style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN></SPAN><input type=checkbox onclick='this.checked=0;'><input type=hidden name=DATA_68 value='' title='报废处理'>报废处理<SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 19">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=701 colSpan=10>
+<P class=MsoNormal style="TEXT-JUSTIFY: inter-ideograph; MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: justify; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">(</SPAN><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">请产品经理批准时综合平衡考虑变更影响和库存数量导致的工作量<SPAN lang=EN-US>,</SPAN>选取最佳方式<SPAN lang=EN-US>)</SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR style="HEIGHT: 1cm; mso-yfti-irow: 20">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">审核<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=182 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">　同意<input type=hidden name=DATA_69 value='同意' title='审核'><SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=519 colSpan=8>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;<input type=hidden name=DATA_70 value='' title='审核意见'></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 1cm" width=4 height=38><BR></TD></TR>
+<TR style="HEIGHT: 1cm; mso-yfti-irow: 21">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">发布审核<SPAN lang=EN-US><BR></SPAN>（质量管理部）<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=182 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">　同意<input type=hidden name=DATA_71 value='同意' title='发布审核'><SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=519 colSpan=8>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;<input type=hidden name=DATA_73 value='' title='发布审核意见'></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 1cm" width=4 height=38><BR></TD></TR>
+<TR style="HEIGHT: 1cm; mso-yfti-irow: 22">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">批准<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=182 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">　同意<input type=hidden name=DATA_72 value='同意' title='批准'><SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 1cm; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=519 colSpan=8>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">&nbsp;<input type=hidden name=DATA_74 value='' title='批准意见'></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 1cm" width=4 height=38><BR></TD></TR>
+<TR style="HEIGHT: 21.85pt; mso-yfti-irow: 23; mso-yfti-lastrow: yes">
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=180 colSpan=2>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; TEXT-ALIGN: center; mso-layout-grid-align: auto" align=center><B><SPAN lang=EN-US style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">ECN</SPAN></B><B><SPAN style="FONT-SIZE: 10.5pt; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">单号<SPAN lang=EN-US></SPAN></SPAN></B></P></TD>
+<TD style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21.85pt; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" width=701 colSpan=10>
+<P class=MsoNormal style="MARGIN-BOTTOM: 0pt; LAYOUT-GRID-MODE: both; mso-layout-grid-align: auto"><SPAN style="FONT-SIZE: 10.5pt; COLOR: black; FONT-FAMILY: 宋体; mso-bidi-font-family: 宋体">　YF150106-03<input type=hidden name=DATA_75 value='YF150106-03' title='ECN单号'><SPAN lang=EN-US></SPAN></SPAN></P></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; HEIGHT: 21.85pt" width=4 height=29><BR></TD></TR>
+<TR>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=20><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=160><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=83><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=99><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=5><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=53><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=55><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=87><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=105><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=72><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=45><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=97><BR></TD>
+<TD style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none" width=4>
+<P class=MsoNormal>&nbsp;</P></TD></TR></TBODY></TABLE></DIV>
+<P class=MsoNormal><SPAN lang=EN-US>&nbsp;</SPAN></P></DIV></form>
+<br>     <table align="center" style='border-collapse:collapse' border=1 cellspacing=0 cellpadding=3 bordercolor='#b8d1e2' width="100%" class="small">
+     <tr class="TableHeader">
+      <td> 公共附件</td>
+    </tr>
+    <tr class="TableData">
+    	<td>
+<span onmouseover="showMenu(this.id);" id="attach_3e8f5aec"><img src="/general/netdisk/images/docx.gif" align="absmiddle"> <a class="attach_name" href="/inc/attach.php?MODULE=workflow&YM=1501&ATTACHMENT_ID=1049582316&ATTACHMENT_NAME=H7000+V50_PD-ST-SW-REPORTV1.0.docx">H7000 V50_PD-ST-SW-REPORTV1.0.docx</a></span>&nbsp;
+<div id="attach_3e8f5aec_menu" class="attach_div" title="H7000 V50_PD-ST-SW-REPORTV1.0.docx"><a href="/inc/attach.php?MODULE=workflow&YM=1501&ATTACHMENT_ID=1049582316&ATTACHMENT_NAME=H7000+V50_PD-ST-SW-REPORTV1.0.docx">下载</a>
+<a href="javascript:;" onClick="SaveFile('workflow,1501_1049582316','H7000+V50_PD-ST-SW-REPORTV1.0.docx');">转存</a>
+<a href="javascript:;" onClick="window.open('/module/OC?MODULE=workflow&YM=1501&ATTACHMENT_ID=1049582316&ATTACHMENT_NAME=H7000+V50_PD-ST-SW-REPORTV1.0.docx&SIGN_KEY=&OP=7&PRINT=1','read78288592','menubar=0,toolbar=0,status=1,scrollbars=1,resizable=1');">阅读</a>
+</div><br>
+       </td>
+     </tr>
+   </table>
+<br>     <table style='border-collapse:collapse' border=1 cellspacing=0 cellpadding=3 bordercolor='#b8d1e2' width="100%" class="small">
+     <tr class="TableHeader">
+      <td><b>会签与点评</b></td>
+    </tr>
+    <tr class="TableData">
+      <td>
+      <b>
+      	第6步【会签】 ECN单号    <u title="部门：质量管理部/质量工程组" style="cursor:hand">冯英</u>：</b>
+        <br>
+    软件存放OA路径：<b>质量管理/软件受控发布/DTU/H7000V5X 标准版 </b><br />链接：<a href="http://192.168.0.8:8080/general/file_folder/read.php?SORT_ID=12736&amp;FILE_SORT=1&amp;CONTENT_ID=41727&amp;start=0" target="_blank">http://192.168.0.8:8080/general/file_folder/read.php?SORT_ID=12736&amp;FILE_SORT=1&amp;CONTENT_ID=41727&amp;start=0</a>    <i>2015-01-06 17:51:51</i>
+    <br>
+
+       </td>
+     </tr>
+</table><br>
+<table style='border-collapse:collapse' border=1 cellspacing=0 cellpadding=3 bordercolor='#b8d1e2' width="100%" class="small">
+   <tr>
+     <td nowrap colspan="3" class="TableHeader"><b>流程图</b></td>
+   </tr>
+
+<tr class="TableLine2">
+
+   <td nowrap align="center" rowspan="1">第<b><span class="Big4">1</span></b>步</td>
+   <td ><img border=0 src="/images/arrow_down.gif"> 序号1：申请人</td>
+   <td><img src='/images/flow_next.gif' align='absmiddle'> <span class='big4'><u title='主办人，部门：研究开发部/M2M项目组 ' style='cursor:hand'><b>易阳科 主办</b></u></span>   [<font color=green>已办结   用时：23分38秒</font>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开始于：2015-01-06 14:37:11<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结束于：2015-01-06 15:00:49<br></td>
+ </tr>
+
+<tr class="TableLine1">
+
+   <td nowrap align="center" rowspan="1">第<b><span class="Big4">2</span></b>步</td>
+   <td title='上一步骤序号：1'><img border=0 src="/images/arrow_down.gif"> 序号2：PMC</td>
+   <td><img src='/images/flow_next.gif' align='absmiddle'> <span class='big4'><u title='主办人，部门：供应链部/计划物控组 ' style='cursor:hand'><b>林兰芳 主办</b></u></span>   [<font color=green>已办结   用时：45秒</font>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开始于：2015-01-06 15:01:23<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结束于：2015-01-06 15:02:08<br></td>
+ </tr>
+
+<tr class="TableLine2">
+
+   <td nowrap align="center" rowspan="1">第<b><span class="Big4">3</span></b>步</td>
+   <td title='上一步骤序号：2'><img border=0 src="/images/arrow_down.gif"> 序号3：审核</td>
+   <td><img src='/images/flow_next.gif' align='absmiddle'> <span class='big4'><u title='主办人，部门：研究开发部/M2M项目组 ' style='cursor:hand'><b>龚潇 主办</b></u></span>   [<font color=green>已办结   用时：1分20秒</font>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开始于：2015-01-06 16:10:22<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结束于：2015-01-06 16:11:42<br></td>
+ </tr>
+
+<tr class="TableLine1">
+
+   <td nowrap align="center" rowspan="1">第<b><span class="Big4">4</span></b>步</td>
+   <td title='上一步骤序号：3'><img border=0 src="/images/arrow_down.gif"> 序号4：发布审核</td>
+   <td><img src='/images/flow_next.gif' align='absmiddle'> <span class='big4'><u title='主办人，部门：质量管理部 ' style='cursor:hand'><b>陈韬 主办</b></u></span>   [<font color=green>已办结   用时：22秒</font>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开始于：2015-01-06 16:12:36<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结束于：2015-01-06 16:12:58<br></td>
+ </tr>
+
+<tr class="TableLine2">
+
+   <td nowrap align="center" rowspan="1">第<b><span class="Big4">5</span></b>步</td>
+   <td title='上一步骤序号：4'><img border=0 src="/images/arrow_down.gif"> 序号5：批准</td>
+   <td><img src='/images/flow_next.gif' align='absmiddle'> <span class='big4'><u title='主办人，部门：市场部/产品发展组 ' style='cursor:hand'><b>刘康德 主办</b></u></span>   [<font color=green>已办结   用时：30秒</font>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开始于：2015-01-06 17:10:37<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结束于：2015-01-06 17:11:07<br></td>
+ </tr>
+
+<tr class="TableContent">
+
+   <td nowrap align="center" rowspan="1">第<b><span class="Big4">6</span></b>步</td>
+   <td title='上一步骤序号：5'><img border=0 src="/images/arrow_down.gif"> 序号6：ECN单号</td>
+   <td><img src='/images/flow_next.gif' align='absmiddle'> <span class='big4'><u title='主办人，部门：质量管理部/质量工程组 ' style='cursor:hand'><b>冯英 主办</b></u></span>   [<font color=green>已办结   用时：41秒</font>]<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开始于：2015-01-06 17:51:13<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结束于：2015-01-06 17:51:54<br></td>
+ </tr>
+
+</table>
+<br>
+
+<div id=MyWebBrowser><OBJECT id=WebBrowser classid=CLSID:8856F961-340A-11D0-A96B-00C04FD705A2 height=0 width=0 VIEWASTEXT></OBJECT></div>
+<script>
+function LoadSignData()
+{
+  return;
+}
+</script>
+<script>
+window.onload = function(){
+LoadSignData();  if(printView == "1")
+    window.setTimeout(print_view,1000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1065 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\PROJECT\STM32L4_TEST\TEST1\Pro.uvproj
+Project File Date:  06/12/2016
+
+<h2>Output:</h2>
+Build target 'L4'
+compiling stm32l4xx_hal_pwr_ex.c...
+linking...
+.\Pro.axf: Error: L6218E: Undefined symbol HAL_PWR_PVDCallback (referred from stm32l4xx_hal_pwr_ex.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+".\Pro.axf" - 1 Error(s), 0 Warning(s).
+Target not created
+</pre>
+</body>
+</html>
+ __HAL_RCC_DFSDM_CONFIG(PeriphClkInit->DfsdmClockSelection);
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(652): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+    PeriphClkInit->DfsdmClockSelection   = __HAL_RCC_GET_DFSDM_SOURCE();
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(1059): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+        srcclk = __HAL_RCC_GET_DFSDM_SOURCE();
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c: 0 warnings, 3 errors
+".\Pro.axf" - 3 Error(s), 0 Warning(s).
+Target not created
+PB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 5 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 6 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 7 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 8 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 9 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 10 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 11 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 13 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 14 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 15 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 16 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 17 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+App\main.c: 15 warnings, 0 errors
+compiling system_stm32l4xx.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 3 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 4 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 5 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 6 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 7 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 8 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 9 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 10 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 11 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 13 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 14 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 15 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 16 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 17 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+App\system_stm32l4xx.c: 15 warnings, 0 errors
+compiling stm32l4xx_hal.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 3 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 4 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 5 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 6 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 7 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 8 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 9 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 10 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 11 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 13 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 14 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 15 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 16 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 17 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c: 15 warnings, 0 errors
+compiling stm32l4xx_hal_cortex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 3 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 4 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 5 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 6 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 7 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 8 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 9 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 10 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 11 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 13 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 14 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 15 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 16 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 17 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c: 15 warnings, 0 errors
+compiling stm32l4xx_hal_gpio.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 3 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 4 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 5 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 6 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 7 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 8 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 9 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 10 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 11 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 13 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 14 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 15 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 16 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 17 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c: 15 warnings, 0 errors
+compiling stm32l4xx_hal_rcc.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 3 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 4 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 5 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 6 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 7 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 8 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 9 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 10 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 11 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 13 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 14 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 15 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 16 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 17 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c: 15 warnings, 0 errors
+compiling stm32l4xx_hal_rcc_ex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 3 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 4 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 5 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 6 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 7 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 8 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 9 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 10 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 11 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 13 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 14 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 15 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 16 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 17 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(562): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+      __HAL_RCC_DFSDM_CONFIG(PeriphClkInit->DfsdmClockSelection);
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(652): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+    PeriphClkInit->DfsdmClockSelection   = __HAL_RCC_GET_DFSDM_SOURCE();
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(1059): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+        srcclk = __HAL_RCC_GET_DFSDM_SOURCE();
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c: 15 warnings, 3 errors
+".\Pro.axf" - 3 Error(s), 105 Warning(s).
+Target not created
+acy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(562): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+      __HAL_RCC_DFSDM_CONFIG(PeriphClkInit->DfsdmClockSelection);
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(652): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+    PeriphClkInit->DfsdmClockSelection   = __HAL_RCC_GET_DFSDM_SOURCE();
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(1059): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+        srcclk = __HAL_RCC_GET_DFSDM_SOURCE();
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c: 16 warnings, 3 errors
+".\Pro.axf" - 3 Error(s), 113 Warning(s).
+Target not created
+>APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_crc_ex.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_dma.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_flash.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_flash_ex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_flash_ramfunc.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_gpio.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_iwdg.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_iwdg.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_lptim.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_lptim.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_msp_template.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_msp_template.c: 16 warnings, 0 errors
+".\Pro.axf" - 0 Error(s), 257 Warning(s).
+Project build/rebuild aborted.
+_hal_pwr_ex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_qspi.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_qspi.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_rcc.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_rcc_ex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(562): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+      __HAL_RCC_DFSDM_CONFIG(PeriphClkInit->DfsdmClockSelection);
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(652): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+    PeriphClkInit->DfsdmClockSelection   = __HAL_RCC_GET_DFSDM_SOURCE();
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c(1059): error:  #20: identifier "RCC_CCIPR_DFSDMSEL" is undefined
+        srcclk = __HAL_RCC_GET_DFSDM_SOURCE();
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c: 16 warnings, 3 errors
+compiling stm32l4xx_hal_rtc.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rtc.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_rtc_ex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rtc_ex.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_spi.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_spi_ex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_spi_ex.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_tim.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_tim_ex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_uart.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_uart_ex.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_usart.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_usart.c: 16 warnings, 0 errors
+compiling stm32l4xx_hal_wwdg.c...
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1124): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_ENABLE" (declared at line 2745 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_ENABLE()           do { \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1154): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_DISABLE" (declared at line 2746 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_DISABLE()          CLEAR_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1428): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_ENABLED" (declared at line 2747 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_ENABLED()       (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1452): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_DISABLED" (declared at line 2748 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_DISABLED()      (READ_BIT(RCC->APB2ENR, RCC_APB2ENR_DFSDMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1718): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_FORCE_RESET" (declared at line 2749 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_FORCE_RESET()          SET_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(1744): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_RELEASE_RESET" (declared at line 2750 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_RELEASE_RESET()        CLEAR_BIT(RCC->APB2RSTR, RCC_APB2RSTR_DFSDMRST)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2029): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_ENABLE" (declared at line 2751 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_ENABLE()     SET_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2053): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CLK_SLEEP_DISABLE" (declared at line 2752 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CLK_SLEEP_DISABLE()    CLEAR_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2338): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED" (declared at line 2753 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_ENABLED()     (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) != RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc.h(2362): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED" (declared at line 2754 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_IS_CLK_SLEEP_DISABLED()    (READ_BIT(RCC->APB2SMENR, RCC_APB2SMENR_DFSDMSMEN) == RESET)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(222): warning:  #47-D: incompatible redefinition of macro "RCC_PERIPHCLK_DFSDM" (declared at line 2756 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_PERIPHCLK_DFSDM            ((uint32_t)0x00010000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(429): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_PCLK" (declared at line 2757 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_PCLK        ((uint32_t)0x00000000U)
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(430): warning:  #47-D: incompatible redefinition of macro "RCC_DFSDMCLKSOURCE_SYSCLK" (declared at line 2758 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define RCC_DFSDMCLKSOURCE_SYSCLK      RCC_CCIPR_DFSDMSEL
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1106): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_DFSDM_CONFIG" (declared at line 2759 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_DFSDM_CONFIG(__DFSDM_CLKSOURCE__) \
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_rcc_ex.h(1114): warning:  #47-D: incompatible redefinition of macro "__HAL_RCC_GET_DFSDM_SOURCE" (declared at line 2760 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define __HAL_RCC_GET_DFSDM_SOURCE() ((uint32_t)(READ_BIT(RCC->CCIPR, RCC_CCIPR_DFSDMSEL)))
+.\STM32L4xx_HAL_Driver\Inc\stm32l4xx_hal_gpio_ex.h(124): warning:  #47-D: incompatible redefinition of macro "GPIO_AF6_DFSDM" (declared at line 442 of ".\STM32L4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h")
+  #define GPIO_AF6_DFSDM         ((uint8_t)0x06)  /* DFSDM Alternate Function mapping  */
+STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_wwdg.c: 16 warnings, 0 errors
+".\Pro.axf" - 3 Error(s), 481 Warning(s).
+Target not created

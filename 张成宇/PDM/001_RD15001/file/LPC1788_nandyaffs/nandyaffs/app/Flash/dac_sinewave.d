@@ -1,0 +1,9 @@
+.\Flash\dac_sinewave.o: DAC_SineWave\Dac_SineWave.c
+.\Flash\dac_sinewave.o: ..\Drivers\lpc177x_8x_dac.h
+.\Flash\dac_sinewave.o: ..\Startup\LPC177x_8x.h
+.\Flash\dac_sinewave.o: ..\CM3_lib\core_cm3.h
+.\Flash\dac_sinewave.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\dac_sinewave.o: ..\Drivers\lpc_types.h
+.\Flash\dac_sinewave.o: ..\Drivers\lpc177x_8x_gpdma.h
+.\Flash\dac_sinewave.o: ..\Drivers\lpc177x_8x_clkpwr.h
+.\Flash\dac_sinewave.o: ..\Startup\system_LPC177x_8x.h

@@ -1,0 +1,17 @@
+.\Output\sys.o: User\src\sys.c
+.\Output\sys.o: .\CMSIS\inc\stm32f10x.h
+.\Output\sys.o: .\CMSIS\inc\core_cm3.h
+.\Output\sys.o: D:\Keil\ARM\RV31\INC\stdint.h
+.\Output\sys.o: .\CMSIS\inc\system_stm32f10x.h
+.\Output\sys.o: .\User\inc\stm32f10x_conf.h
+.\Output\sys.o: .\StdPeriph_Driver_3.12\inc\stm32f10x_exti.h
+.\Output\sys.o: .\CMSIS\inc\stm32f10x.h
+.\Output\sys.o: .\StdPeriph_Driver_3.12\inc\stm32f10x_gpio.h
+.\Output\sys.o: .\StdPeriph_Driver_3.12\inc\stm32f10x_rcc.h
+.\Output\sys.o: .\StdPeriph_Driver_3.12\inc\stm32f10x_tim.h
+.\Output\sys.o: .\StdPeriph_Driver_3.12\inc\stm32f10x_usart.h
+.\Output\sys.o: .\StdPeriph_Driver_3.12\inc\misc.h
+.\Output\sys.o: .\User\inc\sys.h
+.\Output\sys.o: .\User\inc\command.h
+.\Output\sys.o: D:\Keil\ARM\RV31\INC\stdio.h
+.\Output\sys.o: D:\Keil\ARM\RV31\INC\string.h

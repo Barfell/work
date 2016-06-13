@@ -1,0 +1,73 @@
+*** Creating Trace Output File '.\RAM\YL_LPC1788_Test.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\ram\startup_lpc177x_8x.o"'
+### List of Objects: adding '".\ram\system_lpc177x_8x.o"'
+### List of Objects: adding '".\ram\core_cm3.o"'
+### List of Objects: adding '".\ram\debug_frmwrk.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_adc.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_can.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_clkpwr.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_crc.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_dac.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_eeprom.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_emc.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_exti.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_gpdma.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_gpio.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_i2c.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_i2s.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_mci.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_mcpwm.o"'
+### List of Objects: adding '".\ram\sdram_k4s561632j.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_emac.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_nvic.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_pinsel.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_pwm.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_qei.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_rtc.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_ssp.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_systick.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_timer.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_uart.o"'
+### List of Objects: adding '".\ram\lpc177x_8x_wwdt.o"'
+### List of Objects: adding '".\ram\sst39vf6401.o"'
+### List of Objects: adding '".\ram\nandflash_k9f2g08u0x.o"'
+### List of Objects: adding '".\ram\yl_1788_touch.o"'
+### List of Objects: adding '".\ram\main.o"'
+### List of Objects: adding '".\ram\download.o"'
+### List of Objects: adding '".\ram\led.o"'
+### List of Objects: adding '".\ram\gpio_interrupt.o"'
+### List of Objects: adding '".\ram\emac.o"'
+### List of Objects: adding '".\ram\emac_easyweb.o"'
+### List of Objects: adding '".\ram\tcpip.o"'
+### List of Objects: adding '".\ram\diskimg.o"'
+### List of Objects: adding '".\ram\memory.o"'
+### List of Objects: adding '".\ram\mscuser.o"'
+### List of Objects: adding '".\ram\usbcore.o"'
+### List of Objects: adding '".\ram\usbdesc.o"'
+### List of Objects: adding '".\ram\usbhw.o"'
+### List of Objects: adding '".\ram\usbuser.o"'
+### List of Objects: adding '".\ram\dac_sinewave.o"'
+### List of Objects: adding '".\ram\drv_glcd.o"'
+### List of Objects: adding '".\ram\logo.o"'
+### List of Objects: adding '".\ram\pwm_dualedge.o"'
+### List of Objects: adding '".\ram\can_test.o"'
+### List of Objects: adding '".\ram\nor_test.o"'
+### List of Objects: adding '".\ram\nand_app.o"'
+### List of Objects: adding '".\ram\sa56004.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\ram\startup_lpc177x_8x.o" ".\ram\system_lpc177x_8x.o" ".\ram\core_cm3.o" ".\ram\debug_frmwrk.o" ".\ram\lpc177x_8x_adc.o" ".\ram\lpc177x_8x_can.o" ".\ram\lpc177x_8x_clkpwr.o" ".\ram\lpc177x_8x_crc.o" ".\ram\lpc177x_8x_dac.o" ".\ram\lpc177x_8x_eeprom.o" ".\ram\lpc177x_8x_emc.o" ".\ram\lpc177x_8x_exti.o" ".\ram\lpc177x_8x_gpdma.o" ".\ram\lpc177x_8x_gpio.o" ".\ram\lpc177x_8x_i2c.o" ".\ram\lpc177x_8x_i2s.o" ".\ram\lpc177x_8x_mci.o" ".\ram\lpc177x_8x_mcpwm.o" ".\ram\sdram_k4s561632j.o" ".\ram\lpc177x_8x_emac.o" ".\ram\lpc177x_8x_nvic.o" ".\ram\lpc177x_8x_pinsel.o" ".\ram\lpc177x_8x_pwm.o" ".\ram\lpc177x_8x_qei.o" ".\ram\lpc177x_8x_rtc.o" ".\ram\lpc177x_8x_ssp.o" ".\ram\lpc177x_8x_systick.o" ".\ram\lpc177x_8x_timer.o" ".\ram\lpc177x_8x_uart.o" ".\ram\lpc177x_8x_wwdt.o" ".\ram\sst39vf6401.o" ".\ram\nandflash_k9f2g08u0x.o" ".\ram\yl_1788_touch.o" ".\ram\main.o" ".\ram\download.o" ".\ram\led.o" ".\ram\gpio_interrupt.o" ".\ram\emac.o" ".\ram\emac_easyweb.o" ".\ram\tcpip.o" ".\ram\diskimg.o" ".\ram\memory.o" ".\ram\mscuser.o" ".\ram\usbcore.o" ".\ram\usbdesc.o" ".\ram\usbhw.o" ".\ram\usbuser.o" ".\ram\dac_sinewave.o" ".\ram\drv_glcd.o" ".\ram\logo.o" ".\ram\pwm_dualedge.o" ".\ram\can_test.o" ".\ram\nor_test.o" ".\ram\nand_app.o" ".\ram\sa56004.o" --strict --scatter ".\RAM\YL_LPC1788_Test.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\YL_LPC1788_Test.map" -o ".\RAM\YL_LPC1788_Test.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\RAM\YL_LPC1788_Test.axf'
+### ADS-LD Command File: '.\RAM\YL_LPC1788_Test.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\RAM\YL_LPC1788_Test.lnp', Handle=0x000002F4
+### Writing '.lnp' file
+### ADS-LD Command file '.\RAM\YL_LPC1788_Test.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

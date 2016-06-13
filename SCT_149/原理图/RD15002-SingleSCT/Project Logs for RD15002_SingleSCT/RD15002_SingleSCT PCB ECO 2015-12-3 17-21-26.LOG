@@ -1,0 +1,10 @@
+Added Component: Designator=J3(ECH350H-3P)
+Added Component: Designator=J4(ECH350H-3P)
+Added Pin To Net: NetName=RS232TX0 Pin=J3-1
+Added Pin To Net: NetName=RS232RX0 Pin=J3-2
+Added Pin To Net: NetName=DGND Pin=J3-3
+Added Pin To Net: NetName=RS232TX1 Pin=J4-1
+Added Pin To Net: NetName=RS232RX1 Pin=J4-2
+Added Pin To Net: NetName=DGND Pin=J4-3
+Added Member To Class: ClassName=U_8-PORT Member=Component J3 COM2
+Added Member To Class: ClassName=U_8-PORT Member=Component J4 COM2

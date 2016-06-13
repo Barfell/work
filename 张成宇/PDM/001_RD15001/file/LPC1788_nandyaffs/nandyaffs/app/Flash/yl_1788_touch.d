@@ -1,0 +1,11 @@
+.\Flash\yl_1788_touch.o: ..\Drivers\yl_1788_touch.c
+.\Flash\yl_1788_touch.o: ..\app\bsp.h
+.\Flash\yl_1788_touch.o: ..\Drivers\lpc_types.h
+.\Flash\yl_1788_touch.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\yl_1788_touch.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\yl_1788_touch.o: ..\Drivers\lpc177x_8x_adc.h
+.\Flash\yl_1788_touch.o: ..\Startup\LPC177x_8x.h
+.\Flash\yl_1788_touch.o: ..\CM3_lib\core_cm3.h
+.\Flash\yl_1788_touch.o: ..\Drivers\yl_1788_touch.h
+.\Flash\yl_1788_touch.o: ..\Drivers\debug_frmwrk.h
+.\Flash\yl_1788_touch.o: ..\Drivers\lpc177x_8x_uart.h

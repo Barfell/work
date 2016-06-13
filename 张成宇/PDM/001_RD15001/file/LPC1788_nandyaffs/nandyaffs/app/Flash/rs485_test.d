@@ -1,0 +1,9 @@
+.\Flash\rs485_test.o: RS485_Test\rs485_test.c
+.\Flash\rs485_test.o: ..\app\bsp.h
+.\Flash\rs485_test.o: ..\Drivers\lpc_types.h
+.\Flash\rs485_test.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\rs485_test.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\rs485_test.o: ..\Drivers\lpc177x_8x_uart.h
+.\Flash\rs485_test.o: ..\Startup\LPC177x_8x.h
+.\Flash\rs485_test.o: ..\CM3_lib\core_cm3.h
+.\Flash\rs485_test.o: ..\Drivers\lpc177x_8x_pinsel.h

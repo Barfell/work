@@ -1,0 +1,14 @@
+.\Flash\usbhost_lpc17xx.o: USU_Host\usbhost_lpc17xx.c
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\usbhost_lpc17xx.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\usbhost_inc.h
+.\Flash\usbhost_lpc17xx.o: ..\Startup\LPC177x_8x.h
+.\Flash\usbhost_lpc17xx.o: ..\CM3_lib\core_cm3.h
+.\Flash\usbhost_lpc17xx.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\usbhost_err.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\usbhost_lpc17xx.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\usbhost_ms.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\usbhost_inc.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\usbhost_fat.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\lpc_types.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\debug_frmwrk.h
+.\Flash\usbhost_lpc17xx.o: ..\Drivers\lpc177x_8x_uart.h

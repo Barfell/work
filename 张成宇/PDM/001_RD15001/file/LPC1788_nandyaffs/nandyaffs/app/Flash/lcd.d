@@ -1,0 +1,12 @@
+.\Flash\lcd.o: Lcd_Drv\Lcd.c
+.\Flash\lcd.o: Lcd_Drv\drv_glcd.h
+.\Flash\lcd.o: ..\Drivers\lpc_types.h
+.\Flash\lcd.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\lcd.o: ..\Drivers\debug_frmwrk.h
+.\Flash\lcd.o: ..\Drivers\lpc177x_8x_uart.h
+.\Flash\lcd.o: ..\Startup\LPC177x_8x.h
+.\Flash\lcd.o: ..\CM3_lib\core_cm3.h
+.\Flash\lcd.o: Lcd_Drv\draw.h
+.\Flash\lcd.o: ..\Drivers\sdram_k4s561632j.h
+.\Flash\lcd.o: Lcd_Drv\logo.h
+.\Flash\lcd.o: Lcd_Drv\drv_glcd.h

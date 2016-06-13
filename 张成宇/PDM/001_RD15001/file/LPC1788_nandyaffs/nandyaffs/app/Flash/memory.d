@@ -1,0 +1,11 @@
+.\Flash\memory.o: Usb_MassStorage\memory.c
+.\Flash\memory.o: ..\Startup\LPC177x_8x.h
+.\Flash\memory.o: ..\CM3_lib\core_cm3.h
+.\Flash\memory.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\memory.o: ..\Drivers\lpc_types.h
+.\Flash\memory.o: Usb_MassStorage\usb.h
+.\Flash\memory.o: Usb_MassStorage\usbcfg.h
+.\Flash\memory.o: Usb_MassStorage\usbhw.h
+.\Flash\memory.o: Usb_MassStorage\usbcore.h
+.\Flash\memory.o: Usb_MassStorage\mscuser.h
+.\Flash\memory.o: Usb_MassStorage\memory.h

@@ -1,0 +1,33 @@
+CC = arm-elf-gcc
+LD = arm-elf-ld
+MCU = arm9tdmi
+
+include winarm_path
+include includes
+include cflags
+
+crt_i = $(WINARM_PATH)/lib/gcc/arm-elf/4.1.1/crti.o
+crt_begin = $(WINARM_PATH)/lib/gcc/arm-elf/4.1.1/crtbegin.o
+crt_0 = $(WINARM_PATH)/arm-elf/lib/t_crt0.o
+crt_end = $(WINARM_PATH)/lib/gcc/arm-elf/4.1.1/crtend.o
+crt_n = $(WINARM_PATH)/lib/gcc/arm-elf/4.1.1/crtn.o
+
+libs_to_search = --start-group -lgcc -lc --end-group
+lib_search_path = -L$(WINARM_PATH)/lib/gcc/arm-elf/4.1.1 -L$(WINARM_PATH)/lib/gcc -L$(WINARM_PATH)/arm-elf/lib
+
+script_uesed = -Ttarget.ld
+target = code_road
+ 
+codes = $(wildcard *.c) 
+objects = $(codes:.c=.o) 
+depends = $(codes:.c=.d) 
+
+all_objects = $(crt_i) $(crt_begin) $(crt_0) $(objects) ./yaffs2/yaffs2.o ./lwip/lwip.o ./ucos/os_cpu_a.o ./ucos/ucos.o $(crt_end) $(crt_n)
+
+$(target): $(all_objects)
+	$(LD) -o $@ $(script_uesed) $(all_objects) $(lib_search_path) $(libs_to_search)
+
+sinclude $(depends) 
+
+$(objects):
+	$(CC) -c -mcpu=$(MCU) $(INCLUDES) $(CFLAGS) -gdwarf-2 -O0 $< -o $@ 

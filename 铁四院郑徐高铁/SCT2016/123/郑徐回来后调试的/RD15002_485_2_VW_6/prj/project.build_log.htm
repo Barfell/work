@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\PROJECT\SCT2016\123\郑徐回来后调试的\RD15002_485_2_VW_6\prj\project.uvproj
+Project File Date:  05/24/2016
+
+<h2>Output:</h2>
+Build target 'SCT'
+compiling TestDtu.c...
+..\code\GSM\src\TestDtu.c(957): warning:  #177-D: variable "i" was declared but never referenced
+        unsigned char i =0;
+..\code\GSM\src\TestDtu.c(959): warning:  #177-D: variable "VM_Value" was declared but never referenced
+        float VM_Value=0;
+..\code\GSM\src\TestDtu.c(960): warning:  #177-D: variable "T_Value" was declared but never referenced
+        float T_Value =0;
+..\code\GSM\src\TestDtu.c(1250): warning:  #177-D: variable "CMDTimeTicks" was declared but never referenced
+        unsigned int CMDTimeTicks  = 0;//接收命令的两分钟的时间片
+..\code\GSM\src\TestDtu.c(1251): warning:  #177-D: variable "OffLineCounts" was declared but never referenced
+        unsigned int OffLineCounts = 0;//假如掉线了等了很久还没有重连，则再次初始化DTU
+..\code\GSM\src\TestDtu.c(1253): warning:  #177-D: variable "szData" was declared but never referenced
+        U8 szData[DTUUARTSIZE]={0};
+..\code\GSM\src\TestDtu.c(1254): warning:  #177-D: variable "TemSzData" was declared but never referenced
+        unsigned char TemSzData[400];
+..\code\GSM\src\TestDtu.c(1255): warning:  #177-D: variable "u16Length" was declared but never referenced
+        U16 u16Length = 0;
+..\code\GSM\src\TestDtu.c(1256): warning:  #550-D: variable "u32Tick" was set but never used
+        U32 u32Tick = 0;
+..\code\GSM\src\TestDtu.c(1257): warning:  #177-D: variable "s32Count" was declared but never referenced
+    S32 s32Count = 0;
+..\code\GSM\src\TestDtu.c(39): warning:  #550-D: variable "g_u32TimeOut" was set but never used
+  STATIC U32 g_u32TimeOut = 50;
+..\code\GSM\src\TestDtu.c(404): warning:  #177-D: function "HandleCmdProc" was declared but never referenced
+  STATIC VOID HandleCmdProc(U8 *pBuf, U16 u16Length)
+..\code\GSM\src\TestDtu.c: 12 warnings, 0 errors
+linking...
+Program Size: Code=36600 RO-data=488 RW-data=180 ZI-data=65540  
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin --output .\bin\123.bin .\project.axf
+".\project.axf" - 0 Error(s), 12 Warning(s).
+Load "E:\\PROJECT\\SCT2016\\123\\郑徐回来后调试的\\RD15002_485_2_VW_6\\prj\\project.axf" 
+Set JLink Project File to "E:\PROJECT\SCT2016\123\郑徐回来后调试的\RD15002_485_2_VW_6\prj\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 19087980 
+Feature(s) : RDI, FlashDL, FlashBP, JFlash, GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.274V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 0, TRST: 0
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+</pre>
+</body>
+</html>
+6\123\郑徐回来后调试的\RD15002_485_2_VW_6\prj\JLinkSettings.ini"
+* JLink Info: Device "STM32F407VG" selected (1024 KB flash, 128 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.80g, compiled Feb 13 2014 20:50:02
+Firmware: J-Link ARM V7 compiled Jun 20 2012 19:45:53
+Hardware: V7.00
+S/N : 19087980 
+Feature(s) : RDI, FlashDL, FlashBP, JFlash, GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found SWD-DP with ID 0x2BA01477
+* JLink Info: Found Cortex-M4 r0p1, Little endian.
+* JLink Info: FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F407VG
+VTarget = 3.267V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 0, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 1000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Application running ...

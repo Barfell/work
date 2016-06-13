@@ -1,0 +1,261 @@
+Build target 'RAM'
+custom translating webpage.html...
+Custom: .\Easy_web\webconverter.exe .\Easy_web\webpage.html .\Easy_web\webpage.h
+assembling startup_LPC177x_8x.s...
+compiling system_LPC177x_8x.c...
+compiling core_cm3.c...
+compiling debug_frmwrk.c...
+compiling lpc177x_8x_adc.c...
+compiling lpc177x_8x_can.c...
+..\Drivers\lpc177x_8x_can.c(1560): warning:  #61-D: integer operation result is out of range
+..\Drivers\lpc177x_8x_can.c(1560): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_can.c(1564): warning:  #61-D: integer operation result is out of range
+..\Drivers\lpc177x_8x_can.c(1607): warning:  #61-D: integer operation result is out of range
+..\Drivers\lpc177x_8x_can.c(1607): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_can.c(1611): warning:  #61-D: integer operation result is out of range
+..\Drivers\lpc177x_8x_can.c(1654): warning:  #61-D: integer operation result is out of range
+..\Drivers\lpc177x_8x_can.c(1654): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_can.c(1658): warning:  #61-D: integer operation result is out of range
+compiling lpc177x_8x_clkpwr.c...
+compiling lpc177x_8x_crc.c...
+compiling lpc177x_8x_dac.c...
+compiling lpc177x_8x_eeprom.c...
+..\Drivers\lpc177x_8x_eeprom.c(103): warning:  #1441-D: nonstandard cast on lvalue
+..\Drivers\lpc177x_8x_eeprom.c(113): warning:  #1441-D: nonstandard cast on lvalue
+..\Drivers\lpc177x_8x_eeprom.c(123): warning:  #1441-D: nonstandard cast on lvalue
+..\Drivers\lpc177x_8x_eeprom.c(192): warning:  #1441-D: nonstandard cast on lvalue
+..\Drivers\lpc177x_8x_eeprom.c(202): warning:  #1441-D: nonstandard cast on lvalue
+..\Drivers\lpc177x_8x_eeprom.c(211): warning:  #1441-D: nonstandard cast on lvalue
+compiling lpc177x_8x_emc.c...
+compiling lpc177x_8x_exti.c...
+compiling lpc177x_8x_gpdma.c...
+..\Drivers\lpc177x_8x_gpdma.c(77): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(78): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(79): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(80): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(81): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(82): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(83): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(84): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(85): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(86): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(87): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(88): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(89): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(90): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(91): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(92): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(93): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(94): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(95): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(96): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(97): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(98): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(99): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(102): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(103): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(104): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(105): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(106): warning:  #1296-D: extended constant initialiser used
+..\Drivers\lpc177x_8x_gpdma.c(107): warning:  #1296-D: extended constant initialiser used
+compiling lpc177x_8x_gpio.c...
+..\Drivers\lpc177x_8x_gpio.c(341): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_gpio.c(343): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_gpio.c(345): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_gpio.c(347): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_gpio.c(701): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_gpio.c(709): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_gpio.c(745): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_gpio.c(752): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_gpio.c(780): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_gpio.c(808): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_gpio.c(831): warning:  #186-D: pointless comparison of unsigned integer with zero
+compiling lpc177x_8x_i2c.c...
+..\Drivers\lpc177x_8x_i2c.c(288): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(337): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(376): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(446): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(674): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(697): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(780): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(790): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(848): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(882): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1042): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1064): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1114): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1156): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1339): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1361): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1421): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1447): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1482): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(1504): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2c.c(127): warning:  #177-D: function "I2C_getNum" was declared but never referenced
+..\Drivers\lpc177x_8x_i2c.c(253): warning:  #177-D: function "I2C_SetClock" was declared but never referenced
+compiling lpc177x_8x_i2s.c...
+..\Drivers\lpc177x_8x_i2s.c(484): warning:  #188-D: enumerated type mixed with another type
+..\Drivers\lpc177x_8x_i2s.c(486): warning:  #188-D: enumerated type mixed with another type
+compiling lpc177x_8x_mci.c...
+..\Drivers\lpc177x_8x_mci.c(117): warning:  #223-D: function "memcpy" declared implicitly
+..\Drivers\lpc177x_8x_mci.c(135): warning:  #223-D: function "memcpy" declared implicitly
+..\Drivers\lpc177x_8x_mci.c(216): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(232): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(237): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(618): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(661): warning:  #223-D: function "PINSEL_ConfigPin" declared implicitly
+..\Drivers\lpc177x_8x_mci.c(637): warning:  #550-D: variable "retval" was set but never used
+..\Drivers\lpc177x_8x_mci.c(927): warning:  #177-D: variable "respValue" was declared but never referenced
+..\Drivers\lpc177x_8x_mci.c(975): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(985): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(990): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1024): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1040): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1044): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1049): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1083): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1102): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1111): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1139): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1160): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1164): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1251): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1257): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1267): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1250): warning:  #177-D: variable "CmdArgument" was declared but never referenced
+..\Drivers\lpc177x_8x_mci.c(1433): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1453): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1476): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1480): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1484): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1451): warning:  #550-D: variable "CmdArgument" was set but never used
+..\Drivers\lpc177x_8x_mci.c(1555): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1576): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1598): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1602): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1607): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1641): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1665): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1669): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1705): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1717): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1721): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1725): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1760): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1772): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1776): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1780): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1828): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1840): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1844): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1875): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1886): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1890): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1894): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1926): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1937): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1941): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1945): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(1999): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(2012): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(2101): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_mci.c(2114): warning:  #68-D: integer conversion resulted in a change of sign
+compiling lpc177x_8x_mcpwm.c...
+..\Drivers\lpc177x_8x_mcpwm.c(72): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(99): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(103): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(108): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(112): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(117): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(119): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(121): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(125): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(130): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(134): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(187): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(192): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(192): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(196): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(196): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(201): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(201): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(205): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(205): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(210): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(214): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(219): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(223): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(238): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(282): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(286): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(290): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(290): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(294): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(294): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(299): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(299): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(303): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(303): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(308): warning:  #186-D: pointless comparison of unsigned integer with zero
+..\Drivers\lpc177x_8x_mcpwm.c(420): warning:  #61-D: integer operation result is out of range
+..\Drivers\lpc177x_8x_mcpwm.c(424): warning:  #61-D: integer operation result is out of range
+compiling sdram_k4s561632j.c...
+compiling lpc177x_8x_emac.c...
+compiling lpc177x_8x_nvic.c...
+compiling lpc177x_8x_pinsel.c...
+compiling lpc177x_8x_pwm.c...
+..\Drivers\lpc177x_8x_pwm.c(192): warning:  #111-D: statement is unreachable
+compiling lpc177x_8x_qei.c...
+..\Drivers\lpc177x_8x_qei.c(283): warning:  #177-D: variable "ld" was declared but never referenced
+compiling lpc177x_8x_rtc.c...
+compiling lpc177x_8x_ssp.c...
+compiling lpc177x_8x_systick.c...
+compiling lpc177x_8x_timer.c...
+..\Drivers\lpc177x_8x_timer.c(80): warning:  #68-D: integer conversion resulted in a change of sign
+compiling lpc177x_8x_uart.c...
+compiling lpc177x_8x_wwdt.c...
+..\Drivers\lpc177x_8x_wwdt.c(45): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_wwdt.c(50): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_wwdt.c(233): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_wwdt.c(238): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_wwdt.c(270): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_wwdt.c(275): warning:  #68-D: integer conversion resulted in a change of sign
+..\Drivers\lpc177x_8x_wwdt.c(330): warning:  #940-D: missing return statement at end of non-void function "WWDT_GetStatus"
+compiling SST39VF6401.c...
+compiling nandflash_k9f2g08u0x.c...
+..\Drivers\nandflash_k9f2g08u0x.c(317): warning:  #188-D: enumerated type mixed with another type
+compiling yl_1788_touch.c...
+compiling main.c...
+main.c(277): warning:  #223-D: function "ADC_Init" declared implicitly
+main.c(289): warning:  #111-D: statement is unreachable
+main.c(144): warning:  #177-D: variable "load_sta" was declared but never referenced
+compiling download.c...
+download.c(48): warning:  #68-D: integer conversion resulted in a change of sign
+compiling led.c...
+compiling Gpio_interrupt.c...
+compiling EMAC.c...
+compiling Emac_EasyWeb.c...
+compiling tcpip.c...
+compiling DiskImg.c...
+compiling memory.c...
+compiling mscuser.c...
+compiling usbcore.c...
+compiling usbdesc.c...
+compiling usbhw.c...
+compiling usbuser.c...
+compiling Dac_SineWave.c...
+DAC_SineWave\Dac_SineWave.c(63): warning:  #177-D: variable "DMA_LLI_Struct" was declared but never referenced
+compiling drv_glcd.c...
+Lcd_Drv\drv_glcd.c(174): warning:  #61-D: integer operation result is out of range
+Lcd_Drv\drv_glcd.c(174): warning:  #68-D: integer conversion resulted in a change of sign
+Lcd_Drv\drv_glcd.c(201): warning:  #61-D: integer operation result is out of range
+Lcd_Drv\drv_glcd.c(201): warning:  #68-D: integer conversion resulted in a change of sign
+compiling logo.c...
+compiling Pwm_DualEdge.c...
+compiling Can_Test.c...
+compiling Nor_Test.c...
+Nor_Test\Nor_Test.c(14): warning:  #167-D: argument of type "volatile uint16_t *" is incompatible with parameter of type "uint16_t *"
+compiling nand_app.c...
+linking...
+Program Size: Code=53492 RO-data=7152 RW-data=792 ZI-data=16888  
+".\RAM\YL_LPC1788_Test.axf" - 0 Error(s), 201 Warning(s).

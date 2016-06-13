@@ -1,0 +1,14 @@
+.\Flash\drv_glcd.o: Lcd_Drv\drv_glcd.c
+.\Flash\drv_glcd.o: C:\Keil\ARM\RV31\Inc\stdio.h
+.\Flash\drv_glcd.o: C:\Keil\ARM\RV31\Inc\stdlib.h
+.\Flash\drv_glcd.o: C:\Keil\ARM\RV31\Inc\assert.h
+.\Flash\drv_glcd.o: Lcd_Drv\drv_glcd.h
+.\Flash\drv_glcd.o: ..\Drivers\lpc_types.h
+.\Flash\drv_glcd.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\drv_glcd.o: ..\Drivers\lpc177x_8x_clkpwr.h
+.\Flash\drv_glcd.o: ..\Startup\LPC177x_8x.h
+.\Flash\drv_glcd.o: ..\CM3_lib\core_cm3.h
+.\Flash\drv_glcd.o: ..\Startup\system_LPC177x_8x.h
+.\Flash\drv_glcd.o: ..\Drivers\lpc177x_8x_pinsel.h
+.\Flash\drv_glcd.o: ..\Drivers\sdram_k4s561632j.h
+.\Flash\drv_glcd.o: Lcd_Drv\drv_glcd.h

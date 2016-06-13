@@ -1,0 +1,541 @@
+Change Component DesignItemId : Designator=U14 Old DesignItemId= New DesignItemId=74HC1G14
+Change Component DesignItemId : Designator=U10 Old DesignItemId= New DesignItemId=AD8237
+Change Component DesignItemId : Designator=BT1 Old DesignItemId= New DesignItemId=Battery
+Change Component DesignItemId : Designator=D3 Old DesignItemId= New DesignItemId=BAV99WT1G
+Change Component DesignItemId : Designator=C2 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C3 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C5 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C7 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C9 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C10 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C12 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C14 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C15 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C17 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C19 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C20 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C21 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C22 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C23 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C24 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C25 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C26 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C27 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C29 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C31 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C32 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C33 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C34 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C35 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C36 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C37 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C38 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C39 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C40 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C41 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C42 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C43 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C44 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C45 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C46 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C47 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C49 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C51 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C53 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C54 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C55 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C56 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C57 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C58 Old DesignItemId= New DesignItemId=Cap
+Change Component DesignItemId : Designator=C1 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C4 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C6 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C8 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C11 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C13 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C16 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C18 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C28 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C30 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C48 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C50 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=C52 Old DesignItemId= New DesignItemId=Cap Pol1
+Change Component DesignItemId : Designator=D4 Old DesignItemId= New DesignItemId=DIODE-CC
+Change Component DesignItemId : Designator=D5 Old DesignItemId= New DesignItemId=DIODE
+Change Component DesignItemId : Designator=D2 Old DesignItemId= New DesignItemId=D Schottky
+Change Component DesignItemId : Designator=U6 Old DesignItemId= New DesignItemId=FAN3122
+Change Component DesignItemId : Designator=RE1 Old DesignItemId= New DesignItemId=G6K
+Change Component DesignItemId : Designator=JP1 Old DesignItemId= New DesignItemId=Header2*7
+Change Component DesignItemId : Designator=JP2 Old DesignItemId= New DesignItemId=Header2*12
+Change Component DesignItemId : Designator=JP3 Old DesignItemId= New DesignItemId=Header2*12
+Change Component DesignItemId : Designator=L1 Old DesignItemId= New DesignItemId=Inductor
+Change Component DesignItemId : Designator=K1 Old DesignItemId= New DesignItemId=KEY_1
+Change Component DesignItemId : Designator=K2 Old DesignItemId= New DesignItemId=KEY_1
+Change Component DesignItemId : Designator=D1 Old DesignItemId= New DesignItemId=LED
+Change Component DesignItemId : Designator=U7 Old DesignItemId= New DesignItemId=LM833N
+Change Component DesignItemId : Designator=U8 Old DesignItemId= New DesignItemId=LM833N
+Change Component DesignItemId : Designator=U4 Old DesignItemId= New DesignItemId=LM4121-ADJ/1.2
+Change Component DesignItemId : Designator=U2 Old DesignItemId= New DesignItemId=LP2985
+Change Component DesignItemId : Designator=U3 Old DesignItemId= New DesignItemId=LP2985
+Change Component DesignItemId : Designator=U12 Old DesignItemId= New DesignItemId=MAX3223EEAP
+Change Component DesignItemId : Designator=Y2 Old DesignItemId= New DesignItemId=MC-146
+Change Component DesignItemId : Designator=U5 Old DesignItemId= New DesignItemId=MSP430F47126
+Change Component DesignItemId : Designator=Q3 Old DesignItemId= New DesignItemId=NPN
+Change Component DesignItemId : Designator=Q4 Old DesignItemId= New DesignItemId=NPN
+Change Component DesignItemId : Designator=Q5 Old DesignItemId= New DesignItemId=NPN
+Change Component DesignItemId : Designator=Q6 Old DesignItemId= New DesignItemId=NPN
+Change Component DesignItemId : Designator=TR1 Old DesignItemId= New DesignItemId=NPN
+Change Component DesignItemId : Designator=Q1 Old DesignItemId= New DesignItemId=P-MOSFET1
+Change Component DesignItemId : Designator=Q2 Old DesignItemId= New DesignItemId=P-MOSFET1
+Change Component DesignItemId : Designator=U11 Old DesignItemId= New DesignItemId=PC410
+Change Component DesignItemId : Designator=R1 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R2 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R3 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R4 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R5 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R6 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R7 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R8 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R9 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R10 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R11 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R12 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R13 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R14 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R15 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R16 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R17 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R18 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R19 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R20 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R21 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R22 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R23 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R24 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R25 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R26 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R27 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R28 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R29 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R30 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R31 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R32 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R33 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R34 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R35 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R36 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R37 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R38 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R39 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R40 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R41 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R42 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R43 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R44 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R45 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R46 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R47 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R48 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R49 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R50 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R51 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R52 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R53 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R54 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R55 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R56 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R57 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R58 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R59 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R60 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R61 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R62 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R63 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R64 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R65 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R66 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R67 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R68 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R69 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R70 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R71 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R72 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R73 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R74 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R75 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R76 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R77 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R78 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R79 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R80 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R81 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R82 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R83 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R84 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R85 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R86 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R87 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R88 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=R89 Old DesignItemId= New DesignItemId=Res2
+Change Component DesignItemId : Designator=U13 Old DesignItemId= New DesignItemId=SN65HVD72/75/78
+Change Component DesignItemId : Designator=S1 Old DesignItemId= New DesignItemId=SW-PB
+Change Component DesignItemId : Designator=U9 Old DesignItemId= New DesignItemId=TLV3491AID
+Change Component DesignItemId : Designator=U1 Old DesignItemId= New DesignItemId=TPS560200
+Change Component DesignItemId : Designator=Y1 Old DesignItemId= New DesignItemId=XTAL
+Change Component Description : Designator=C2 Old Description= New Description=Capacitor
+Change Component Description : Designator=C3 Old Description= New Description=Capacitor
+Change Component Description : Designator=C5 Old Description= New Description=Capacitor
+Change Component Description : Designator=C7 Old Description= New Description=Capacitor
+Change Component Description : Designator=C9 Old Description= New Description=Capacitor
+Change Component Description : Designator=C10 Old Description= New Description=Capacitor
+Change Component Description : Designator=C12 Old Description= New Description=Capacitor
+Change Component Description : Designator=C14 Old Description= New Description=Capacitor
+Change Component Description : Designator=C15 Old Description= New Description=Capacitor
+Change Component Description : Designator=C17 Old Description= New Description=Capacitor
+Change Component Description : Designator=C19 Old Description= New Description=Capacitor
+Change Component Description : Designator=C20 Old Description= New Description=Capacitor
+Change Component Description : Designator=C21 Old Description= New Description=Capacitor
+Change Component Description : Designator=C22 Old Description= New Description=Capacitor
+Change Component Description : Designator=C23 Old Description= New Description=Capacitor
+Change Component Description : Designator=C24 Old Description= New Description=Capacitor
+Change Component Description : Designator=C25 Old Description= New Description=Capacitor
+Change Component Description : Designator=C26 Old Description= New Description=Capacitor
+Change Component Description : Designator=C27 Old Description= New Description=Capacitor
+Change Component Description : Designator=C29 Old Description= New Description=Capacitor
+Change Component Description : Designator=C31 Old Description= New Description=Capacitor
+Change Component Description : Designator=C32 Old Description= New Description=Capacitor
+Change Component Description : Designator=C33 Old Description= New Description=Capacitor
+Change Component Description : Designator=C34 Old Description= New Description=Capacitor
+Change Component Description : Designator=C35 Old Description= New Description=Capacitor
+Change Component Description : Designator=C36 Old Description= New Description=Capacitor
+Change Component Description : Designator=C37 Old Description= New Description=Capacitor
+Change Component Description : Designator=C38 Old Description= New Description=Capacitor
+Change Component Description : Designator=C39 Old Description= New Description=Capacitor
+Change Component Description : Designator=C40 Old Description= New Description=Capacitor
+Change Component Description : Designator=C41 Old Description= New Description=Capacitor
+Change Component Description : Designator=C42 Old Description= New Description=Capacitor
+Change Component Description : Designator=C43 Old Description= New Description=Capacitor
+Change Component Description : Designator=C44 Old Description= New Description=Capacitor
+Change Component Description : Designator=C45 Old Description= New Description=Capacitor
+Change Component Description : Designator=C46 Old Description= New Description=Capacitor
+Change Component Description : Designator=C47 Old Description= New Description=Capacitor
+Change Component Description : Designator=C49 Old Description= New Description=Capacitor
+Change Component Description : Designator=C51 Old Description= New Description=Capacitor
+Change Component Description : Designator=C53 Old Description= New Description=Capacitor
+Change Component Description : Designator=C54 Old Description= New Description=Capacitor
+Change Component Description : Designator=C55 Old Description= New Description=Capacitor
+Change Component Description : Designator=C56 Old Description= New Description=Capacitor
+Change Component Description : Designator=C57 Old Description= New Description=Capacitor
+Change Component Description : Designator=C58 Old Description= New Description=Capacitor
+Change Component Description : Designator=Y1 Old Description= New Description=Crystal Oscillator
+Change Component Description : Designator=L1 Old Description= New Description=Inductor
+Change Component Description : Designator=BT1 Old Description= New Description=Multicell Battery
+Change Component Description : Designator=C1 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C4 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C6 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C8 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C11 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C13 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C16 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C18 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C28 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C30 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C48 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C50 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=C52 Old Description= New Description=Polarized Capacitor (Radial)
+Change Component Description : Designator=R1 Old Description= New Description=Resistor
+Change Component Description : Designator=R2 Old Description= New Description=Resistor
+Change Component Description : Designator=R3 Old Description= New Description=Resistor
+Change Component Description : Designator=R4 Old Description= New Description=Resistor
+Change Component Description : Designator=R5 Old Description= New Description=Resistor
+Change Component Description : Designator=R6 Old Description= New Description=Resistor
+Change Component Description : Designator=R7 Old Description= New Description=Resistor
+Change Component Description : Designator=R8 Old Description= New Description=Resistor
+Change Component Description : Designator=R9 Old Description= New Description=Resistor
+Change Component Description : Designator=R10 Old Description= New Description=Resistor
+Change Component Description : Designator=R11 Old Description= New Description=Resistor
+Change Component Description : Designator=R12 Old Description= New Description=Resistor
+Change Component Description : Designator=R13 Old Description= New Description=Resistor
+Change Component Description : Designator=R14 Old Description= New Description=Resistor
+Change Component Description : Designator=R15 Old Description= New Description=Resistor
+Change Component Description : Designator=R16 Old Description= New Description=Resistor
+Change Component Description : Designator=R17 Old Description= New Description=Resistor
+Change Component Description : Designator=R18 Old Description= New Description=Resistor
+Change Component Description : Designator=R19 Old Description= New Description=Resistor
+Change Component Description : Designator=R20 Old Description= New Description=Resistor
+Change Component Description : Designator=R21 Old Description= New Description=Resistor
+Change Component Description : Designator=R22 Old Description= New Description=Resistor
+Change Component Description : Designator=R23 Old Description= New Description=Resistor
+Change Component Description : Designator=R24 Old Description= New Description=Resistor
+Change Component Description : Designator=R25 Old Description= New Description=Resistor
+Change Component Description : Designator=R26 Old Description= New Description=Resistor
+Change Component Description : Designator=R27 Old Description= New Description=Resistor
+Change Component Description : Designator=R28 Old Description= New Description=Resistor
+Change Component Description : Designator=R29 Old Description= New Description=Resistor
+Change Component Description : Designator=R30 Old Description= New Description=Resistor
+Change Component Description : Designator=R31 Old Description= New Description=Resistor
+Change Component Description : Designator=R32 Old Description= New Description=Resistor
+Change Component Description : Designator=R33 Old Description= New Description=Resistor
+Change Component Description : Designator=R34 Old Description= New Description=Resistor
+Change Component Description : Designator=R35 Old Description= New Description=Resistor
+Change Component Description : Designator=R36 Old Description= New Description=Resistor
+Change Component Description : Designator=R37 Old Description= New Description=Resistor
+Change Component Description : Designator=R38 Old Description= New Description=Resistor
+Change Component Description : Designator=R39 Old Description= New Description=Resistor
+Change Component Description : Designator=R40 Old Description= New Description=Resistor
+Change Component Description : Designator=R41 Old Description= New Description=Resistor
+Change Component Description : Designator=R42 Old Description= New Description=Resistor
+Change Component Description : Designator=R43 Old Description= New Description=Resistor
+Change Component Description : Designator=R44 Old Description= New Description=Resistor
+Change Component Description : Designator=R45 Old Description= New Description=Resistor
+Change Component Description : Designator=R46 Old Description= New Description=Resistor
+Change Component Description : Designator=R47 Old Description= New Description=Resistor
+Change Component Description : Designator=R48 Old Description= New Description=Resistor
+Change Component Description : Designator=R49 Old Description= New Description=Resistor
+Change Component Description : Designator=R50 Old Description= New Description=Resistor
+Change Component Description : Designator=R51 Old Description= New Description=Resistor
+Change Component Description : Designator=R52 Old Description= New Description=Resistor
+Change Component Description : Designator=R53 Old Description= New Description=Resistor
+Change Component Description : Designator=R54 Old Description= New Description=Resistor
+Change Component Description : Designator=R55 Old Description= New Description=Resistor
+Change Component Description : Designator=R56 Old Description= New Description=Resistor
+Change Component Description : Designator=R57 Old Description= New Description=Resistor
+Change Component Description : Designator=R58 Old Description= New Description=Resistor
+Change Component Description : Designator=R59 Old Description= New Description=Resistor
+Change Component Description : Designator=R60 Old Description= New Description=Resistor
+Change Component Description : Designator=R61 Old Description= New Description=Resistor
+Change Component Description : Designator=R62 Old Description= New Description=Resistor
+Change Component Description : Designator=R63 Old Description= New Description=Resistor
+Change Component Description : Designator=R64 Old Description= New Description=Resistor
+Change Component Description : Designator=R65 Old Description= New Description=Resistor
+Change Component Description : Designator=R66 Old Description= New Description=Resistor
+Change Component Description : Designator=R67 Old Description= New Description=Resistor
+Change Component Description : Designator=R68 Old Description= New Description=Resistor
+Change Component Description : Designator=R69 Old Description= New Description=Resistor
+Change Component Description : Designator=R70 Old Description= New Description=Resistor
+Change Component Description : Designator=R71 Old Description= New Description=Resistor
+Change Component Description : Designator=R72 Old Description= New Description=Resistor
+Change Component Description : Designator=R73 Old Description= New Description=Resistor
+Change Component Description : Designator=R74 Old Description= New Description=Resistor
+Change Component Description : Designator=R75 Old Description= New Description=Resistor
+Change Component Description : Designator=R76 Old Description= New Description=Resistor
+Change Component Description : Designator=R77 Old Description= New Description=Resistor
+Change Component Description : Designator=R78 Old Description= New Description=Resistor
+Change Component Description : Designator=R79 Old Description= New Description=Resistor
+Change Component Description : Designator=R80 Old Description= New Description=Resistor
+Change Component Description : Designator=R81 Old Description= New Description=Resistor
+Change Component Description : Designator=R82 Old Description= New Description=Resistor
+Change Component Description : Designator=R83 Old Description= New Description=Resistor
+Change Component Description : Designator=R84 Old Description= New Description=Resistor
+Change Component Description : Designator=R85 Old Description= New Description=Resistor
+Change Component Description : Designator=R86 Old Description= New Description=Resistor
+Change Component Description : Designator=R87 Old Description= New Description=Resistor
+Change Component Description : Designator=R88 Old Description= New Description=Resistor
+Change Component Description : Designator=R89 Old Description= New Description=Resistor
+Change Component Description : Designator=D2 Old Description= New Description=Schottky Diode
+Change Component Description : Designator=S1 Old Description= New Description=Switch
+Change Component Description : Designator=D3 Old Description= New Description=TVS DIODE,70VVVM,8VC,SOT-323
+Change Component Library : Designator=JP1 Old Library= New Library=Connector.SchLib
+Change Component Library : Designator=JP2 Old Library= New Library=Connector.SchLib
+Change Component Library : Designator=JP3 Old Library= New Library=Connector.SchLib
+Change Component Library : Designator=D3 Old Library= New Library=Diode.IntLib
+Change Component Library : Designator=K1 Old Library= New Library=Discrete.SchLib
+Change Component Library : Designator=K2 Old Library= New Library=Discrete.SchLib
+Change Component Library : Designator=TR1 Old Library= New Library=Discrete.SchLib
+Change Component Library : Designator=Y2 Old Library= New Library=Discrete.SchLib
+Change Component Library : Designator=U1 Old Library= New Library=IC.SchLib
+Change Component Library : Designator=U2 Old Library= New Library=IC.SchLib
+Change Component Library : Designator=U3 Old Library= New Library=IC.SchLib
+Change Component Library : Designator=U4 Old Library= New Library=IC.SchLib
+Change Component Library : Designator=U5 Old Library= New Library=IC.SchLib
+Change Component Library : Designator=U6 Old Library= New Library=IC.SchLib
+Change Component Library : Designator=U12 Old Library= New Library=IC.SchLib
+Change Component Library : Designator=U13 Old Library= New Library=IC.SchLib
+Change Component Library : Designator=BT1 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C1 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C2 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C3 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C4 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C5 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C6 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C7 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C8 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C9 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C10 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C11 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C12 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C13 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C14 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C15 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C16 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C17 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C18 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C19 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C20 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C21 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C22 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C23 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C24 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C25 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C26 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C27 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C28 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C29 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C30 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C31 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C32 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C33 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C34 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C35 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C36 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C37 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C38 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C39 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C40 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C41 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C42 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C43 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C44 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C45 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C46 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C47 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C48 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C49 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C50 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C51 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C52 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C53 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C54 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C55 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C56 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C57 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=C58 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=D2 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=L1 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R1 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R2 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R3 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R4 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R5 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R6 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R7 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R8 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R9 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R10 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R11 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R12 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R13 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R14 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R15 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R16 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R17 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R18 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R19 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R20 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R21 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R22 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R23 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R24 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R25 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R26 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R27 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R28 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R29 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R30 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R31 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R32 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R33 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R34 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R35 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R36 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R37 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R38 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R39 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R40 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R41 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R42 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R43 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R44 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R45 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R46 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R47 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R48 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R49 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R50 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R51 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R52 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R53 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R54 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R55 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R56 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R57 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R58 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R59 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R60 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R61 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R62 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R63 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R64 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R65 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R66 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R67 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R68 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R69 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R70 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R71 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R72 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R73 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R74 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R75 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R76 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R77 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R78 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R79 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R80 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R81 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R82 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R83 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R84 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R85 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R86 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R87 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R88 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=R89 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=S1 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=Y1 Old Library= New Library=Miscellaneous Devices.IntLib
+Change Component Library : Designator=D1 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=D4 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=D5 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=Q1 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=Q2 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=Q3 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=Q4 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=Q5 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=Q6 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=RE1 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=U7 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=U8 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=U9 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=U10 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=U11 Old Library= New Library=woylib2015.IntLib
+Change Component Library : Designator=U14 Old Library= New Library=woylib2015.IntLib
+Added Pin To Net: NetName=P1.2 Pin=K1-1
+Added Pin To Net: NetName=P1.3 Pin=K2-1
+Added Pin To Net: NetName=P1.2 Pin=R25-2
+Added Pin To Net: NetName=P1.3 Pin=R26-2
+Added Class: Name=U_1_Power_Supply
+Added Class: Name=U_2_MCU_MSP430
+Added Class: Name=U_3_VW_Sensor
+Added Class: Name=U_4_Resistor_Sensor
+Added Class: Name=U_5_Current_Voltage_Sensor
+Added Class: Name=U_6_Pulse_Sensor
+Added Class: Name=U_7_RS485_RS232_Sensor
+Added Class: Name=U_8_Port
+Added Room: Name=U_1_Power_Supply
+Added Room: Name=U_2_MCU_MSP430
+Added Room: Name=U_3_VW_Sensor
+Added Room: Name=U_4_Resistor_Sensor
+Added Room: Name=U_5_Current_Voltage_Sensor
+Added Room: Name=U_6_Pulse_Sensor
+Added Room: Name=U_7_RS485_RS232_Sensor
+Added Room: Name=U_8_Port

@@ -1,0 +1,25 @@
+Added Component: Designator=D4(SOT-23W)
+Added Component: Designator=Q3(SOT-23W)
+Added Component: Designator=Q4(SOT-23W)
+Added Component: Designator=U10(MSOP8)
+Added Pin To Net: NetName=+3.3VTRAN Pin=D4-1
+Added Pin To Net: NetName=+3.3VCOLL Pin=D4-2
+Added Pin To Net: NetName=+3.3VCOM Pin=D4-3
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=DGND Pin=Q3-2
+Added Pin To Net: NetName=NetQ3_3 Pin=Q3-3
+Added Pin To Net: NetName=NetQ4_1 Pin=Q4-1
+Added Pin To Net: NetName=DGND Pin=Q4-2
+Added Pin To Net: NetName=NetQ4_3 Pin=Q4-3
+Added Pin To Net: NetName=NetR55_1 Pin=U10-1
+Added Pin To Net: NetName=NetR58_1 Pin=U10-2
+Added Pin To Net: NetName=NetR59_2 Pin=U10-3
+Added Pin To Net: NetName=DGND Pin=U10-4
+Added Pin To Net: NetName=+3.3VCOLL Pin=U10-5
+Added Pin To Net: NetName=NetR60_2 Pin=U10-6
+Added Pin To Net: NetName=NetR57_1 Pin=U10-7
+Added Pin To Net: NetName=IN1+ Pin=U10-8
+Added Member To Class: ClassName=U_7_RS485_RS232_Sensor Member=Component D4 DIODE-CC
+Added Member To Class: ClassName=U_1_Power_Supply Member=Component Q3 MMBT3904
+Added Member To Class: ClassName=U_1_Power_Supply Member=Component Q4 MMBT3904
+Added Member To Class: ClassName=U_5_Current_Voltage_Sensor Member=Component U10 AD8237

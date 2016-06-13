@@ -1,0 +1,11 @@
+.\Flash\lpc177x_8x_emac.o: ..\Drivers\lpc177x_8x_emac.c
+.\Flash\lpc177x_8x_emac.o: ..\Drivers\lpc177x_8x_emac.h
+.\Flash\lpc177x_8x_emac.o: ..\Startup\LPC177x_8x.h
+.\Flash\lpc177x_8x_emac.o: ..\CM3_lib\core_cm3.h
+.\Flash\lpc177x_8x_emac.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\lpc177x_8x_emac.o: ..\Drivers\lpc_types.h
+.\Flash\lpc177x_8x_emac.o: ..\app\bsp.h
+.\Flash\lpc177x_8x_emac.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\lpc177x_8x_emac.o: ..\Drivers\lpc177x_8x_clkpwr.h
+.\Flash\lpc177x_8x_emac.o: ..\Startup\system_LPC177x_8x.h
+.\Flash\lpc177x_8x_emac.o: ..\Drivers\lpc177x_8x_pinsel.h

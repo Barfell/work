@@ -1,0 +1,10 @@
+.\Flash\lpc177x_8x_i2c.o: ..\Drivers\lpc177x_8x_i2c.c
+.\Flash\lpc177x_8x_i2c.o: ..\Drivers\lpc177x_8x_i2c.h
+.\Flash\lpc177x_8x_i2c.o: ..\Startup\LPC177x_8x.h
+.\Flash\lpc177x_8x_i2c.o: ..\CM3_lib\core_cm3.h
+.\Flash\lpc177x_8x_i2c.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\lpc177x_8x_i2c.o: ..\Drivers\lpc_types.h
+.\Flash\lpc177x_8x_i2c.o: ..\Drivers\lpc177x_8x_clkpwr.h
+.\Flash\lpc177x_8x_i2c.o: ..\Startup\system_LPC177x_8x.h
+.\Flash\lpc177x_8x_i2c.o: ..\Drivers\lpc177x_8x_pinsel.h
+.\Flash\lpc177x_8x_i2c.o: .\IIC_Test\SA56004.h

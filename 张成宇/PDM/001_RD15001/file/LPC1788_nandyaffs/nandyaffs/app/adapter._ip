@@ -1,0 +1,1 @@
+"Nand_Test\adapter.c" -E -c --cpu Cortex-M3 -D__MICROLIB -O0 --apcs=interwork -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\NXP\LPC177x_8x -o "adapter.i" --list_dir ".\\" --list

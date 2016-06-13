@@ -1,0 +1,8 @@
+---- CalculateRfidCrc Matches (7 in 3 files) ----
+app_rfid.c (code):U16 CalculateRfidCrc(U8 *u8Buf, U16 len)
+app_rfid.c (code):    u16Value = CalculateRfidCrc(pBuf+25, 4);
+app_rfid.c (code):    u16Value = CalculateRfidCrc(g_cRfidVar.szReceivedata + 1, g_cRfidVar.u8ReceiveCount - 3);
+app_rfid.c (code):	u16Value = CalculateRfidCrc(szDebugData + 1, 4);
+app_rfid.c (code):    u16Value = CalculateRfidCrc(g_cRfidVar.szReceivedata + 1, g_cRfidVar.u8ReceiveCount - 3);
+app_rfid.h (code):U16 CalculateRfidCrc(U8 *u8Buf, U16 len);
+TestRfid.c (code):            u16Value = CalculateRfidCrc(szData, u16Count);

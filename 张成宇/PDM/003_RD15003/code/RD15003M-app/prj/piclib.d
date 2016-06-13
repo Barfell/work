@@ -1,0 +1,53 @@
+.\piclib.o: ..\code\PICTURE\piclib.c
+.\piclib.o: ..\code\PICTURE\piclib.h
+.\piclib.o: ..\code\sys\Include\kernal.h
+.\piclib.o: ..\code\sys\Include\stm32f4xx.h
+.\piclib.o: ..\code\DSP_LIB\Include\core_cm4.h
+.\piclib.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdint.h
+.\piclib.o: ..\code\DSP_LIB\Include\core_cmInstr.h
+.\piclib.o: ..\code\DSP_LIB\Include\core_cmFunc.h
+.\piclib.o: ..\code\DSP_LIB\Include\core_cm4_simd.h
+.\piclib.o: ..\code\sys\Include\system_stm32f4xx.h
+.\piclib.o: ..\code\user\stm32f4xx_conf.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_adc.h
+.\piclib.o: ..\code\sys\Include\stm32f4xx.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_crc.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_dbgmcu.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_dma.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_exti.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_flash.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_gpio.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_i2c.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_iwdg.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_pwr.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_rcc.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_rtc.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_sdio.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_spi.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_syscfg.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_tim.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_usart.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_wwdg.h
+.\piclib.o: ..\code\bsp\inc\misc.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_can.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_cryp.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_hash.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_rng.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_dac.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_dcmi.h
+.\piclib.o: ..\code\bsp\inc\stm32f4xx_fsmc.h
+.\piclib.o: ..\code\sys\Include\tool.h
+.\piclib.o: ..\code\sys\Include\type32.h
+.\piclib.o: ..\code\sys\Include\archDef.h
+.\piclib.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h
+.\piclib.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdlib.h
+.\piclib.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\string.h
+.\piclib.o: ..\code\sys\Include\malloc.h
+.\piclib.o: ..\code\FATFS\src\ff.h
+.\piclib.o: ..\code\FATFS\src\integer.h
+.\piclib.o: ..\code\FATFS\src\ffconf.h
+.\piclib.o: ..\code\FATFS\exfuns\exfuns.h
+.\piclib.o: ..\code\PICTURE\bmp.h
+.\piclib.o: ..\code\PICTURE\tjpgd.h
+.\piclib.o: ..\code\PICTURE\integer.h
+.\piclib.o: ..\code\PICTURE\gif.h

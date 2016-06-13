@@ -1,0 +1,5 @@
+---- OffsetAm2305 Matches (4 in 1 files) ----
+TestDtu.c (code\test)://STATIC float OffsetAm2305 = 1.070;//A board
+TestDtu.c (code\test):STATIC float OffsetAm2305 = -0.435;//B board
+TestDtu.c (code\test)://STATIC float OffsetAm2305 = -1.9075;//C board
+TestDtu.c (code\test):		Temperature = (szAM2305_Data[2]*256 + szAM2305_Data[3])/10.0+OffsetAm2305;

@@ -1,0 +1,14 @@
+--cpu Cortex-M4.fp
+".\main.o"
+".\stm32l4xx_it.o"
+".\system_stm32l4xx.o"
+".\stm32l4xx_hal.o"
+".\stm32l4xx_hal_cortex.o"
+".\stm32l4xx_hal_gpio.o"
+".\stm32l4xx_hal_rcc.o"
+".\stm32l4xx_hal_pwr_ex.o"
+".\startup_stm32l471xx.o"
+--strict --scatter ".\Pro.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Pro.map" -o .\Pro.axf

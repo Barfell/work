@@ -1,0 +1,49 @@
+*** Creating Trace Output File '.\Flash\YL_LPC1788_Test.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\flash\startup_lpc177x_8x.o"'
+### List of Objects: adding '".\flash\system_lpc177x_8x.o"'
+### List of Objects: adding '".\flash\core_cm3.o"'
+### List of Objects: adding '".\flash\debug_frmwrk.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_clkpwr.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_dac.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_emc.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_exti.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_gpdma.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_gpio.o"'
+### List of Objects: adding '".\flash\sdram_k4s561632j.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_nvic.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_qei.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_timer.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_uart.o"'
+### List of Objects: adding '".\flash\nandflash_k9f2g08u0x.o"'
+### List of Objects: adding '".\flash\lpc177x_8x_pinsel.o"'
+### List of Objects: adding '".\flash\main.o"'
+### List of Objects: adding '".\flash\download.o"'
+### List of Objects: adding '".\flash\flash2k.o"'
+### List of Objects: adding '".\flash\yaffs_checkptrw.o"'
+### List of Objects: adding '".\flash\yaffs_ecc.o"'
+### List of Objects: adding '".\flash\yaffs_guts.o"'
+### List of Objects: adding '".\flash\yaffs_nand.o"'
+### List of Objects: adding '".\flash\yaffs_packedtags2.o"'
+### List of Objects: adding '".\flash\yaffs_qsort.o"'
+### List of Objects: adding '".\flash\yaffs_tagscompat.o"'
+### List of Objects: adding '".\flash\yaffs_tagsvalidity.o"'
+### List of Objects: adding '".\flash\yaffscfg2k.o"'
+### List of Objects: adding '".\flash\yaffsfs.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\flash\startup_lpc177x_8x.o" ".\flash\system_lpc177x_8x.o" ".\flash\core_cm3.o" ".\flash\debug_frmwrk.o" ".\flash\lpc177x_8x_clkpwr.o" ".\flash\lpc177x_8x_dac.o" ".\flash\lpc177x_8x_emc.o" ".\flash\lpc177x_8x_exti.o" ".\flash\lpc177x_8x_gpdma.o" ".\flash\lpc177x_8x_gpio.o" ".\flash\sdram_k4s561632j.o" ".\flash\lpc177x_8x_nvic.o" ".\flash\lpc177x_8x_qei.o" ".\flash\lpc177x_8x_timer.o" ".\flash\lpc177x_8x_uart.o" ".\flash\nandflash_k9f2g08u0x.o" ".\flash\lpc177x_8x_pinsel.o" ".\flash\main.o" ".\flash\download.o" ".\flash\flash2k.o" ".\flash\yaffs_checkptrw.o" ".\flash\yaffs_ecc.o" ".\flash\yaffs_guts.o" ".\flash\yaffs_nand.o" ".\flash\yaffs_packedtags2.o" ".\flash\yaffs_qsort.o" ".\flash\yaffs_tagscompat.o" ".\flash\yaffs_tagsvalidity.o" ".\flash\yaffscfg2k.o" ".\flash\yaffsfs.o" --library_type=microlib --feedback ".\Flash\YL_LPC1788_Test.fed" 
+--rwpi --strict --scatter ".\Flash\YL_LPC1788_Test.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\YL_LPC1788_Test.map" -o ".\Flash\YL_LPC1788_Test.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Flash\YL_LPC1788_Test.axf'
+### ADS-LD Command File: '.\Flash\YL_LPC1788_Test.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Flash\YL_LPC1788_Test.lnp', Handle=0x0000026C
+### Writing '.lnp' file
+### ADS-LD Command file '.\Flash\YL_LPC1788_Test.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,13 @@
+.\Flash\emac.o: Easy_web\EMAC.c
+.\Flash\emac.o: Easy_web\EMAC.h
+.\Flash\emac.o: ..\Drivers\lpc_types.h
+.\Flash\emac.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\emac.o: Easy_web\tcpip.h
+.\Flash\emac.o: ..\Startup\LPC177x_8x.h
+.\Flash\emac.o: ..\CM3_lib\core_cm3.h
+.\Flash\emac.o: ..\Drivers\lpc177x_8x_emac.h
+.\Flash\emac.o: ..\app\bsp.h
+.\Flash\emac.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\emac.o: ..\Drivers\lpc177x_8x_pinsel.h
+.\Flash\emac.o: ..\Drivers\lpc177x_8x_clkpwr.h
+.\Flash\emac.o: ..\Startup\system_LPC177x_8x.h

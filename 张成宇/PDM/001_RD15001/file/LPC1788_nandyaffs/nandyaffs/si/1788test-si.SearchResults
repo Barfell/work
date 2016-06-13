@@ -1,0 +1,7 @@
+---- yaffs_StartUp Matches (6 in 5 files) ----
+Main.c (d:\yldaima\nandyaffs\app):    yaffs_StartUp();
+Main.txt (d:\yldaima\nandyaffs\app):;;;186        yaffs_StartUp();
+Main.txt (d:\yldaima\nandyaffs\app):0000a0  f7fffffe          BL       yaffs_StartUp
+Yaffscfg2k.c (d:\yldaima\nandyaffs\fs):int yaffs_StartUp(void)
+Yaffscfg2k.txt (d:\yldaima\nandyaffs\app):                  yaffs_StartUp PROC
+Yaffsfs.h (d:\yldaima\nandyaffs\fs):int yaffs_StartUp(void);

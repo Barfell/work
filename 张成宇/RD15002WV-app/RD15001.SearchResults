@@ -1,0 +1,8 @@
+---- u16RxDataCount Matches (7 in 1 files) ----
+Usart.c (code\drv\src):    U16  u16RxDataCount;
+Usart.c (code\drv\src):            u16RxDataCount = g_cUsart1Info.UsartRxCount;
+Usart.c (code\drv\src):            u16RxDataCount = g_cUsart2Info.UsartRxCount;
+Usart.c (code\drv\src):			u16RxDataCount = g_cUsart3Info.UsartRxCount;
+Usart.c (code\drv\src):			u16RxDataCount = g_cUsart4Info.UsartRxCount;
+Usart.c (code\drv\src):		AddQueue(pBufDest, pBufRoot, pQueueInfo, u16RxDataCount);
+Usart.c (code\drv\src):    u16RxDataCount = 0;

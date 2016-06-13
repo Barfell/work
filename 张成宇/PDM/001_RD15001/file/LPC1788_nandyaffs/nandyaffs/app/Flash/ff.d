@@ -1,0 +1,11 @@
+.\Flash\ff.o: FATFS_R0.08\ff.c
+.\Flash\ff.o: FATFS_R0.08\ff.h
+.\Flash\ff.o: FATFS_R0.08\integer.h
+.\Flash\ff.o: FATFS_R0.08\ffconf.h
+.\Flash\ff.o: FATFS_R0.08\diskio.h
+.\Flash\ff.o: ..\Drivers\debug_frmwrk.h
+.\Flash\ff.o: ..\Drivers\lpc177x_8x_uart.h
+.\Flash\ff.o: ..\Startup\LPC177x_8x.h
+.\Flash\ff.o: ..\CM3_lib\core_cm3.h
+.\Flash\ff.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\ff.o: ..\Drivers\lpc_types.h

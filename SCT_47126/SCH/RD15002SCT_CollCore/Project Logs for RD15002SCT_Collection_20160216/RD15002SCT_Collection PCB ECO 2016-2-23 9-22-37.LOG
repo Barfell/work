@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=VCOLL Pin=Q1-2
+Removed Pin From Net: NetName=VBAT Pin=Q1-3
+Removed Pin From Net: NetName=VCORE Pin=Q2-2
+Removed Pin From Net: NetName=VBAT Pin=Q2-3
+Change Component DesignItemId : Designator=Q1 Old DesignItemId=P-MOSFET New DesignItemId=P-MOSFET1
+Change Component DesignItemId : Designator=Q2 Old DesignItemId=P-MOSFET New DesignItemId=P-MOSFET1
+Added Pin To Net: NetName=VBAT Pin=Q1-2
+Added Pin To Net: NetName=VCOLL Pin=Q1-3
+Added Pin To Net: NetName=VBAT Pin=Q2-2
+Added Pin To Net: NetName=VCORE Pin=Q2-3
+Added Room: Name=U_1_Power_Supply
+Added Room: Name=U_2_MCU_MSP430
+Added Room: Name=U_3_VW_Sensor
+Added Room: Name=U_4_Resistor_Sensor
+Added Room: Name=U_5_Current_Voltage_Sensor
+Added Room: Name=U_6_Pulse_Sensor
+Added Room: Name=U_7_RS485_RS232_Sensor
+Added Room: Name=U_8_Port

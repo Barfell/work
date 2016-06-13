@@ -1,0 +1,45 @@
+#ifndef _CMD_H
+#define _CMD_H
+/*
+  1、//写升级标记指令（包括软硬件版本）
+send：FE 03 00 00 00 00 FE
+response：app set flag ok\r\n
+
+2、//重启指令
+send：FE 07 00 00 00 00 FE
+response：app restart\r\n
+
+
+3、//进入升级模式指令
+send：FE 01 00 00 00 00 FE
+response：boot enter update mode,please send 1 package\r\n
+。。。。升级。。。。。
+。。。。升级。。。。。
+。。。。升级。。。。。
+升级过程每个包都是1024字节，应答都是boot receive = %d, write = %d, please send %d package\r\n
+
+4、//获取升级文件长度指令
+send：FE 08 00 00 00 00 FE
+response：boot update = %d Bytes, Sum = 0x%x\r\n
+
+5、//清除标志
+send：FE 09 00 00 00 00 FE
+response：boot erase flag ok\r\n（或者boot erase flag error\r\n，前提是没有标记才会如此）
+
+//重启指令
+send：FE 07 00 00 00 00 FE
+response：boot restart\r\n
+
+*/
+struct CmdType{
+  char start;
+  char cmd;
+  char para[20];
+  char end;
+};
+
+unsigned char cmdExtract(char *datstring, struct CmdType *cmdstructure);
+void cmdProc(struct CmdType cmdstructure);
+void cmdTask(void);
+
+#endif  

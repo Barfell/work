@@ -1,0 +1,7 @@
+---- ExternFlashChipErase Matches (6 in 4 files) ----
+DtuBoot.c (code\app\src):			ExternFlashChipErase();
+DtuBoot.c (code\app\src):	ExternFlashChipErase();
+SST25VF064C.c (code\drv\src)://º¯ÊýÃû³Æ:void ExternFlashChipErase()
+SST25VF064C.c (code\drv\src):VOID ExternFlashChipErase(VOID)
+SST25VF064C.h (code\drv\inc):VOID ExternFlashChipErase(VOID);
+TestSST25VF0.c (code\test):						ExternFlashChipErase();

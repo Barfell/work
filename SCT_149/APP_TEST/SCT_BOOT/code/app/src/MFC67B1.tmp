@@ -1,0 +1,67 @@
+#include "Zigbee.h"
+#include "JN5139.h"
+#include "kernel.h"
+
+unsigned char JN_recived_flg = 0;
+extern JNRAMType UartJN;
+
+
+void ZigbeeInit(void)
+{
+  unsigned char i;
+  JN5139Init();
+  JN5139SendString("xxxxxxxxxxxxx\r\n");
+  while(JN_recived_flg == 0)
+  {
+    delay_ms(1);
+    i++;
+    if(i >200)
+    {break;}
+  }
+}
+
+char *ZigbeeRSP(void)
+{
+  
+}
+
+//把原始数据提取出来，假如是JN命令则提取，不是则不提取  成功则返回1，不提取则返回0
+//通过判断空格间隔来提取数据
+unsigned char JNcmdExtract(char *dat, JNprotocolStructType *JNprotocolStructure)
+{
+
+}
+
+
+
+//串口通信任务。串口接到命令后进行动作
+void JNcmdTask(void)
+{
+  
+}
+
+
+//对命令进行处理,参数结构体都是提取成功后的(确认是JN的命令体系，且对本机操作)
+void JNcmdProc(JNprotocolStructType JNprotocolStructure)
+{
+	
+}
+
+
+
+
+/*-------------------各个命令对应的子函数-------------------------*/
+void JNprotocol_TIME_handle(char *para)
+{
+
+}
+
+void JNprotocol_UPDATE_handle(char *para)
+{
+
+}
+
+void JNprotocol_PROTOCOL_handle(char *para)
+{
+
+}

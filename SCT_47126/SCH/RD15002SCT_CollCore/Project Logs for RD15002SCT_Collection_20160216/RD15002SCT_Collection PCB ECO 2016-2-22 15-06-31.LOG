@@ -1,0 +1,251 @@
+Removed Pin From Net: NetName=P4.5 Pin=JP2-1
+Removed Pin From Net: NetName=P4.4 Pin=JP2-2
+Removed Pin From Net: NetName=P4.3 Pin=JP2-3
+Removed Pin From Net: NetName=P4.2 Pin=JP2-4
+Removed Pin From Net: NetName=COM0 Pin=JP2-5
+Removed Pin From Net: NetName=P5.2 Pin=JP2-6
+Removed Pin From Net: NetName=P5.3 Pin=JP2-7
+Removed Pin From Net: NetName=P5.4 Pin=JP2-8
+Removed Pin From Net: NetName=P3.7 Pin=JP2-9
+Removed Pin From Net: NetName=P3.6 Pin=JP2-10
+Removed Pin From Net: NetName=P3.5 Pin=JP2-11
+Removed Pin From Net: NetName=P3.4 Pin=JP2-12
+Removed Pin From Net: NetName=P3.3 Pin=JP2-13
+Removed Pin From Net: NetName=P3.2 Pin=JP2-14
+Removed Pin From Net: NetName=P3.1 Pin=JP2-15
+Removed Pin From Net: NetName=P3.0 Pin=JP2-16
+Removed Pin From Net: NetName=P2.3 Pin=JP2-17
+Removed Pin From Net: NetName=P2.3 Pin=JP2-18
+Removed Pin From Net: NetName=P1.4 Pin=JP2-19
+Removed Pin From Net: NetName=P1.3 Pin=JP2-20
+Removed Pin From Net: NetName=P1.2 Pin=JP2-21
+Removed Pin From Net: NetName=P1.1 Pin=JP2-22
+Removed Pin From Net: NetName=IN3+ Pin=JP2-23
+Removed Pin From Net: NetName=IN3- Pin=JP2-24
+Removed Pin From Net: NetName=P10.0 Pin=K1-1
+Removed Pin From Net: NetName=P10.1 Pin=K2-1
+Removed Pin From Net: NetName=P10.2 Pin=R22-2
+Removed Pin From Net: NetName=P10.0 Pin=R25-2
+Removed Pin From Net: NetName=P10.1 Pin=R26-2
+Removed Pin From Net: NetName=+3.3VCORE Pin=U5-1
+Removed Pin From Net: NetName=IN0+ Pin=U5-2
+Removed Pin From Net: NetName=IN0- Pin=U5-3
+Removed Pin From Net: NetName=IN1+ Pin=U5-4
+Removed Pin From Net: NetName=IN1- Pin=U5-5
+Removed Pin From Net: NetName=IN2+ Pin=U5-6
+Removed Pin From Net: NetName=IN2- Pin=U5-7
+Removed Pin From Net: NetName=VREF Pin=U5-10
+Removed Pin From Net: NetName=P5.1 Pin=U5-12
+Removed Pin From Net: NetName=P10.7 Pin=U5-14
+Removed Pin From Net: NetName=P10.6 Pin=U5-15
+Removed Pin From Net: NetName=P10.5 Pin=U5-16
+Removed Pin From Net: NetName=P10.4 Pin=U5-17
+Removed Pin From Net: NetName=P10.3 Pin=U5-18
+Removed Pin From Net: NetName=DTU_ONOFF Pin=U5-19
+Removed Pin From Net: NetName=DTU_DCD Pin=U5-20
+Removed Pin From Net: NetName=TRAN_PWR_CN Pin=U5-21
+Removed Pin From Net: NetName=P4.5 Pin=U5-48
+Removed Pin From Net: NetName=P4.4 Pin=U5-49
+Removed Pin From Net: NetName=P4.3 Pin=U5-50
+Removed Pin From Net: NetName=P4.2 Pin=U5-51
+Removed Pin From Net: NetName=COM0 Pin=U5-52
+Removed Pin From Net: NetName=P5.2 Pin=U5-53
+Removed Pin From Net: NetName=P5.3 Pin=U5-54
+Removed Pin From Net: NetName=P5.4 Pin=U5-55
+Removed Pin From Net: NetName=P5.5 Pin=U5-56
+Removed Pin From Net: NetName=P5.6 Pin=U5-57
+Removed Pin From Net: NetName=P5.7 Pin=U5-58
+Removed Pin From Net: NetName=LCDCAP Pin=U5-59
+Removed Pin From Net: NetName=+3.3VCORE Pin=U5-60
+Removed Pin From Net: NetName=DGND Pin=U5-61
+Removed Pin From Net: NetName=MCURXD1 Pin=U5-62
+Removed Pin From Net: NetName=MCUTXD1 Pin=U5-63
+Removed Pin From Net: NetName=P3.7 Pin=U5-64
+Removed Pin From Net: NetName=P3.6 Pin=U5-65
+Removed Pin From Net: NetName=P3.5 Pin=U5-66
+Removed Pin From Net: NetName=P3.4 Pin=U5-67
+Removed Pin From Net: NetName=P3.3 Pin=U5-68
+Removed Pin From Net: NetName=P3.2 Pin=U5-69
+Removed Pin From Net: NetName=P3.1 Pin=U5-70
+Removed Pin From Net: NetName=P3.0 Pin=U5-71
+Removed Pin From Net: NetName=P2.7 Pin=U5-72
+Removed Pin From Net: NetName=NetR21_2 Pin=U5-73
+Removed Pin From Net: NetName=MCURXD0 Pin=U5-74
+Removed Pin From Net: NetName=MCUTXD0 Pin=U5-75
+Removed Pin From Net: NetName=P2.3 Pin=U5-76
+Removed Pin From Net: NetName=P2.2 Pin=U5-77
+Removed Pin From Net: NetName=VW_DRIVE Pin=U5-78
+Removed Pin From Net: NetName=VW_EN Pin=U5-79
+Removed Pin From Net: NetName=VW_TRCN Pin=U5-80
+Removed Pin From Net: NetName=VW_RA Pin=U5-81
+Removed Pin From Net: NetName=VW_RD Pin=U5-82
+Removed Pin From Net: NetName=P1.4 Pin=U5-83
+Removed Pin From Net: NetName=P1.3 Pin=U5-84
+Removed Pin From Net: NetName=P1.2 Pin=U5-85
+Removed Pin From Net: NetName=P1.1 Pin=U5-86
+Removed Pin From Net: NetName=P1.0 Pin=U5-87
+Removed Pin From Net: NetName=TDO Pin=U5-90
+Removed Pin From Net: NetName=TDI Pin=U5-91
+Removed Pin From Net: NetName=TMS Pin=U5-92
+Removed Pin From Net: NetName=TCK Pin=U5-93
+Removed Pin From Net: NetName=RESET Pin=U5-94
+Removed Pin From Net: NetName=P5.0 Pin=U5-95
+Removed Pin From Net: NetName=IN3+ Pin=U5-96
+Removed Pin From Net: NetName=IN3- Pin=U5-97
+Removed Pin From Net: NetName=AVSS Pin=U5-98
+Removed Pin From Net: NetName=DGND Pin=U5-99
+Removed Pin From Net: NetName=AVCC Pin=U5-100
+Change Component DesignItemId : Designator=U5 Old DesignItemId=MSP430F47X4IPZ New DesignItemId=MSP430F47126
+Change Component Comment : Designator=U5 Old Comment=MSP430F47X4IPZ New Comment=MSP430F47126
+Added Pin To Net: NetName=P10.4 Pin=C20-2
+Added Pin To Net: NetName=P10.5 Pin=C21-2
+Added Pin To Net: NetName=P10.6 Pin=C26-1
+Added Pin To Net: NetName=P10.7 Pin=C27-1
+Added Pin To Net: NetName=IN3+ Pin=JP2-1
+Added Pin To Net: NetName=IN3- Pin=JP2-2
+Added Pin To Net: NetName=COM0 Pin=JP2-3
+Added Pin To Net: NetName=P3.5 Pin=JP2-4
+Added Pin To Net: NetName=P3.6 Pin=JP2-5
+Added Pin To Net: NetName=P3.7 Pin=JP2-6
+Added Pin To Net: NetName=P10.0 Pin=JP2-7
+Added Pin To Net: NetName=P4.2 Pin=JP2-8
+Added Pin To Net: NetName=P4.3 Pin=JP2-9
+Added Pin To Net: NetName=P5.0 Pin=JP2-10
+Added Pin To Net: NetName=P5.1 Pin=JP2-11
+Added Pin To Net: NetName=P5.2 Pin=JP2-12
+Added Pin To Net: NetName=P5.3 Pin=JP2-13
+Added Pin To Net: NetName=P5.4 Pin=JP2-14
+Added Pin To Net: NetName=P5.5 Pin=JP2-15
+Added Pin To Net: NetName=P5.6 Pin=JP2-16
+Added Pin To Net: NetName=P5.7 Pin=JP2-17
+Added Pin To Net: NetName=LCDCAP Pin=JP2-18
+Added Pin To Net: NetName=P3.4 Pin=JP2-19
+Added Pin To Net: NetName=P3.3 Pin=JP2-20
+Added Pin To Net: NetName=P3.2 Pin=JP2-21
+Added Pin To Net: NetName=P3.1 Pin=JP2-22
+Added Pin To Net: NetName=P3.0 Pin=JP2-23
+Added Pin To Net: NetName=P2.7 Pin=JP2-24
+Added Pin To Net: NetName=P1.2 Pin=K1-1
+Added Pin To Net: NetName=P1.3 Pin=K2-1
+Added Pin To Net: NetName=P1.1 Pin=R22-2
+Added Pin To Net: NetName=P1.2 Pin=R25-2
+Added Pin To Net: NetName=P1.3 Pin=R26-2
+Added Pin To Net: NetName=IN0+ Pin=U5-1
+Added Pin To Net: NetName=IN0- Pin=U5-2
+Added Pin To Net: NetName=IN1+ Pin=U5-3
+Added Pin To Net: NetName=IN1- Pin=U5-4
+Added Pin To Net: NetName=IN2+ Pin=U5-5
+Added Pin To Net: NetName=IN2- Pin=U5-6
+Added Pin To Net: NetName=AVSS Pin=U5-7
+Added Pin To Net: NetName=AVCC Pin=U5-8
+Added Pin To Net: NetName=VREF Pin=U5-9
+Added Pin To Net: NetName=IN3+ Pin=U5-10
+Added Pin To Net: NetName=IN3- Pin=U5-11
+Added Pin To Net: NetName=COM0 Pin=U5-12
+Added Pin To Net: NetName=P3.5 Pin=U5-13
+Added Pin To Net: NetName=P3.6 Pin=U5-14
+Added Pin To Net: NetName=P3.7 Pin=U5-15
+Added Pin To Net: NetName=DGND Pin=U5-18
+Added Pin To Net: NetName=DTU_ONOFF Pin=U5-20
+Added Pin To Net: NetName=DTU_DCD Pin=U5-21
+Added Pin To Net: NetName=TRAN_PWR_CN Pin=U5-22
+Added Pin To Net: NetName=P10.1 Pin=U5-48
+Added Pin To Net: NetName=P4.5 Pin=U5-49
+Added Pin To Net: NetName=P4.4 Pin=U5-50
+Added Pin To Net: NetName=P4.3 Pin=U5-51
+Added Pin To Net: NetName=P4.2 Pin=U5-52
+Added Pin To Net: NetName=P10.0 Pin=U5-53
+Added Pin To Net: NetName=NetR21_2 Pin=U5-54
+Added Pin To Net: NetName=P5.0 Pin=U5-55
+Added Pin To Net: NetName=P5.1 Pin=U5-56
+Added Pin To Net: NetName=P5.2 Pin=U5-57
+Added Pin To Net: NetName=P5.3 Pin=U5-58
+Added Pin To Net: NetName=P5.4 Pin=U5-59
+Added Pin To Net: NetName=P5.5 Pin=U5-60
+Added Pin To Net: NetName=P5.6 Pin=U5-61
+Added Pin To Net: NetName=P5.7 Pin=U5-62
+Added Pin To Net: NetName=LCDCAP Pin=U5-63
+Added Pin To Net: NetName=+3.3VCORE Pin=U5-64
+Added Pin To Net: NetName=P10.6 Pin=U5-65
+Added Pin To Net: NetName=P10.7 Pin=U5-66
+Added Pin To Net: NetName=DGND Pin=U5-67
+Added Pin To Net: NetName=VW_TRCN Pin=U5-68
+Added Pin To Net: NetName=VW_EN Pin=U5-69
+Added Pin To Net: NetName=VW_DRIVE Pin=U5-70
+Added Pin To Net: NetName=P3.4 Pin=U5-71
+Added Pin To Net: NetName=P3.3 Pin=U5-72
+Added Pin To Net: NetName=P3.2 Pin=U5-73
+Added Pin To Net: NetName=P3.1 Pin=U5-74
+Added Pin To Net: NetName=P3.0 Pin=U5-75
+Added Pin To Net: NetName=P2.7 Pin=U5-76
+Added Pin To Net: NetName=VW_RA Pin=U5-77
+Added Pin To Net: NetName=MCURXD0 Pin=U5-78
+Added Pin To Net: NetName=MCUTXD0 Pin=U5-79
+Added Pin To Net: NetName=P2.3 Pin=U5-80
+Added Pin To Net: NetName=P2.2 Pin=U5-81
+Added Pin To Net: NetName=P10.2 Pin=U5-82
+Added Pin To Net: NetName=P10.3 Pin=U5-83
+Added Pin To Net: NetName=MCURXD1 Pin=U5-84
+Added Pin To Net: NetName=MCUTXD1 Pin=U5-85
+Added Pin To Net: NetName=VW_RD Pin=U5-86
+Added Pin To Net: NetName=P1.4 Pin=U5-87
+Added Pin To Net: NetName=P1.3 Pin=U5-88
+Added Pin To Net: NetName=P1.2 Pin=U5-89
+Added Pin To Net: NetName=P1.1 Pin=U5-90
+Added Pin To Net: NetName=P1.0 Pin=U5-91
+Added Pin To Net: NetName=+3.3VCORE Pin=U5-92
+Added Pin To Net: NetName=P10.5 Pin=U5-93
+Added Pin To Net: NetName=P10.4 Pin=U5-94
+Added Pin To Net: NetName=DGND Pin=U5-95
+Added Pin To Net: NetName=TDO Pin=U5-96
+Added Pin To Net: NetName=TDI Pin=U5-97
+Added Pin To Net: NetName=TMS Pin=U5-98
+Added Pin To Net: NetName=TCK Pin=U5-99
+Added Pin To Net: NetName=RESET Pin=U5-100
+Added Pin To Net: NetName=P10.4 Pin=Y1-1
+Added Pin To Net: NetName=P10.5 Pin=Y1-2
+Added Pin To Net: NetName=P10.6 Pin=Y2-1
+Added Pin To Net: NetName=P10.7 Pin=Y2-4
+Change Net Name : Old Net Name=COM0 New Net Name=IN4+
+Change Net Name : Old Net Name=P3.5 New Net Name=IN4-
+Change Net Name : Old Net Name=P3.6 New Net Name=IN5+
+Change Net Name : Old Net Name=P3.7 New Net Name=IN5-
+Change Net Name : Old Net Name=P4.6 New Net Name=P4.7
+Change Net Name : Old Net Name=P4.7 New Net Name=P7.0
+Change Net Name : Old Net Name=P7.0 New Net Name=P7.1
+Change Net Name : Old Net Name=P7.1 New Net Name=P7.2
+Change Net Name : Old Net Name=P7.2 New Net Name=P7.3
+Change Net Name : Old Net Name=P7.3 New Net Name=P7.4
+Change Net Name : Old Net Name=P7.4 New Net Name=P7.5
+Change Net Name : Old Net Name=P7.5 New Net Name=P7.6
+Change Net Name : Old Net Name=P7.6 New Net Name=P7.7
+Change Net Name : Old Net Name=P7.7 New Net Name=P8.0
+Change Net Name : Old Net Name=P8.0 New Net Name=P8.1
+Change Net Name : Old Net Name=P8.1 New Net Name=P8.2
+Change Net Name : Old Net Name=P8.2 New Net Name=P8.3
+Change Net Name : Old Net Name=P8.3 New Net Name=P8.4
+Change Net Name : Old Net Name=P8.4 New Net Name=P8.5
+Change Net Name : Old Net Name=P8.5 New Net Name=P8.6
+Change Net Name : Old Net Name=P8.6 New Net Name=P8.7
+Change Net Name : Old Net Name=P8.7 New Net Name=P9.0
+Change Net Name : Old Net Name=P9.0 New Net Name=P9.1
+Change Net Name : Old Net Name=P9.1 New Net Name=P9.2
+Change Net Name : Old Net Name=P9.2 New Net Name=P9.3
+Change Net Name : Old Net Name=P9.3 New Net Name=P9.4
+Change Net Name : Old Net Name=P10.0 New Net Name=P4.1
+Change Net Name : Old Net Name=P10.1 New Net Name=P4.6
+Change Net Name : Old Net Name=P10.2 New Net Name=P2.1
+Change Net Name : Old Net Name=P10.3 New Net Name=P2.0
+Change Net Name : Old Net Name=P10.4 New Net Name=NetC20_2
+Change Net Name : Old Net Name=P10.5 New Net Name=NetC21_2
+Change Net Name : Old Net Name=P10.6 New Net Name=NetC26_1
+Change Net Name : Old Net Name=P10.7 New Net Name=NetC27_1
+Added Member To Class: ClassName=U_8_Port Member=Component JP2 Header2*12
+Added Room: Name=U_1_Power_Supply
+Added Room: Name=U_2_MCU_MSP430
+Added Room: Name=U_3_VW_Sensor
+Added Room: Name=U_4_Resistor_Sensor
+Added Room: Name=U_5_Current_Voltage_Sensor
+Added Room: Name=U_6_Pulse_Sensor
+Added Room: Name=U_7_RS485_RS232_Sensor
+Added Room: Name=U_8_Port

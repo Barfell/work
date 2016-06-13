@@ -1,0 +1,43 @@
+C51 COMPILER V9.00   RFID                                                                  06/15/2015 18:10:42 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE RFID
+OBJECT MODULE PLACED IN rfid.obj
+COMPILER INVOKED BY: C:\Keil_v51\C51\BIN\C51.EXE code\rfid.c LARGE BROWSE INCDIR(.\code) DEBUG OBJECTEXTEND PRINT(.\rfid
+                    -.lst) OBJECT(rfid.obj)
+
+line level    source
+
+   1          /*Abstract :RFID module M6Emicro Config&Read.
+   2          *
+   3          *Version NO.:1.0
+   4          *Writer     :Woy
+   5          *Date       :2015-06-10
+   6          **************************************************/
+   7          #include "C8051F340.h"
+   8          #include "system.h"
+   9          #include "uart.h"
+  10          
+  11          
+  12          
+  13          void Init_M6E()
+  14          {
+  15   1      
+  16   1      
+  17   1      
+  18   1      
+  19   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =      1    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

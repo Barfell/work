@@ -1,0 +1,37 @@
+--cpu Cortex-M3
+".\flash\startup_lpc177x_8x.o"
+".\flash\system_lpc177x_8x.o"
+".\flash\core_cm3.o"
+".\flash\debug_frmwrk.o"
+".\flash\lpc177x_8x_clkpwr.o"
+".\flash\lpc177x_8x_dac.o"
+".\flash\lpc177x_8x_emc.o"
+".\flash\lpc177x_8x_exti.o"
+".\flash\lpc177x_8x_gpdma.o"
+".\flash\lpc177x_8x_gpio.o"
+".\flash\sdram_k4s561632j.o"
+".\flash\lpc177x_8x_nvic.o"
+".\flash\lpc177x_8x_qei.o"
+".\flash\lpc177x_8x_timer.o"
+".\flash\lpc177x_8x_uart.o"
+".\flash\nandflash_k9f2g08u0x.o"
+".\flash\lpc177x_8x_pinsel.o"
+".\flash\main.o"
+".\flash\download.o"
+".\flash\flash2k.o"
+".\flash\yaffs_checkptrw.o"
+".\flash\yaffs_ecc.o"
+".\flash\yaffs_guts.o"
+".\flash\yaffs_nand.o"
+".\flash\yaffs_packedtags2.o"
+".\flash\yaffs_qsort.o"
+".\flash\yaffs_tagscompat.o"
+".\flash\yaffs_tagsvalidity.o"
+".\flash\yaffscfg2k.o"
+".\flash\yaffsfs.o"
+--library_type=microlib
+--feedback ".\Flash\YL_LPC1788_Test.fed" --feedback_image=none
+--rwpi --strict --scatter ".\Flash\YL_LPC1788_Test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\YL_LPC1788_Test.map" -o .\Flash\YL_LPC1788_Test.axf

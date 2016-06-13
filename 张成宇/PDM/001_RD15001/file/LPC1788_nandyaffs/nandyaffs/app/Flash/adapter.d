@@ -1,0 +1,14 @@
+.\Flash\adapter.o: Nand_Test\adapter.c
+.\Flash\adapter.o: ..\app\bsp.h
+.\Flash\adapter.o: ..\Drivers\lpc_types.h
+.\Flash\adapter.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\adapter.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\adapter.o: ..\Drivers\sdram_k4s561632j.h
+.\Flash\adapter.o: ..\Drivers\debug_frmwrk.h
+.\Flash\adapter.o: ..\Drivers\lpc177x_8x_uart.h
+.\Flash\adapter.o: ..\Startup\LPC177x_8x.h
+.\Flash\adapter.o: ..\CM3_lib\core_cm3.h
+.\Flash\adapter.o: Nand_Test\adaptor.h
+.\Flash\adapter.o: ..\app\bsp.h
+.\Flash\adapter.o: ..\Drivers\nandflash_k9f2g08u0x.h
+.\Flash\adapter.o: ..\Drivers\lpc177x_8x_emc.h

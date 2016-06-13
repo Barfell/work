@@ -1,0 +1,65 @@
+C51 COMPILER V9.52.0.0   PROTOCOL                                                          08/18/2015 14:52:37 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE PROTOCOL
+OBJECT MODULE PLACED IN .\protocol.obj
+COMPILER INVOKED BY: C:\Keil_v4\C51\BIN\C51.EXE ..\code\protocol.c LARGE BROWSE INCDIR(..\code) DEBUG OBJECTEXTEND PRINT
+                    -(.\protocol.lst) OBJECT(.\protocol.obj)
+
+line level    source
+
+   1          #include "protocol.h"
+   2          
+   3          void Init(PQueueInfo pQueueInfo)
+   4          {
+   5   1              pQueueInfo->u8Front = 0;
+   6   1              pQueueInfo->u8Rear = 0;
+   7   1      }
+   8          QueueDataType GetQueueLength(PQueueInfo pQueueInfo)
+   9          {
+  10   1              return (pQueueInfo->u8Rear - pQueueInfo->u8Front + MAXSIZE) % MAXSIZE;
+  11   1      }
+  12          BOOL AddQueue(PQueueInfo pQueueInfo, QueueDataType qValue)
+  13          {
+  14   1          BOOL xdata bState;
+  15   1              if((pQueueInfo->u8Rear + 1) % MAXSIZE == pQueueInfo->u8Front)
+  16   1              {
+  17   2                      bState = FALSE;
+  18   2              }
+  19   1          else
+  20   1          {
+  21   2              pQueueInfo->queuedata[pQueueInfo->u8Rear] = qValue;
+  22   2              pQueueInfo->u8Rear = (pQueueInfo->u8Rear + 1) % MAXSIZE;
+  23   2              bState = TRUE;
+  24   2          }
+  25   1          return bState;
+  26   1      }
+  27          BOOL DeleteQueue(PQueueInfo pQueueInfo, QueueDataType *pqValue)
+  28          {
+  29   1          BOOL xdata bState;
+  30   1              if(pQueueInfo->u8Front == pQueueInfo->u8Rear)
+  31   1              {
+  32   2                      bState = FALSE;
+  33   2              }
+  34   1          else
+  35   1          {
+  36   2              *pqValue = pQueueInfo->queuedata[pQueueInfo->u8Front];
+  37   2              pQueueInfo->u8Front = (pQueueInfo->u8Front + 1) % MAXSIZE;
+  38   2              bState = TRUE;
+  39   2          }
+  40   1              return bState;
+  41   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    276    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----      11
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,235 @@
+;#<FEEDBACK># ARM Linker, 5040049: Last Updated: Thu Jun 02 10:57:06 2016
+;VERSION 0.2
+;FILE core_cm3.o
+__REV16 <= USED 0
+__REVSH <= USED 0
+__get_MSP <= USED 0
+__get_PSP <= USED 0
+__set_MSP <= USED 0
+__set_PSP <= USED 0
+;FILE debug_frmwrk.o
+;FILE download.o
+LoadFromUart <= USED 0
+;FILE flash2k.o
+;FILE lpc177x_8x_clkpwr.o
+CLKPWR_DeepPowerDown <= USED 0
+CLKPWR_DeepSleep <= USED 0
+CLKPWR_PowerDown <= USED 0
+CLKPWR_SetCLKDiv <= USED 0
+CLKPWR_Sleep <= USED 0
+;FILE lpc177x_8x_dac.o
+DAC_ConfigDAConverterControl <= USED 0
+DAC_Init <= USED 0
+DAC_IsIntRequested <= USED 0
+DAC_SetBias <= USED 0
+DAC_SetDMATimeOut <= USED 0
+DAC_UpdateValue <= USED 0
+;FILE lpc177x_8x_emc.o
+EMC_ConfigEndianMode <= USED 0
+EMC_DynCtrlClockControl <= USED 0
+EMC_DynCtrlClockEnable <= USED 0
+EMC_DynCtrlMMC <= USED 0
+EMC_DynCtrlPowerDownMode <= USED 0
+EMC_DynCtrlSDRAMInit <= USED 0
+EMC_DynCtrlSelfRefresh <= USED 0
+EMC_DynMemCAS <= USED 0
+EMC_DynMemConfigAM <= USED 0
+EMC_DynMemConfigB <= USED 0
+EMC_DynMemConfigMD <= USED 0
+EMC_DynMemConfigP <= USED 0
+EMC_DynMemRAS <= USED 0
+EMC_SetDynMemoryParameter <= USED 0
+EMC_StaMemConfigB <= USED 0
+EMC_StaMemConfigEW <= USED 0
+EMC_StaMemConfigPC <= USED 0
+EMC_StaMemConfigPM <= USED 0
+EMC_StaMemConfigpP <= USED 0
+EMC_StaticExtendedWait <= USED 0
+;FILE lpc177x_8x_exti.o
+EXTI_ClearEXTIFlag <= USED 0
+EXTI_Config <= USED 0
+EXTI_DeInit <= USED 0
+EXTI_Init <= USED 0
+EXTI_SetMode <= USED 0
+EXTI_SetPolarity <= USED 0
+;FILE lpc177x_8x_gpdma.o
+GPDMA_ChannelCmd <= USED 0
+GPDMA_ClearIntPending <= USED 0
+GPDMA_Init <= USED 0
+GPDMA_IntGetStatus <= USED 0
+GPDMA_Setup <= USED 0
+;FILE lpc177x_8x_gpio.o
+FIO_ByteClearValue <= USED 0
+FIO_ByteReadValue <= USED 0
+FIO_ByteSetDir <= USED 0
+FIO_ByteSetMask <= USED 0
+FIO_ByteSetValue <= USED 0
+FIO_ClearInt <= USED 0
+FIO_ClearValue <= USED 0
+FIO_GetIntStatus <= USED 0
+FIO_HalfWordClearValue <= USED 0
+FIO_HalfWordReadValue <= USED 0
+FIO_HalfWordSetDir <= USED 0
+FIO_HalfWordSetMask <= USED 0
+FIO_HalfWordSetValue <= USED 0
+FIO_IntCmd <= USED 0
+FIO_ReadValue <= USED 0
+FIO_SetDir <= USED 0
+FIO_SetMask <= USED 0
+FIO_SetValue <= USED 0
+GPIO_ClearInt <= USED 0
+GPIO_ClearValue <= USED 0
+GPIO_GetIntStatus <= USED 0
+GPIO_IntCmd <= USED 0
+GPIO_OutputValue <= USED 0
+GPIO_ReadValue <= USED 0
+GPIO_SetDir <= USED 0
+GPIO_SetValue <= USED 0
+;FILE lpc177x_8x_nvic.o
+NVIC_DeInit <= USED 0
+NVIC_SCBDeInit <= USED 0
+NVIC_SetVTOR <= USED 0
+;FILE lpc177x_8x_pinsel.o
+PINSEL_DacEnable <= USED 0
+PINSEL_SetAnalogPinMode <= USED 0
+PINSEL_SetFilter <= USED 0
+PINSEL_SetHysMode <= USED 0
+PINSEL_SetI2CMode <= USED 0
+PINSEL_SetInBufMode <= USED 0
+PINSEL_SetOpenDrainMode <= USED 0
+PINSEL_SetPinMode <= USED 0
+PINSEL_SetSlewMode <= USED 0
+;FILE lpc177x_8x_qei.o
+QEI_CalculateRPM <= USED 0
+QEI_DeInit <= USED 0
+QEI_GetCfgDefault <= USED 0
+QEI_GetIndex <= USED 0
+QEI_GetIntStatus <= USED 0
+QEI_GetPointer <= USED 0
+QEI_GetPosition <= USED 0
+QEI_GetStatus <= USED 0
+QEI_GetTimer <= USED 0
+QEI_GetVelocity <= USED 0
+QEI_GetVelocityCap <= USED 0
+QEI_Init <= USED 0
+QEI_IntClear <= USED 0
+QEI_IntCmd <= USED 0
+QEI_IntSet <= USED 0
+QEI_Reset <= USED 0
+QEI_SetDigiFilter <= USED 0
+QEI_SetIndexComp <= USED 0
+QEI_SetMaxPosition <= USED 0
+QEI_SetPositionComp <= USED 0
+QEI_SetTimerReload <= USED 0
+QEI_SetVelocityComp <= USED 0
+;FILE lpc177x_8x_timer.o
+TIM_ClearIntCapturePending <= USED 0
+TIM_ClearIntPending <= USED 0
+TIM_ConfigCapture <= USED 0
+TIM_ConfigStructInit <= USED 0
+TIM_DeInit <= USED 0
+TIM_GetCaptureValue <= USED 0
+TIM_GetIntCaptureStatus <= USED 0
+TIM_GetIntStatus <= USED 0
+TIM_UpdateMatchValue <= USED 0
+;FILE lpc177x_8x_uart.o
+UART_ABClearIntPending <= USED 0
+UART_ABCmd <= USED 0
+UART_CheckBusy <= USED 0
+UART_DeInit <= USED 0
+UART_FIFOConfig <= USED 0
+UART_FIFOConfigStructInit <= USED 0
+UART_ForceBreak <= USED 0
+UART_FullModemConfigMode <= USED 0
+UART_FullModemForcePinState <= USED 0
+UART_FullModemGetStatus <= USED 0
+UART_GetIntId <= USED 0
+UART_GetLineStatus <= USED 0
+UART_IntConfig <= USED 0
+UART_IrDACmd <= USED 0
+UART_IrDAInvtInputCmd <= USED 0
+UART_IrDAPulseDivConfig <= USED 0
+UART_RS485Config <= USED 0
+UART_RS485ReceiverCmd <= USED 0
+UART_RS485Send <= USED 0
+UART_RS485SendData <= USED 0
+UART_RS485SendSlvAddr <= USED 0
+;FILE main.o
+print_menu <= USED 0
+;FILE nandflash_k9f2g08u0x.o
+NandFlash_BlockErase <= USED 0
+NandFlash_PageRead <= USED 0
+NandFlash_PageReadFromAddr <= USED 0
+NandFlash_PageReadFromBeginning <= USED 0
+NandFlash_ReadFromAddr <= USED 0
+NandFlash_ReadId <= USED 0
+NandFlash_ReadStatus <= USED 0
+NandFlash_SectorRead <= USED 0
+NandFlash_ValidBlockCheck <= USED 0
+;FILE sdram_k4s561632j.o
+;FILE startup_lpc177x_8x.o
+;FILE system_lpc177x_8x.o
+SystemCoreClockUpdate <= USED 0
+;FILE yaffs_checkptrw.o
+yaffs_CheckpointWrite <= USED 0
+;FILE yaffs_ecc.o
+;FILE yaffs_guts.o
+yaffs_CheckpointSave <= USED 0
+yaffs_FlushEntireDeviceCache <= USED 0
+yaffs_GetAttributes <= USED 0
+yaffs_GetFileSize <= USED 0
+yaffs_GetNumberOfFreeChunks <= USED 0
+yaffs_GetObjectInode <= USED 0
+yaffs_GetObjectLinkCount <= USED 0
+yaffs_GetObjectType <= USED 0
+yaffs_GetSymlinkAlias <= USED 0
+yaffs_IsManagedTempBuffer <= USED 0
+yaffs_Link <= USED 0
+yaffs_LostNFound <= USED 0
+yaffs_MknodSpecial <= USED 0
+yaffs_MknodSymLink <= USED 0
+yaffs_RenameObject <= USED 0
+yaffs_Root <= USED 0
+yaffs_SetAttributes <= USED 0
+yaffs_Unlink <= USED 0
+;FILE yaffs_nand.o
+;FILE yaffs_packedtags2.o
+;FILE yaffs_qsort.o
+;FILE yaffs_tagscompat.o
+;FILE yaffs_tagsvalidity.o
+;FILE yaffscfg2k.o
+SetCheckpointReservedBlocks <= USED 0
+yaffs_free <= USED 0
+yaffsfs_GetLastError <= USED 0
+yaffsfs_LocalInitialisation <= USED 0
+;FILE yaffsfs.o
+yaffs_DumpDevStruct <= USED 0
+yaffs_access <= USED 0
+yaffs_chmod <= USED 0
+yaffs_closedir <= USED 0
+yaffs_dup <= USED 0
+yaffs_fchmod <= USED 0
+yaffs_flush <= USED 0
+yaffs_freespace <= USED 0
+yaffs_fstat <= USED 0
+yaffs_ftruncate <= USED 0
+yaffs_inodecount <= USED 0
+yaffs_link <= USED 0
+yaffs_lseek <= USED 0
+yaffs_lstat <= USED 0
+yaffs_opendir <= USED 0
+yaffs_pwrite <= USED 0
+yaffs_read <= USED 0
+yaffs_readdir <= USED 0
+yaffs_readlink <= USED 0
+yaffs_rename <= USED 0
+yaffs_rewinddir <= USED 0
+yaffs_rmdir <= USED 0
+yaffs_stat <= USED 0
+yaffs_symlink <= USED 0
+yaffs_sync <= USED 0
+yaffs_totalspace <= USED 0
+yaffs_truncate <= USED 0
+yaffs_unlink <= USED 0
+yaffs_unmount <= USED 0
+yaffsfs_DoUnlink <= USED 0

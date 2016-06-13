@@ -1,0 +1,337 @@
+Dependencies for Project 'YL_LPC1788_APP', Target 'FLASH': (DO NOT MODIFY !)
+F (..\Startup\startup_LPC177x_8x.s)(0x50C45E41)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"--list .\startup_lpc177x_8x.lst --xref -o .\flash\startup_lpc177x_8x.o --depend .\flash\startup_lpc177x_8x.d)
+F (..\Startup\system_LPC177x_8x.c)(0x50BB4D1A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\system_lpc177x_8x.o --list_dir ".\\" --list --omf_browse .\flash\system_lpc177x_8x.crf --depend .\flash\system_lpc177x_8x.d)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+F (..\CM3_lib\core_cm3.c)(0x4D74550E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\core_cm3.o --list_dir ".\\" --list --omf_browse .\flash\core_cm3.crf --depend .\flash\core_cm3.d)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+F (..\Drivers\debug_frmwrk.c)(0x4EFC0A6C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\debug_frmwrk.o --list_dir ".\\" --list --omf_browse .\flash\debug_frmwrk.crf --depend .\flash\debug_frmwrk.d)
+I (..\Drivers\debug_frmwrk.h)(0x4DFAAB32)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_pinsel.h)(0x4D749110)
+F (..\Drivers\lpc177x_8x_clkpwr.c)(0x4D749142)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_clkpwr.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_clkpwr.crf --depend .\flash\lpc177x_8x_clkpwr.d)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+F (..\Drivers\lpc177x_8x_dac.c)(0x4D748934)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_dac.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_dac.crf --depend .\flash\lpc177x_8x_dac.d)
+I (..\Drivers\lpc177x_8x_dac.h)(0x4D748918)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+I (..\Drivers\lpc177x_8x_pinsel.h)(0x4D749110)
+F (..\Drivers\lpc177x_8x_emc.c)(0x4E0D2A26)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_emc.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_emc.crf --depend .\flash\lpc177x_8x_emc.d)
+I (..\Drivers\lpc177x_8x_emc.h)(0x4D749110)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+I (..\Drivers\lpc177x_8x_pinsel.h)(0x4D749110)
+F (..\Drivers\lpc177x_8x_exti.c)(0x4D749142)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_exti.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_exti.crf --depend .\flash\lpc177x_8x_exti.d)
+I (..\Drivers\lpc177x_8x_exti.h)(0x4D749110)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+F (..\Drivers\lpc177x_8x_gpdma.c)(0x4D749142)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_gpdma.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_gpdma.crf --depend .\flash\lpc177x_8x_gpdma.d)
+I (..\Drivers\lpc177x_8x_gpdma.h)(0x4D749110)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+F (..\Drivers\lpc177x_8x_gpio.c)(0x4E097D06)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_gpio.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_gpio.crf --depend .\flash\lpc177x_8x_gpio.d)
+I (..\Drivers\lpc177x_8x_gpio.h)(0x4D749110)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+F (..\Drivers\sdram_k4s561632j.c)(0x50BB40B0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\sdram_k4s561632j.o --list_dir ".\\" --list --omf_browse .\flash\sdram_k4s561632j.crf --depend .\flash\sdram_k4s561632j.d)
+I (..\app\bsp.h)(0x4E27C538)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\phylan_dp83848c.h)(0x4D7490FA)
+I (..\Drivers\lpc177x_8x_emc.h)(0x4D749110)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+I (..\Drivers\lpc177x_8x_pinsel.h)(0x4D749110)
+I (..\Drivers\lpc177x_8x_timer.h)(0x4D749110)
+I (..\Drivers\sdram_k4s561632j.h)(0x4E0A86E6)
+F (..\Drivers\lpc177x_8x_nvic.c)(0x4D748934)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_nvic.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_nvic.crf --depend .\flash\lpc177x_8x_nvic.d)
+I (..\Drivers\lpc177x_8x_nvic.h)(0x4D748918)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+F (..\Drivers\lpc177x_8x_qei.c)(0x4D749142)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_qei.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_qei.crf --depend .\flash\lpc177x_8x_qei.d)
+I (..\Drivers\lpc177x_8x_qei.h)(0x4D74829A)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+F (..\Drivers\lpc177x_8x_timer.c)(0x4D79E686)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_timer.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_timer.crf --depend .\flash\lpc177x_8x_timer.d)
+I (..\Drivers\lpc177x_8x_timer.h)(0x4D749110)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+I (..\Drivers\lpc177x_8x_pinsel.h)(0x4D749110)
+F (..\Drivers\lpc177x_8x_uart.c)(0x4E27C802)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_uart.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_uart.crf --depend .\flash\lpc177x_8x_uart.d)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+F (..\Drivers\nandflash_k9f2g08u0x.c)(0x50CC9D2A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\nandflash_k9f2g08u0x.o --list_dir ".\\" --list --omf_browse .\flash\nandflash_k9f2g08u0x.crf --depend .\flash\nandflash_k9f2g08u0x.d)
+I (..\app\bsp.h)(0x4E27C538)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\phylan_dp83848c.h)(0x4D7490FA)
+I (..\Drivers\nandflash_k9f2g08u0x.h)(0x50C407A8)
+I (..\Drivers\lpc177x_8x_emc.h)(0x4D749110)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+I (..\Drivers\lpc177x_8x_pinsel.h)(0x4D749110)
+I (..\Drivers\lpc177x_8x_timer.h)(0x4D749110)
+I (..\Drivers\debug_frmwrk.h)(0x4DFAAB32)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+F (..\Drivers\lpc177x_8x_pinsel.c)(0x4E11623A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\lpc177x_8x_pinsel.o --list_dir ".\\" --list --omf_browse .\flash\lpc177x_8x_pinsel.crf --depend .\flash\lpc177x_8x_pinsel.d)
+I (..\Drivers\lpc177x_8x_pinsel.h)(0x4D749110)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+F (.\main.c)(0x50CCB81A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\main.o --list_dir ".\\" --list --omf_browse .\flash\main.crf --depend .\flash\main.d)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc177x_8x_nvic.h)(0x4D748918)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (..\Startup\system_LPC177x_8x.h)(0x4D745A7C)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+I (..\Drivers\lpc177x_8x_clkpwr.h)(0x4D749110)
+I (..\Drivers\lpc177x_8x_gpio.h)(0x4D749110)
+I (..\Drivers\sdram_k4s561632j.h)(0x4E0A86E6)
+I (..\Drivers\nandflash_k9f2g08u0x.h)(0x50C407A8)
+I (..\Drivers\lpc177x_8x_emc.h)(0x4D749110)
+I (..\Drivers\debug_frmwrk.h)(0x4DFAAB32)
+I (download.h)(0x4E03E2F6)
+I (bsp.h)(0x4E27C538)
+I (..\Drivers\phylan_dp83848c.h)(0x4D7490FA)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (..\fs\yaffsfs.h)(0x4EBFF472)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+F (.\download.c)(0x4E004242)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\download.o --list_dir ".\\" --list --omf_browse .\flash\download.crf --depend .\flash\download.d)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (download.h)(0x4E03E2F6)
+I (..\Drivers\debug_frmwrk.h)(0x4DFAAB32)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+F (..\fs\flash2K.c)(0x50CC99D8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\flash2k.o --list_dir ".\\" --list --omf_browse .\flash\flash2k.crf --depend .\flash\flash2k.d)
+I (..\fs\yaffs_flashif2.h)(0x50CC9DD1)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yaffs_packedtags2.h)(0x481EBE42)
+I (..\fs\yaffs_ecc.h)(0x47615136)
+I (..\Drivers\nandflash_k9f2g08u0x.h)(0x50C407A8)
+I (..\Drivers\lpc177x_8x_emc.h)(0x4D749110)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (..\Drivers\debug_frmwrk.h)(0x4DFAAB32)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+F (..\fs\yaffs_checkptrw.c)(0x50C48C01)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffs_checkptrw.o --list_dir ".\\" --list --omf_browse .\flash\yaffs_checkptrw.crf --depend .\flash\yaffs_checkptrw.d)
+I (..\fs\yaffs_checkptrw.h)(0x47615136)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yaffs_getblockinfo.h)(0x4822618A)
+I (..\Drivers\debug_frmwrk.h)(0x4DFAAB32)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+F (..\fs\yaffs_ecc.c)(0x47615136)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffs_ecc.o --list_dir ".\\" --list --omf_browse .\flash\yaffs_ecc.crf --depend .\flash\yaffs_ecc.d)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yaffs_ecc.h)(0x47615136)
+F (..\fs\yaffs_guts.c)(0x50C46800)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffs_guts.o --list_dir ".\\" --list --omf_browse .\flash\yaffs_guts.crf --depend .\flash\yaffs_guts.d)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yaffsfs.h)(0x4EBFF472)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+I (..\fs\yaffs_tagsvalidity.h)(0x47615136)
+I (..\fs\yaffs_getblockinfo.h)(0x4822618A)
+I (..\fs\yaffs_tagscompat.h)(0x481EBE42)
+I (..\fs\yaffs_qsort.h)(0x47615136)
+I (..\fs\yaffs_checkptrw.h)(0x47615136)
+I (..\fs\yaffs_packedtags2.h)(0x481EBE42)
+I (..\fs\yaffs_ecc.h)(0x47615136)
+I (..\Drivers\debug_frmwrk.h)(0x4DFAAB32)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)
+F (..\fs\yaffs_nand.c)(0x4EC095A2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffs_nand.o --list_dir ".\\" --list --omf_browse .\flash\yaffs_nand.crf --depend .\flash\yaffs_nand.d)
+I (..\fs\yaffs_nand.h)(0x47615136)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yaffs_tagscompat.h)(0x481EBE42)
+I (..\fs\yaffs_tagsvalidity.h)(0x47615136)
+I (..\fs\yaffs_getblockinfo.h)(0x4822618A)
+F (..\fs\yaffs_packedtags2.c)(0x496FD8BC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffs_packedtags2.o --list_dir ".\\" --list --omf_browse .\flash\yaffs_packedtags2.crf --depend .\flash\yaffs_packedtags2.d)
+I (..\fs\yaffs_packedtags2.h)(0x481EBE42)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yaffs_ecc.h)(0x47615136)
+I (..\fs\yaffs_tagsvalidity.h)(0x47615136)
+F (..\fs\yaffs_qsort.c)(0x47615136)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffs_qsort.o --list_dir ".\\" --list --omf_browse .\flash\yaffs_qsort.crf --depend .\flash\yaffs_qsort.d)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+F (..\fs\yaffs_tagscompat.c)(0x49138C96)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffs_tagscompat.o --list_dir ".\\" --list --omf_browse .\flash\yaffs_tagscompat.crf --depend .\flash\yaffs_tagscompat.d)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yaffs_tagscompat.h)(0x481EBE42)
+I (..\fs\yaffs_ecc.h)(0x47615136)
+I (..\fs\yaffs_getblockinfo.h)(0x4822618A)
+F (..\fs\yaffs_tagsvalidity.c)(0x45D26132)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffs_tagsvalidity.o --list_dir ".\\" --list --omf_browse .\flash\yaffs_tagsvalidity.crf --depend .\flash\yaffs_tagsvalidity.d)
+I (..\fs\yaffs_tagsvalidity.h)(0x47615136)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+F (..\fs\yaffscfg2k.c)(0x50CCB16E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffscfg2k.o --list_dir ".\\" --list --omf_browse .\flash\yaffscfg2k.crf --depend .\flash\yaffscfg2k.d)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffsfs.h)(0x4EBFF472)
+I (D:\Program Files\mdk\ARM\ARMCC\include\errno.h)(0x53463A44)
+I (..\fs\yaffs_flashif2.h)(0x50CC9DD1)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+F (..\fs\yaffsfs.c)(0x50C518BA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --asm --interleave --asm_dir ".\\" -I..\app -I..\CM3_lib -I..\Drivers -I..\Startup -I.\Easy_web -I.\Lcd_Drv -I.\IIC_Test -I.\USU_Host -I.\Nand_Test -I.\FATFS_R0.08 -I..\fs-I "D:\Program Files\mdk\ARM\RV31\INC"-I "D:\Program Files\mdk\pack\ARM\CMSIS\4.1.1\CMSIS\Include"-I "D:\Program Files\mdk\ARM\Inc\NXP\LPC177x_8x"-o .\flash\yaffsfs.o --list_dir ".\\" --list --omf_browse .\flash\yaffsfs.crf --depend .\flash\yaffsfs.d)
+I (..\fs\yaffsfs.h)(0x4EBFF472)
+I (..\fs\yaffscfg.h)(0x50C2C654)
+I (..\fs\yportenv.h)(0x50C32DF0)
+I (..\fs\ydirectenv.h)(0x50C44656)
+I (..\fs\devextras.h)(0x4EBF36D2)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdlib.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdio.h)(0x53463A44)
+I (D:\Program Files\mdk\ARM\ARMCC\include\string.h)(0x53463A44)
+I (..\fs\yaffs_malloc.h)(0x4795C47E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\assert.h)(0x53463A44)
+I (..\fs\yaffs_guts.h)(0x4EBF54B4)
+I (..\Drivers\debug_frmwrk.h)(0x4DFAAB32)
+I (..\Drivers\lpc177x_8x_uart.h)(0x4DF9C8C4)
+I (..\Startup\LPC177x_8x.h)(0x4D79E194)
+I (..\CM3_lib\core_cm3.h)(0x4D74550E)
+I (D:\Program Files\mdk\ARM\ARMCC\include\stdint.h)(0x53463A44)
+I (..\Drivers\lpc_types.h)(0x4D74550E)

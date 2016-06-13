@@ -1,0 +1,9 @@
+.\Flash\sa56004.o: IIC_Test\SA56004.c
+.\Flash\sa56004.o: C:\Keil\ARM\RV31\Inc\math.h
+.\Flash\sa56004.o: IIC_Test\SA56004.h
+.\Flash\sa56004.o: ..\Drivers\lpc_types.h
+.\Flash\sa56004.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\sa56004.o: ..\Drivers\lpc177x_8x_i2c.h
+.\Flash\sa56004.o: ..\Startup\LPC177x_8x.h
+.\Flash\sa56004.o: ..\CM3_lib\core_cm3.h
+.\Flash\sa56004.o: ..\Drivers\lpc177x_8x_pinsel.h

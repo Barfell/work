@@ -1,0 +1,9 @@
+.\Flash\gpio_interrupt.o: gpio_test\Gpio_interrupt.c
+.\Flash\gpio_interrupt.o: ..\app\bsp.h
+.\Flash\gpio_interrupt.o: ..\Drivers\lpc_types.h
+.\Flash\gpio_interrupt.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\gpio_interrupt.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\gpio_interrupt.o: ..\Drivers\lpc177x_8x_pinsel.h
+.\Flash\gpio_interrupt.o: ..\Startup\LPC177x_8x.h
+.\Flash\gpio_interrupt.o: ..\CM3_lib\core_cm3.h
+.\Flash\gpio_interrupt.o: ..\Drivers\lpc177x_8x_gpio.h

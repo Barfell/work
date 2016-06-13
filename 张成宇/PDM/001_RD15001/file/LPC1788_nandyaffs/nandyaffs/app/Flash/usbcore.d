@@ -1,0 +1,11 @@
+.\Flash\usbcore.o: Usb_MassStorage\usbcore.c
+.\Flash\usbcore.o: ..\Drivers\lpc_types.h
+.\Flash\usbcore.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\usbcore.o: Usb_MassStorage\usb.h
+.\Flash\usbcore.o: Usb_MassStorage\usbcfg.h
+.\Flash\usbcore.o: Usb_MassStorage\usbhw.h
+.\Flash\usbcore.o: Usb_MassStorage\usbcore.h
+.\Flash\usbcore.o: Usb_MassStorage\usbdesc.h
+.\Flash\usbcore.o: Usb_MassStorage\usbuser.h
+.\Flash\usbcore.o: Usb_MassStorage\msc.h
+.\Flash\usbcore.o: Usb_MassStorage\mscuser.h

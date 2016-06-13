@@ -1,0 +1,71 @@
+*** Creating Trace Output File 'YL_LPC1788_Test.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\startup_lpc177x_8x.o"'
+### List of Objects: adding '"system_lpc177x_8x.o"'
+### List of Objects: adding '"core_cm3.o"'
+### List of Objects: adding '"debug_frmwrk.o"'
+### List of Objects: adding '"lpc177x_8x_adc.o"'
+### List of Objects: adding '"lpc177x_8x_can.o"'
+### List of Objects: adding '"lpc177x_8x_clkpwr.o"'
+### List of Objects: adding '"lpc177x_8x_crc.o"'
+### List of Objects: adding '"lpc177x_8x_dac.o"'
+### List of Objects: adding '"lpc177x_8x_eeprom.o"'
+### List of Objects: adding '"lpc177x_8x_emc.o"'
+### List of Objects: adding '"lpc177x_8x_exti.o"'
+### List of Objects: adding '"lpc177x_8x_gpdma.o"'
+### List of Objects: adding '"lpc177x_8x_gpio.o"'
+### List of Objects: adding '"lpc177x_8x_i2c.o"'
+### List of Objects: adding '"lpc177x_8x_i2s.o"'
+### List of Objects: adding '"lpc177x_8x_mci.o"'
+### List of Objects: adding '"lpc177x_8x_mcpwm.o"'
+### List of Objects: adding '"sdram_k4s561632j.o"'
+### List of Objects: adding '"lpc177x_8x_emac.o"'
+### List of Objects: adding '"lpc177x_8x_nvic.o"'
+### List of Objects: adding '"lpc177x_8x_pinsel.o"'
+### List of Objects: adding '"lpc177x_8x_pwm.o"'
+### List of Objects: adding '"lpc177x_8x_qei.o"'
+### List of Objects: adding '"lpc177x_8x_rtc.o"'
+### List of Objects: adding '"lpc177x_8x_ssp.o"'
+### List of Objects: adding '"lpc177x_8x_systick.o"'
+### List of Objects: adding '"lpc177x_8x_timer.o"'
+### List of Objects: adding '"lpc177x_8x_uart.o"'
+### List of Objects: adding '"lpc177x_8x_wwdt.o"'
+### List of Objects: adding '"sst39vf6401.o"'
+### List of Objects: adding '"nandflash_k9f2g08u0x.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"download.o"'
+### List of Objects: adding '"led.o"'
+### List of Objects: adding '"gpio_interrupt.o"'
+### List of Objects: adding '"emac.o"'
+### List of Objects: adding '"emac_easyweb.o"'
+### List of Objects: adding '"tcpip.o"'
+### List of Objects: adding '"diskimg.o"'
+### List of Objects: adding '"memory.o"'
+### List of Objects: adding '"mscuser.o"'
+### List of Objects: adding '"usbcore.o"'
+### List of Objects: adding '"usbdesc.o"'
+### List of Objects: adding '"usbhw.o"'
+### List of Objects: adding '"usbuser.o"'
+### List of Objects: adding '"dac_sinewave.o"'
+### List of Objects: adding '"drv_glcd.o"'
+### List of Objects: adding '"logo.o"'
+### List of Objects: adding '"pwm_dualedge.o"'
+### List of Objects: adding '"can_test.o"'
+### List of Objects: adding '"nor_test.o"'
+### List of Objects: adding '"nand_app.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\startup_lpc177x_8x.o" "system_lpc177x_8x.o" "core_cm3.o" "debug_frmwrk.o" "lpc177x_8x_adc.o" "lpc177x_8x_can.o" "lpc177x_8x_clkpwr.o" "lpc177x_8x_crc.o" "lpc177x_8x_dac.o" "lpc177x_8x_eeprom.o" "lpc177x_8x_emc.o" "lpc177x_8x_exti.o" "lpc177x_8x_gpdma.o" "lpc177x_8x_gpio.o" "lpc177x_8x_i2c.o" "lpc177x_8x_i2s.o" "lpc177x_8x_mci.o" "lpc177x_8x_mcpwm.o" "sdram_k4s561632j.o" "lpc177x_8x_emac.o" "lpc177x_8x_nvic.o" "lpc177x_8x_pinsel.o" "lpc177x_8x_pwm.o" "lpc177x_8x_qei.o" "lpc177x_8x_rtc.o" "lpc177x_8x_ssp.o" "lpc177x_8x_systick.o" "lpc177x_8x_timer.o" "lpc177x_8x_uart.o" "lpc177x_8x_wwdt.o" "sst39vf6401.o" "nandflash_k9f2g08u0x.o" "main.o" "download.o" "led.o" "gpio_interrupt.o" "emac.o" "emac_easyweb.o" "tcpip.o" "diskimg.o" "memory.o" "mscuser.o" "usbcore.o" "usbdesc.o" "usbhw.o" "usbuser.o" "dac_sinewave.o" "drv_glcd.o" "logo.o" "pwm_dualedge.o" "can_test.o" "nor_test.o" "nand_app.o" --strict --scatter "YL_LPC1788_Test.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\YL_LPC1788_Test.map" -o "YL_LPC1788_Test.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'YL_LPC1788_Test.axf'
+### ADS-LD Command File: 'YL_LPC1788_Test.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'YL_LPC1788_Test.lnp', Handle=0x0000040C
+### Writing '.lnp' file
+### ADS-LD Command file 'YL_LPC1788_Test.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

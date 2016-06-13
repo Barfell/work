@@ -1,0 +1,225 @@
+Added Component: Designator=D6(CC0603)
+Added Component: Designator=D7(CC0603)
+Added Component: Designator=D8(CC0603)
+Added Component: Designator=S1(SPST)
+Added Component: Designator=S2(SPST)
+Added Component: Designator=S3(SPST)
+Added Component: Designator=S4(SPST)
+Added Component: Designator=S5(SPST)
+Added Component: Designator=U10(MS10)
+Added Component: Designator=Y1(XCYAI)
+Added Component: Designator=Y2(MC-146)
+Added Net: Name=+3V_MCU
+Added Net: Name=+3V_ZIGBEE
+Added Net: Name=+3V
+Added Pin To Net: NetName=+5V_ADC Pin=U10-1
+Added Pin To Net: NetName=+5V_ADC Pin=U10-2
+Added Net: Name=+5V_ADC
+Added Net: Name=+5V
+Added Net: Name=+VIN
+Added Net: Name=AD_BAT
+Added Net: Name=AD_MCUVOL
+Added Net: Name=ADC_IN+
+Added Net: Name=ADC_IN-
+Added Net: Name=ADC_VOL
+Added Net: Name=AGND
+Added Net: Name=A
+Added Net: Name=BAT+
+Added Net: Name=BEEP
+Added Net: Name=BLACK_R
+Added Net: Name=BLACK_T
+Added Net: Name=BLACK
+Added Net: Name=B
+Added Pin To Net: NetName=DGND Pin=D8-2
+Added Pin To Net: NetName=DGND Pin=S1-1
+Added Pin To Net: NetName=DGND Pin=S2-2
+Added Pin To Net: NetName=DGND Pin=S3-2
+Added Pin To Net: NetName=DGND Pin=S4-2
+Added Pin To Net: NetName=DGND Pin=S5-2
+Added Pin To Net: NetName=DGND Pin=U10-6
+Added Pin To Net: NetName=DGND Pin=Y2-2
+Added Pin To Net: NetName=DGND Pin=Y2-3
+Added Net: Name=DGND
+Added Pin To Net: NetName=DIO9 Pin=S2-1
+Added Net: Name=DIO9
+Added Pin To Net: NetName=DIO10 Pin=S3-1
+Added Net: Name=DIO10
+Added Pin To Net: NetName=DIO16 Pin=D6-2
+Added Net: Name=DIO16
+Added Net: Name=DRIVER_EN
+Added Net: Name=GREEN
+Added Net: Name=LT_RTD1
+Added Net: Name=MCUMISO
+Added Net: Name=MCUMOSI
+Added Net: Name=MCURXD0
+Added Net: Name=MCURXD1
+Added Net: Name=MCUSCK
+Added Net: Name=MCUTXD0
+Added Net: Name=MCUTXD1
+Added Net: Name=NetB1_1
+Added Net: Name=NetB1_2
+Added Net: Name=NetB2_9
+Added Net: Name=NetB2_13
+Added Net: Name=NetB2_14
+Added Pin To Net: NetName=NetB2_29 Pin=S4-1
+Added Net: Name=NetB2_29
+Added Net: Name=NetC3_1
+Added Net: Name=NetC11_2
+Added Net: Name=NetC16_2
+Added Net: Name=NetC18_2
+Added Pin To Net: NetName=NetC21_2 Pin=Y1-2
+Added Net: Name=NetC21_2
+Added Pin To Net: NetName=NetC22_2 Pin=Y1-1
+Added Net: Name=NetC22_2
+Added Pin To Net: NetName=NetC23_1 Pin=Y2-1
+Added Net: Name=NetC23_1
+Added Pin To Net: NetName=NetC24_1 Pin=Y2-4
+Added Net: Name=NetC24_1
+Added Net: Name=NetC31_1
+Added Net: Name=NetC31_2
+Added Net: Name=NetC32_1
+Added Net: Name=NetC32_2
+Added Net: Name=NetC33_1
+Added Net: Name=NetC33_2
+Added Net: Name=NetC34_1
+Added Net: Name=NetC35_1
+Added Net: Name=NetC36_1
+Added Net: Name=NetC43_2
+Added Net: Name=NetC44_2
+Added Net: Name=NetC47_1
+Added Net: Name=NetC47_2
+Added Net: Name=NetC48_1
+Added Net: Name=NetC50_1
+Added Net: Name=NetC50_2
+Added Net: Name=NetC51_2
+Added Net: Name=NetC53_2
+Added Net: Name=NetD1_2
+Added Net: Name=NetD4_1
+Added Net: Name=NetD5_2
+Added Pin To Net: NetName=NetD6_1 Pin=D6-1
+Added Net: Name=NetD6_1
+Added Pin To Net: NetName=NetD7_1 Pin=D7-1
+Added Net: Name=NetD7_1
+Added Pin To Net: NetName=NetD8_1 Pin=D8-1
+Added Net: Name=NetD8_1
+Added Net: Name=NetJ7_1
+Added Net: Name=NetJ7_2
+Added Net: Name=NetL1_1
+Added Net: Name=NetQ1_1
+Added Net: Name=NetQ2_1
+Added Net: Name=NetR12_2
+Added Net: Name=NetR14_1
+Added Net: Name=NetR16_1
+Added Net: Name=NetR25_1
+Added Net: Name=NetR32_1
+Added Net: Name=NetR36_1
+Added Net: Name=NetR36_2
+Added Net: Name=NetR37_1
+Added Net: Name=NetR37_2
+Added Net: Name=NetR38_1
+Added Net: Name=NetR39_1
+Added Net: Name=NetR42_2
+Added Pin To Net: NetName=NetR45_2 Pin=U10-10
+Added Net: Name=NetR45_2
+Added Pin To Net: NetName=NetR50_2 Pin=U10-4
+Added Net: Name=NetR50_2
+Added Net: Name=NetR51_2
+Added Net: Name=NetR52_1
+Added Net: Name=NetR53_2
+Added Net: Name=NetR54_1
+Added Pin To Net: NetName=NetR57_2 Pin=U10-5
+Added Net: Name=NetR57_2
+Added Net: Name=NetR67_1
+Added Net: Name=NetR68_1
+Added Net: Name=NetR70_1
+Added Net: Name=NetR72_1
+Added Net: Name=NetR78_2
+Added Net: Name=NetU13_4
+Added Net: Name=P2.4
+Added Net: Name=P2.5
+Added Net: Name=P2.6
+Added Net: Name=P2.7
+Added Net: Name=P3.0
+Added Net: Name=P4.0
+Added Net: Name=P4.2
+Added Net: Name=P4.3
+Added Net: Name=P4.4
+Added Net: Name=P4.5
+Added Net: Name=P4.6
+Added Net: Name=P4.7
+Added Net: Name=P5.0
+Added Net: Name=P5.1
+Added Net: Name=P5.2
+Added Net: Name=P5.3
+Added Net: Name=P5.4
+Added Net: Name=P5.5
+Added Net: Name=P5.6
+Added Net: Name=P5.7
+Added Net: Name=PWR_ADC
+Added Net: Name=PWR_MAIN
+Added Net: Name=PWR_MCU
+Added Net: Name=PWR_ZIGBEE
+Added Net: Name=RED_R
+Added Net: Name=RED_T
+Added Net: Name=RED
+Added Pin To Net: NetName=RESET Pin=S1-2
+Added Net: Name=RESET
+Added Net: Name=RESISTOR+
+Added Net: Name=RESISTOR-
+Added Net: Name=RS232RX0
+Added Net: Name=RS232RX1
+Added Net: Name=RS232TX0
+Added Net: Name=RS232TX1
+Added Net: Name=SCK
+Added Net: Name=SHIELD
+Added Pin To Net: NetName=SPI1_CS1 Pin=U10-7
+Added Net: Name=SPI1_CS1
+Added Pin To Net: NetName=SPI1_MISO Pin=U10-8
+Added Net: Name=SPI1_MISO
+Added Pin To Net: NetName=SPI1_SCK Pin=U10-9
+Added Net: Name=SPI1_SCK
+Added Net: Name=TCK
+Added Net: Name=TDI
+Added Net: Name=TDO
+Added Net: Name=TMS
+Added Net: Name=VOLTAGE+
+Added Net: Name=VOLTAGE-
+Added Net: Name=VW_DRIVE
+Added Net: Name=VW_RE
+Added Net: Name=VW_TRCN
+Added Net: Name=VWTRCN
+Added Pin To Net: NetName=WHITE Pin=U10-3
+Added Net: Name=WHITE
+Added Net: Name=ZIGBEECTS0
+Added Pin To Net: NetName=ZIGBEECTS1 Pin=D7-2
+Added Net: Name=ZIGBEECTS1
+Added Net: Name=ZIGBEECTS
+Added Pin To Net: NetName=ZIGBEEMISO Pin=S5-1
+Added Net: Name=ZIGBEEMISO
+Added Net: Name=ZIGBEERTS0
+Added Net: Name=ZIGBEERTS1
+Added Net: Name=ZIGBEERTS
+Added Net: Name=ZIGBEERX0
+Added Net: Name=ZIGBEERX1
+Added Net: Name=ZIGBEERX
+Added Net: Name=ZIGBEETX0
+Added Net: Name=ZIGBEETX1
+Added Net: Name=ZIGBEETX
+Added Class: Name=U_1-POWER
+Added Class: Name=U_2-MCU
+Added Class: Name=U_3-VW_MODULE
+Added Class: Name=U_4-ADC
+Added Class: Name=U_5-VOL_CHECK
+Added Class: Name=U_6-CURRENT_CHECK
+Added Class: Name=U_7-RES_CHECK
+Added Class: Name=U_8-PORT
+Added Class: Name=U_9-ZIGBEE
+Added Room: Name=U_1-POWER
+Added Room: Name=U_2-MCU
+Added Room: Name=U_3-VW_MODULE
+Added Room: Name=U_4-ADC
+Added Room: Name=U_5-VOL_CHECK
+Added Room: Name=U_6-CURRENT_CHECK
+Added Room: Name=U_7-RES_CHECK
+Added Room: Name=U_8-PORT
+Added Room: Name=U_9-ZIGBEE

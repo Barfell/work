@@ -1,0 +1,6 @@
+---- ReceiveUsartData Matches (5 in 1 files) ----
+Usart.c (code\drv\src):STATIC VOID ReceiveUsartData(U8 type)//处理接收到的串口数据
+Usart.c (code\drv\src):        ReceiveUsartData(USART1_TYPE);
+Usart.c (code\drv\src):        ReceiveUsartData(USART2_TYPE);
+Usart.c (code\drv\src):        ReceiveUsartData(USART3_TYPE);
+Usart.c (code\drv\src):        ReceiveUsartData(USART4_TYPE);

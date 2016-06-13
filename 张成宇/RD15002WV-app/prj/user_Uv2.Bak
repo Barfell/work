@@ -1,0 +1,146 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+Target (Target 1), 0x0004 // Tools: 'ARM-ADS'
+
+Group (sys)
+Group (bsp)
+Group (DSP_LIB)
+Group (user)
+Group (drv)
+Group (test)
+
+File 1,1,<..\code\sys\system_stm32f4xx.c><system_stm32f4xx.c>
+File 1,2,<..\code\sys\startup_stm32f40_41xxx.s><startup_stm32f40_41xxx.s>
+File 1,1,<..\code\sys\malloc.c><malloc.c>
+File 1,1,<..\code\sys\kernal.c><kernal.c>
+File 2,1,<..\code\bsp\src\misc.c><misc.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_adc.c><stm32f4xx_adc.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_dbgmcu.c><stm32f4xx_dbgmcu.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_dma.c><stm32f4xx_dma.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_exti.c><stm32f4xx_exti.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_flash.c><stm32f4xx_flash.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_fsmc.c><stm32f4xx_fsmc.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_gpio.c><stm32f4xx_gpio.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_iwdg.c><stm32f4xx_iwdg.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_rcc.c><stm32f4xx_rcc.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_sdio.c><stm32f4xx_sdio.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_spi.c><stm32f4xx_spi.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_syscfg.c><stm32f4xx_syscfg.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_tim.c><stm32f4xx_tim.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_usart.c><stm32f4xx_usart.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_wwdg.c><stm32f4xx_wwdg.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_dma2d.c><stm32f4xx_dma2d.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_can.c><stm32f4xx_can.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_rtc.c><stm32f4xx_rtc.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_pwr.c><stm32f4xx_pwr.c>
+File 2,1,<..\code\bsp\src\stm32f4xx_crc.c><stm32f4xx_crc.c>
+File 3,4,<..\code\DSP_LIB\arm_cortexM4lf_math.lib><arm_cortexM4lf_math.lib>
+File 4,1,<..\code\user\main.c><main.c>
+File 4,5,<..\code\user\readme.txt><readme.txt>
+File 4,1,<..\code\user\protocol.c><protocol.c>
+File 5,1,<..\code\drv\src\usart.c><usart.c>
+File 5,1,<..\code\drv\src\SST25VF064C.c><SST25VF064C.c>
+File 5,1,<..\code\drv\src\rtc.c><rtc.c>
+File 5,1,<..\code\drv\src\ltc2402.c><ltc2402.c>
+File 5,1,<..\code\drv\src\spi.c><spi.c>
+File 5,1,<..\code\drv\src\FreqMeasurement.c><FreqMeasurement.c>
+File 5,1,<..\code\drv\src\bsp_init.c><bsp_init.c>
+File 5,1,<..\code\drv\src\bsp_io_control.c><bsp_io_control.c>
+File 6,1,<..\code\test\TestUsart.c><TestUsart.c>
+File 6,1,<..\code\test\TestSST25VF0.c><TestSST25VF0.c>
+File 6,1,<..\code\test\TestRtc.c><TestRtc.c>
+File 6,1,<..\code\test\TestLtc2402.c><TestLtc2402.c>
+File 6,1,<..\code\test\TestFrequency.c><TestFrequency.c>
+
+
+Options 1,0,0  // Target 'Target 1'
+ Device (STM32F407ZGTx)
+ Vendor (STMicroelectronics)
+ Cpu (IROM(0x08000000,0x100000) IRAM(0x20000000,0x20000) IRAM2(0x10000000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE)
+ FlashUt ()
+ StupF ()
+ FlashDR (UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F407ZGTx$CMSIS\Flash\STM32F4xx_1024.FLM)))
+ DevID (0)
+ Rgf ($$Device:STM32F407ZGTx$Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)
+ Mem ()
+ C ()
+ A ()
+ RL ()
+ OH ()
+ DBC_IFX ()
+ DBC_CMS ()
+ DBC_AMS ()
+ DBC_LMS ()
+ UseEnv=0
+ EnvBin ()
+ EnvInc ()
+ EnvLib ()
+ EnvReg ()
+ OrgReg ()
+ TgStat=16
+ OutDir (.\)
+ OutName (user)
+ GenApp=1
+ GenLib=0
+ GenHex=0
+ Debug=1
+ Browse=1
+ LstDir (.\)
+ HexSel=1
+ MG32K=0
+ TGMORE=0
+ RunUsr 0 1 <fromelf --bin  --output .\bin\RD15002WV_APP.bin  .\user.axf>
+ RunUsr 1 0 <>
+ BrunUsr 0 0 <>
+ BrunUsr 1 0 <>
+ CrunUsr 0 0 <>
+ CrunUsr 1 0 <>
+ SVCSID <>
+ GLFLAGS=1790
+ ADSFLGA { 243,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ACPUTYP ("Cortex-M4")
+ RVDEV ()
+ ADSTFLGA { 0,140,16,130,99,0,0,66,0,0,0,0,0,0,0,0,0,0,0,0 }
+ OCMADSOCM { 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ OCMADSIRAM { 0,0,0,0,32,0,0,2,0 }
+ OCMADSIROM { 1,0,0,0,8,0,0,16,0 }
+ OCMADSXRAM { 0,0,0,0,0,0,0,0,0 }
+ OCR_RVCT { 1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,8,0,0,15,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,32,0,0,2,0,0,0,0,0,16,0,0,1,0 }
+ RV_STAVEC ()
+ ADSCCFLG { 13,32,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSCMISC (--C99)
+ ADSCDEFN (USE_STDPERIPH_DRIVER,STM32F40_41xxx,USE_USB_OTG_FS,__FPU_USED,ARM_MATH_CM4,__CC_ARM,ARM_MATH_MATRIX_CHECK,ARM_MATH_ROUNDING)
+ ADSCUDEF ()
+ ADSCINCD (..\code\sys\Include;..\code\bsp\inc;..\code\user;..\code\drv\inc;..\code\DSP_LIB\Include;..\code\drv\USB\STM32_USB_Device_Library\Class\msc\inc;..\code\drv\USB\STM32_USB_Device_Library\Core\inc;..\code\drv\USB\STM32_USB_HOST_Library\Class\MSC\inc;..\code\drv\USB\STM32_USB_HOST_Library\Core\inc;..\code\drv\USB\STM32_USB_OTG_Driver\inc;..\code\drv\USB\USB_APP;..\code\PICTURE;..\code\TEXT;..\code\FATFS\exfuns;..\code\FATFS\src)
+ ADSASFLG { 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSAMISC ()
+ ADSADEFN ()
+ ADSAUDEF ()
+ ADSAINCD ()
+ PropFld { 0,128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ IncBld=1
+ AlwaysBuild=0
+ GenAsm=0
+ AsmAsm=0
+ PublicsOnly=0
+ StopCode=3
+ CustArgs ()
+ LibMods ()
+ ADSLDFG { 17,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 }
+ ADSLDTA (0x08000000)
+ ADSLDDA (0x20000000)
+ ADSLDSC ()
+ ADSLDIB ()
+ ADSLDIC ()
+ ADSLDMC ()
+ ADSLDIF ()
+ ADSLDDW ()
+  OPTDL (SARMCM3.DLL)( -REMAP -MPU)(DCM.DLL)(-pCM4)(SARMCM3.DLL)( -MPU)(TCM.DLL)(-pCM4)
+  OPTDBG 3981310,6,()()()()()()()()()() (Segger\JL2CM3.dll)()()()
+ FLASH1 { 217,0,0,0,1,0,0,0,0,16,0,0,0,0,0,0,0,0,0,0 }
+ FLASH2 (BIN\UL2CM3.DLL)
+ FLASH3 ("" ())
+ FLASH4 ()
+EndOpt
+

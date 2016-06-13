@@ -1,0 +1,53 @@
+.\gif.o: ..\code\PICTURE\gif.c
+.\gif.o: ..\code\PICTURE\piclib.h
+.\gif.o: ..\code\sys\Include\kernal.h
+.\gif.o: ..\code\sys\Include\stm32f4xx.h
+.\gif.o: ..\code\DSP_LIB\Include\core_cm4.h
+.\gif.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdint.h
+.\gif.o: ..\code\DSP_LIB\Include\core_cmInstr.h
+.\gif.o: ..\code\DSP_LIB\Include\core_cmFunc.h
+.\gif.o: ..\code\DSP_LIB\Include\core_cm4_simd.h
+.\gif.o: ..\code\sys\Include\system_stm32f4xx.h
+.\gif.o: ..\code\user\stm32f4xx_conf.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_adc.h
+.\gif.o: ..\code\sys\Include\stm32f4xx.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_crc.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_dbgmcu.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_dma.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_exti.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_flash.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_gpio.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_i2c.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_iwdg.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_pwr.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_rcc.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_rtc.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_sdio.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_spi.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_syscfg.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_tim.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_usart.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_wwdg.h
+.\gif.o: ..\code\bsp\inc\misc.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_can.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_cryp.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_hash.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_rng.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_dac.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_dcmi.h
+.\gif.o: ..\code\bsp\inc\stm32f4xx_fsmc.h
+.\gif.o: ..\code\sys\Include\tool.h
+.\gif.o: ..\code\sys\Include\type32.h
+.\gif.o: ..\code\sys\Include\archDef.h
+.\gif.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h
+.\gif.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdlib.h
+.\gif.o: D:\Program Files\mdk\ARM\ARMCC\bin\..\include\string.h
+.\gif.o: ..\code\sys\Include\malloc.h
+.\gif.o: ..\code\FATFS\src\ff.h
+.\gif.o: ..\code\FATFS\src\integer.h
+.\gif.o: ..\code\FATFS\src\ffconf.h
+.\gif.o: ..\code\FATFS\exfuns\exfuns.h
+.\gif.o: ..\code\PICTURE\bmp.h
+.\gif.o: ..\code\PICTURE\tjpgd.h
+.\gif.o: ..\code\PICTURE\integer.h
+.\gif.o: ..\code\PICTURE\gif.h

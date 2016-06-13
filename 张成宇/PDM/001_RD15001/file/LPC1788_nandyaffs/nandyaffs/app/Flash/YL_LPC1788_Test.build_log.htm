@@ -1,0 +1,822 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\PROJECT\’≈≥…”Ó\PDM\001_RD15001\file\LPC1788_nandyaffs\nandyaffs\app\YL_LPC1788_APP.uvproj
+Project File Date:  12/09/2012
+
+<h2>Output:</h2>
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'FLASH'
+Clean started - Project: 'YL_LPC1788_APP'
+   deleting intermediate output files for target 'FLASH'
+assembling startup_LPC177x_8x.s...
+creating preprocessor file for system_LPC177x_8x.c...
+compiling system_LPC177x_8x.c...
+creating preprocessor file for core_cm3.c...
+compiling core_cm3.c...
+creating preprocessor file for debug_frmwrk.c...
+compiling debug_frmwrk.c...
+..\Drivers\debug_frmwrk.c(298): warning:  #177-D: variable "c5" was declared but never referenced
+        uint8_t c5=(decnum/10000)%10;
+..\Drivers\debug_frmwrk.c: 1 warning, 0 errors
+creating preprocessor file for lpc177x_8x_clkpwr.c...
+compiling lpc177x_8x_clkpwr.c...
+creating preprocessor file for lpc177x_8x_dac.c...
+compiling lpc177x_8x_dac.c...
+creating preprocessor file for lpc177x_8x_emc.c...
+compiling lpc177x_8x_emc.c...
+creating preprocessor file for lpc177x_8x_exti.c...
+compiling lpc177x_8x_exti.c...
+creating preprocessor file for lpc177x_8x_gpdma.c...
+compiling lpc177x_8x_gpdma.c...
+..\Drivers\lpc177x_8x_gpdma.c(77): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_MCI->FIFO),                                     // SD Card
+..\Drivers\lpc177x_8x_gpdma.c(78): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP0->DR),                                      // SSP0 Tx
+..\Drivers\lpc177x_8x_gpdma.c(79): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP0->DR),                                      // SSP0 Rx
+..\Drivers\lpc177x_8x_gpdma.c(80): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP1->DR),                                      // SSP1 Tx
+..\Drivers\lpc177x_8x_gpdma.c(81): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP1->DR),                                      // SSP1 Rx
+..\Drivers\lpc177x_8x_gpdma.c(82): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP2->DR),                                      // SSP2 Tx
+..\Drivers\lpc177x_8x_gpdma.c(83): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP2->DR),                                      // SSP2 Rx
+..\Drivers\lpc177x_8x_gpdma.c(84): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_ADC->GDR),                                      // ADC
+..\Drivers\lpc177x_8x_gpdma.c(85): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_DAC->CR),                                       // DAC
+..\Drivers\lpc177x_8x_gpdma.c(86): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART0->/*RBTHDLR.*/THR),        // UART0 Tx
+..\Drivers\lpc177x_8x_gpdma.c(87): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART0->/*RBTHDLR.*/RBR),        // UART0 Rx
+..\Drivers\lpc177x_8x_gpdma.c(88): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART1->/*RBTHDLR.*/THR),        // UART1 Tx
+..\Drivers\lpc177x_8x_gpdma.c(89): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART1->/*RBTHDLR.*/RBR),        // UART1 Rx
+..\Drivers\lpc177x_8x_gpdma.c(90): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART2->/*RBTHDLR.*/THR),        // UART2 Tx
+..\Drivers\lpc177x_8x_gpdma.c(91): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART2->/*RBTHDLR.*/RBR),        // UART2 Rx
+..\Drivers\lpc177x_8x_gpdma.c(92): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM0->MR0),                                     // MAT0.0
+..\Drivers\lpc177x_8x_gpdma.c(93): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM0->MR1),                                     // MAT0.1
+..\Drivers\lpc177x_8x_gpdma.c(94): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM1->MR0),                                     // MAT1.0
+..\Drivers\lpc177x_8x_gpdma.c(95): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM1->MR1),                                     // MAT1.1
+..\Drivers\lpc177x_8x_gpdma.c(96): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM2->MR0),                                     // MAT2.0
+..\Drivers\lpc177x_8x_gpdma.c(97): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM2->MR1),                                     // MAT2.1
+..\Drivers\lpc177x_8x_gpdma.c(98): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_I2S->TXFIFO),                           // I2S Tx
+..\Drivers\lpc177x_8x_gpdma.c(99): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_I2S->RXFIFO),                           // I2S Rx
+..\Drivers\lpc177x_8x_gpdma.c(102): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART3->/*RBTHDLR.*/THR),        // UART3 Tx
+..\Drivers\lpc177x_8x_gpdma.c(103): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART3->/*RBTHDLR.*/RBR),        // UART3 Rx
+..\Drivers\lpc177x_8x_gpdma.c(104): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART4->/*RBTHDLR.*/THR),        // UART4 Tx
+..\Drivers\lpc177x_8x_gpdma.c(105): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART4->/*RBTHDLR.*/RBR),        // UART4 Rx
+..\Drivers\lpc177x_8x_gpdma.c(106): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM3->MR0),                                     // MAT3.0
+..\Drivers\lpc177x_8x_gpdma.c(107): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM3->MR1),                                     // MAT3.1
+..\Drivers\lpc177x_8x_gpdma.c: 29 warnings, 0 errors
+creating preprocessor file for lpc177x_8x_gpio.c...
+compiling lpc177x_8x_gpio.c...
+..\Drivers\lpc177x_8x_gpio.c(341): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO0IntStatR)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(343): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO2IntStatR)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(345): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO0IntStatF)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(347): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO2IntStatF)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(701): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(709): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(745): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(752): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(780): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(808): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(831): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c: 11 warnings, 0 errors
+creating preprocessor file for sdram_k4s561632j.c...
+compiling sdram_k4s561632j.c...
+creating preprocessor file for lpc177x_8x_nvic.c...
+compiling lpc177x_8x_nvic.c...
+creating preprocessor file for lpc177x_8x_qei.c...
+compiling lpc177x_8x_qei.c...
+..\Drivers\lpc177x_8x_qei.c(283): warning:  #177-D: variable "ld" was declared but never referenced
+        uint32_t ld = 0;
+..\Drivers\lpc177x_8x_qei.c: 1 warning, 0 errors
+creating preprocessor file for lpc177x_8x_timer.c...
+compiling lpc177x_8x_timer.c...
+..\Drivers\lpc177x_8x_timer.c(80): warning:  #68-D: integer conversion resulted in a change of sign
+        uint32_t tnum = -1;
+..\Drivers\lpc177x_8x_timer.c: 1 warning, 0 errors
+creating preprocessor file for lpc177x_8x_uart.c...
+compiling lpc177x_8x_uart.c...
+creating preprocessor file for nandflash_k9f2g08u0x.c...
+compiling nandflash_k9f2g08u0x.c...
+..\Drivers\nandflash_k9f2g08u0x.c(275): warning:  #188-D: enumerated type mixed with another type
+        return (NandFlash_PageReadFromBeginning(pageNum, blockNum, bufPtr) != 0);
+..\Drivers\nandflash_k9f2g08u0x.c: 1 warning, 0 errors
+creating preprocessor file for lpc177x_8x_pinsel.c...
+compiling lpc177x_8x_pinsel.c...
+creating preprocessor file for main.c...
+compiling main.c...
+main.c(135): warning:  #177-D: variable "FlashID" was declared but never referenced
+      uint32_t FlashID;
+main.c: 1 warning, 0 errors
+creating preprocessor file for download.c...
+compiling download.c...
+download.c(48): warning:  #68-D: integer conversion resulted in a change of sign
+                download_len = -1;
+download.c: 1 warning, 0 errors
+creating preprocessor file for flash2K.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\flash2K.c: 2 warnings, 0 errors
+compiling flash2K.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\flash2K.c: 2 warnings, 0 errors
+creating preprocessor file for yaffs_checkptrw.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffs_checkptrw.c: 2 warnings, 0 errors
+compiling yaffs_checkptrw.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffs_checkptrw.c: 2 warnings, 0 errors
+creating preprocessor file for yaffs_ecc.c...
+compiling yaffs_ecc.c...
+creating preprocessor file for yaffs_guts.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffs_guts.c: 2 warnings, 0 errors
+compiling yaffs_guts.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffs_guts.c(638): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                        yaffs_ReadChunkWithTagsFromNAND(dev,theChunk,NULL, &tags);
+..\fs\yaffs_guts.c(708): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev,theChunk,NULL, &tags);
+..\fs\yaffs_guts.c(796): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                yaffs_ReadChunkWithTagsFromNAND(dev, obj->hdrChunk,buffer, &tags);
+..\fs\yaffs_guts.c(918): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunkInNAND, data, &tags);
+..\fs\yaffs_guts.c(916): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(1008): warning:  #223-D: function "yaffs_WriteChunkWithTagsToNAND" declared implicitly
+                writeOk = yaffs_WriteChunkWithTagsToNAND(dev, chunk,data, tags);
+..\fs\yaffs_guts.c(1047): warning:  #223-D: function "yaffs_MarkBlockBad" declared implicitly
+        if (yaffs_MarkBlockBad(dev, blockInNAND) != YAFFS_OK) {
+..\fs\yaffs_guts.c(1048): warning:  #223-D: function "yaffs_EraseBlockInNAND" declared implicitly
+                if (yaffs_EraseBlockInNAND(dev, blockInNAND) != YAFFS_OK) {
+..\fs\yaffs_guts.c(1591): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        yaffs_ReadChunkWithTagsFromNAND(dev, theChunk, NULL,
+..\fs\yaffs_guts.c(2819): warning:  #223-D: function "yaffs_EraseBlockInNAND" declared implicitly
+                erasedOk = yaffs_EraseBlockInNAND(dev, blockNo);
+..\fs\yaffs_guts.c(3111): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev, oldChunk,
+..\fs\yaffs_guts.c(3049): warning:  #550-D: variable "chunksAfter" was set but never used
+        int chunksAfter;
+..\fs\yaffs_guts.c(3560): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev,
+..\fs\yaffs_guts.c(3627): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                return yaffs_ReadChunkWithTagsFromNAND(in->myDev, chunkInNAND, buffer,NULL);
+..\fs\yaffs_guts.c(3673): warning:  #223-D: function "yaffs_WriteChunkWithTagsToNAND" declared implicitly
+                yaffs_WriteChunkWithTagsToNAND(dev, chunkId, NULL, &tags);
+..\fs\yaffs_guts.c(3802): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, prevChunkId,
+..\fs\yaffs_guts.c(3775): warning:  #550-D: variable "result" was set but never used
+        int result = 0;
+..\fs\yaffs_guts.c(4069): warning:  #550-D: variable "pushout" was set but never used
+        int pushout;
+..\fs\yaffs_guts.c(5398): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5401): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5404): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5407): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5602): warning:  #223-D: function "yaffs_QueryInitialBlockState" declared implicitly
+                yaffs_QueryInitialBlockState(dev, blk, &state, &sequenceNumber);
+..\fs\yaffs_guts.c(5639): warning:  #188-D: enumerated type mixed with another type
+                state = bi->blockState;
+..\fs\yaffs_guts.c(5649): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunk, NULL,
+..\fs\yaffs_guts.c(5565): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6023): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                result = yaffs_ReadChunkWithTagsFromNAND(dev,in->hdrChunk,chunkData,&tags);
+..\fs\yaffs_guts.c(6005): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6006): warning:  #550-D: variable "alloc_failed" was set but never used
+        int alloc_failed = 0;
+..\fs\yaffs_guts.c(6128): warning:  #223-D: function "yaffs_QueryInitialBlockState" declared implicitly
+                yaffs_QueryInitialBlockState(dev, blk, &state, &sequenceNumber);
+..\fs\yaffs_guts.c(6233): warning:  #188-D: enumerated type mixed with another type
+                state = bi->blockState;
+..\fs\yaffs_guts.c(6249): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunk, NULL,
+..\fs\yaffs_guts.c(6066): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6068): warning:  #550-D: variable "deleted" was set but never used
+        int deleted;
+..\fs\yaffs_guts.c(7036): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(obj->myDev,
+..\fs\yaffs_guts.c(7028): warning:  #550-D: variable "result" was set but never used
+                int result;
+..\fs\yaffs_guts.c(7096): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7099): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7102): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7105): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7121): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7318): warning:  #223-D: function "yaffs_InitialiseNAND" declared implicitly
+        if (yaffs_InitialiseNAND(dev) != YAFFS_OK) {
+..\fs\yaffs_guts.c(7519): warning:  #68-D: integer conversion resulted in a change of sign
+                                dev->allocationPage = -1;
+..\fs\yaffs_guts.c(417): warning:  #177-D: variable "blockStateName" was declared but never referenced
+  static const char * blockStateName[] = {
+..\fs\yaffs_guts.c: 46 warnings, 0 errors
+creating preprocessor file for yaffs_nand.c...
+compiling yaffs_nand.c...
+..\fs\yaffs_nand.c(77): warning:  #223-D: function "yflash2_WriteChunkWithTagsToNAND" declared implicitly
+                return yflash2_WriteChunkWithTagsToNAND(dev, chunkInNAND, buffer,tags);
+..\fs\yaffs_nand.c: 1 warning, 0 errors
+creating preprocessor file for yaffs_packedtags2.c...
+compiling yaffs_packedtags2.c...
+..\fs\yaffs_packedtags2.c(83): warning:  #61-D: integer operation result is out of range
+                ptt->objectId &= ~EXTRA_OBJECT_TYPE_MASK;
+..\fs\yaffs_packedtags2.c(145): warning:  #188-D: enumerated type mixed with another type
+                        t->extraObjectType =
+..\fs\yaffs_packedtags2.c(147): warning:  #61-D: integer operation result is out of range
+                        t->objectId &= ~EXTRA_OBJECT_TYPE_MASK;
+..\fs\yaffs_packedtags2.c: 3 warnings, 0 errors
+creating preprocessor file for yaffs_qsort.c...
+compiling yaffs_qsort.c...
+creating preprocessor file for yaffs_tagscompat.c...
+compiling yaffs_tagscompat.c...
+creating preprocessor file for yaffs_tagsvalidity.c...
+compiling yaffs_tagsvalidity.c...
+creating preprocessor file for yaffscfg2k.c...
+compiling yaffscfg2k.c...
+..\fs\yaffscfg2k.c(64): warning:  #177-D: variable "yaffs_kill_alloc" was declared but never referenced
+  static int yaffs_kill_alloc = 0;
+..\fs\yaffscfg2k.c(65): warning:  #177-D: variable "total_malloced" was declared but never referenced
+  static size_t total_malloced = 0;
+..\fs\yaffscfg2k.c(66): warning:  #177-D: variable "malloc_limit" was declared but never referenced
+  static size_t malloc_limit = 6000000;
+..\fs\yaffscfg2k.c: 3 warnings, 0 errors
+creating preprocessor file for yaffsfs.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffsfs.c: 2 warnings, 0 errors
+compiling yaffsfs.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffsfs.c(944): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if( (h->position + offset) >= 0)
+..\fs\yaffsfs.c(1576): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal=-1;
+..\fs\yaffsfs.c(1599): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal=-1;
+..\fs\yaffsfs.c(1623): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal= -1;
+..\fs\yaffsfs.c(1635): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if(retVal < 0){
+..\fs\yaffsfs.c: 7 warnings, 0 errors
+linking...
+.\Flash\YL_LPC1788_Test.axf: Warning: L6914W: option rwpi ignored when using --scatter.
+Program Size: Code=44564 RO-data=1628 RW-data=212 ZI-data=303000  
+Finished: 0 information, 1 warning and 0 error messages.
+".\Flash\YL_LPC1788_Test.axf" - 0 Error(s), 119 Warning(s).
+
+*** Performing Cross-Module-Optimization:
+compiling system_LPC177x_8x.c...
+compiling core_cm3.c...
+compiling lpc177x_8x_clkpwr.c...
+compiling lpc177x_8x_dac.c...
+compiling lpc177x_8x_emc.c...
+compiling lpc177x_8x_exti.c...
+compiling lpc177x_8x_gpdma.c...
+..\Drivers\lpc177x_8x_gpdma.c(77): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_MCI->FIFO),                                     // SD Card
+..\Drivers\lpc177x_8x_gpdma.c(78): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP0->DR),                                      // SSP0 Tx
+..\Drivers\lpc177x_8x_gpdma.c(79): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP0->DR),                                      // SSP0 Rx
+..\Drivers\lpc177x_8x_gpdma.c(80): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP1->DR),                                      // SSP1 Tx
+..\Drivers\lpc177x_8x_gpdma.c(81): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP1->DR),                                      // SSP1 Rx
+..\Drivers\lpc177x_8x_gpdma.c(82): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP2->DR),                                      // SSP2 Tx
+..\Drivers\lpc177x_8x_gpdma.c(83): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP2->DR),                                      // SSP2 Rx
+..\Drivers\lpc177x_8x_gpdma.c(84): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_ADC->GDR),                                      // ADC
+..\Drivers\lpc177x_8x_gpdma.c(85): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_DAC->CR),                                       // DAC
+..\Drivers\lpc177x_8x_gpdma.c(86): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART0->/*RBTHDLR.*/THR),        // UART0 Tx
+..\Drivers\lpc177x_8x_gpdma.c(87): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART0->/*RBTHDLR.*/RBR),        // UART0 Rx
+..\Drivers\lpc177x_8x_gpdma.c(88): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART1->/*RBTHDLR.*/THR),        // UART1 Tx
+..\Drivers\lpc177x_8x_gpdma.c(89): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART1->/*RBTHDLR.*/RBR),        // UART1 Rx
+..\Drivers\lpc177x_8x_gpdma.c(90): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART2->/*RBTHDLR.*/THR),        // UART2 Tx
+..\Drivers\lpc177x_8x_gpdma.c(91): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART2->/*RBTHDLR.*/RBR),        // UART2 Rx
+..\Drivers\lpc177x_8x_gpdma.c(92): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM0->MR0),                                     // MAT0.0
+..\Drivers\lpc177x_8x_gpdma.c(93): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM0->MR1),                                     // MAT0.1
+..\Drivers\lpc177x_8x_gpdma.c(94): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM1->MR0),                                     // MAT1.0
+..\Drivers\lpc177x_8x_gpdma.c(95): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM1->MR1),                                     // MAT1.1
+..\Drivers\lpc177x_8x_gpdma.c(96): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM2->MR0),                                     // MAT2.0
+..\Drivers\lpc177x_8x_gpdma.c(97): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM2->MR1),                                     // MAT2.1
+..\Drivers\lpc177x_8x_gpdma.c(98): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_I2S->TXFIFO),                           // I2S Tx
+..\Drivers\lpc177x_8x_gpdma.c(99): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_I2S->RXFIFO),                           // I2S Rx
+..\Drivers\lpc177x_8x_gpdma.c(102): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART3->/*RBTHDLR.*/THR),        // UART3 Tx
+..\Drivers\lpc177x_8x_gpdma.c(103): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART3->/*RBTHDLR.*/RBR),        // UART3 Rx
+..\Drivers\lpc177x_8x_gpdma.c(104): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART4->/*RBTHDLR.*/THR),        // UART4 Tx
+..\Drivers\lpc177x_8x_gpdma.c(105): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART4->/*RBTHDLR.*/RBR),        // UART4 Rx
+..\Drivers\lpc177x_8x_gpdma.c(106): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM3->MR0),                                     // MAT3.0
+..\Drivers\lpc177x_8x_gpdma.c(107): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM3->MR1),                                     // MAT3.1
+..\Drivers\lpc177x_8x_gpdma.c: 29 warnings, 0 errors
+compiling lpc177x_8x_gpio.c...
+..\Drivers\lpc177x_8x_gpio.c(341): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO0IntStatR)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(343): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO2IntStatR)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(345): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO0IntStatF)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(347): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO2IntStatF)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(701): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(709): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(745): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(752): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(780): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(808): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(831): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c: 11 warnings, 0 errors
+compiling lpc177x_8x_nvic.c...
+compiling lpc177x_8x_qei.c...
+..\Drivers\lpc177x_8x_qei.c(283): warning:  #177-D: variable "ld" was declared but never referenced
+        uint32_t ld = 0;
+..\Drivers\lpc177x_8x_qei.c: 1 warning, 0 errors
+compiling lpc177x_8x_timer.c...
+..\Drivers\lpc177x_8x_timer.c(80): warning:  #68-D: integer conversion resulted in a change of sign
+        uint32_t tnum = -1;
+..\Drivers\lpc177x_8x_timer.c: 1 warning, 0 errors
+compiling lpc177x_8x_uart.c...
+compiling nandflash_k9f2g08u0x.c...
+..\Drivers\nandflash_k9f2g08u0x.c(275): warning:  #188-D: enumerated type mixed with another type
+        return (NandFlash_PageReadFromBeginning(pageNum, blockNum, bufPtr) != 0);
+..\Drivers\nandflash_k9f2g08u0x.c: 1 warning, 0 errors
+compiling lpc177x_8x_pinsel.c...
+compiling main.c...
+main.c(135): warning:  #177-D: variable "FlashID" was declared but never referenced
+      uint32_t FlashID;
+main.c: 1 warning, 0 errors
+compiling download.c...
+download.c(48): warning:  #68-D: integer conversion resulted in a change of sign
+                download_len = -1;
+download.c: 1 warning, 0 errors
+compiling yaffs_checkptrw.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffs_checkptrw.c: 2 warnings, 0 errors
+compiling yaffs_guts.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffs_guts.c(638): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                        yaffs_ReadChunkWithTagsFromNAND(dev,theChunk,NULL, &tags);
+..\fs\yaffs_guts.c(708): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev,theChunk,NULL, &tags);
+..\fs\yaffs_guts.c(796): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                yaffs_ReadChunkWithTagsFromNAND(dev, obj->hdrChunk,buffer, &tags);
+..\fs\yaffs_guts.c(918): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunkInNAND, data, &tags);
+..\fs\yaffs_guts.c(916): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(1008): warning:  #223-D: function "yaffs_WriteChunkWithTagsToNAND" declared implicitly
+                writeOk = yaffs_WriteChunkWithTagsToNAND(dev, chunk,data, tags);
+..\fs\yaffs_guts.c(1047): warning:  #223-D: function "yaffs_MarkBlockBad" declared implicitly
+        if (yaffs_MarkBlockBad(dev, blockInNAND) != YAFFS_OK) {
+..\fs\yaffs_guts.c(1048): warning:  #223-D: function "yaffs_EraseBlockInNAND" declared implicitly
+                if (yaffs_EraseBlockInNAND(dev, blockInNAND) != YAFFS_OK) {
+..\fs\yaffs_guts.c(1591): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        yaffs_ReadChunkWithTagsFromNAND(dev, theChunk, NULL,
+..\fs\yaffs_guts.c(2819): warning:  #223-D: function "yaffs_EraseBlockInNAND" declared implicitly
+                erasedOk = yaffs_EraseBlockInNAND(dev, blockNo);
+..\fs\yaffs_guts.c(3111): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev, oldChunk,
+..\fs\yaffs_guts.c(3049): warning:  #550-D: variable "chunksAfter" was set but never used
+        int chunksAfter;
+..\fs\yaffs_guts.c(3560): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev,
+..\fs\yaffs_guts.c(3627): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                return yaffs_ReadChunkWithTagsFromNAND(in->myDev, chunkInNAND, buffer,NULL);
+..\fs\yaffs_guts.c(3673): warning:  #223-D: function "yaffs_WriteChunkWithTagsToNAND" declared implicitly
+                yaffs_WriteChunkWithTagsToNAND(dev, chunkId, NULL, &tags);
+..\fs\yaffs_guts.c(3802): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, prevChunkId,
+..\fs\yaffs_guts.c(3775): warning:  #550-D: variable "result" was set but never used
+        int result = 0;
+..\fs\yaffs_guts.c(4069): warning:  #550-D: variable "pushout" was set but never used
+        int pushout;
+..\fs\yaffs_guts.c(5398): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5401): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5404): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5407): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5602): warning:  #223-D: function "yaffs_QueryInitialBlockState" declared implicitly
+                yaffs_QueryInitialBlockState(dev, blk, &state, &sequenceNumber);
+..\fs\yaffs_guts.c(5639): warning:  #188-D: enumerated type mixed with another type
+                state = bi->blockState;
+..\fs\yaffs_guts.c(5649): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunk, NULL,
+..\fs\yaffs_guts.c(5565): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6023): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                result = yaffs_ReadChunkWithTagsFromNAND(dev,in->hdrChunk,chunkData,&tags);
+..\fs\yaffs_guts.c(6005): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6006): warning:  #550-D: variable "alloc_failed" was set but never used
+        int alloc_failed = 0;
+..\fs\yaffs_guts.c(6128): warning:  #223-D: function "yaffs_QueryInitialBlockState" declared implicitly
+                yaffs_QueryInitialBlockState(dev, blk, &state, &sequenceNumber);
+..\fs\yaffs_guts.c(6233): warning:  #188-D: enumerated type mixed with another type
+                state = bi->blockState;
+..\fs\yaffs_guts.c(6249): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunk, NULL,
+..\fs\yaffs_guts.c(6066): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6068): warning:  #550-D: variable "deleted" was set but never used
+        int deleted;
+..\fs\yaffs_guts.c(7036): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(obj->myDev,
+..\fs\yaffs_guts.c(7028): warning:  #550-D: variable "result" was set but never used
+                int result;
+..\fs\yaffs_guts.c(7096): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7099): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7102): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7105): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7121): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7318): warning:  #223-D: function "yaffs_InitialiseNAND" declared implicitly
+        if (yaffs_InitialiseNAND(dev) != YAFFS_OK) {
+..\fs\yaffs_guts.c(7519): warning:  #68-D: integer conversion resulted in a change of sign
+                                dev->allocationPage = -1;
+..\fs\yaffs_guts.c(417): warning:  #177-D: variable "blockStateName" was declared but never referenced
+  static const char * blockStateName[] = {
+..\fs\yaffs_guts.c: 46 warnings, 0 errors
+compiling yaffscfg2k.c...
+..\fs\yaffscfg2k.c(64): warning:  #177-D: variable "yaffs_kill_alloc" was declared but never referenced
+  static int yaffs_kill_alloc = 0;
+..\fs\yaffscfg2k.c(65): warning:  #177-D: variable "total_malloced" was declared but never referenced
+  static size_t total_malloced = 0;
+..\fs\yaffscfg2k.c(66): warning:  #177-D: variable "malloc_limit" was declared but never referenced
+  static size_t malloc_limit = 6000000;
+..\fs\yaffscfg2k.c: 3 warnings, 0 errors
+compiling yaffsfs.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffsfs.c(944): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if( (h->position + offset) >= 0)
+..\fs\yaffsfs.c(1576): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal=-1;
+..\fs\yaffsfs.c(1599): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal=-1;
+..\fs\yaffsfs.c(1623): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal= -1;
+..\fs\yaffsfs.c(1635): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if(retVal < 0){
+..\fs\yaffsfs.c: 7 warnings, 0 errors
+linking...
+.\Flash\YL_LPC1788_Test.axf: Warning: L6914W: option rwpi ignored when using --scatter.
+Program Size: Code=36408 RO-data=1628 RW-data=212 ZI-data=303000  
+Finished: 0 information, 1 warning and 0 error messages.
+compiling system_LPC177x_8x.c...
+compiling core_cm3.c...
+compiling lpc177x_8x_clkpwr.c...
+compiling lpc177x_8x_dac.c...
+compiling lpc177x_8x_emc.c...
+compiling lpc177x_8x_exti.c...
+compiling lpc177x_8x_gpdma.c...
+..\Drivers\lpc177x_8x_gpdma.c(77): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_MCI->FIFO),                                     // SD Card
+..\Drivers\lpc177x_8x_gpdma.c(78): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP0->DR),                                      // SSP0 Tx
+..\Drivers\lpc177x_8x_gpdma.c(79): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP0->DR),                                      // SSP0 Rx
+..\Drivers\lpc177x_8x_gpdma.c(80): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP1->DR),                                      // SSP1 Tx
+..\Drivers\lpc177x_8x_gpdma.c(81): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP1->DR),                                      // SSP1 Rx
+..\Drivers\lpc177x_8x_gpdma.c(82): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP2->DR),                                      // SSP2 Tx
+..\Drivers\lpc177x_8x_gpdma.c(83): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_SSP2->DR),                                      // SSP2 Rx
+..\Drivers\lpc177x_8x_gpdma.c(84): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_ADC->GDR),                                      // ADC
+..\Drivers\lpc177x_8x_gpdma.c(85): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_DAC->CR),                                       // DAC
+..\Drivers\lpc177x_8x_gpdma.c(86): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART0->/*RBTHDLR.*/THR),        // UART0 Tx
+..\Drivers\lpc177x_8x_gpdma.c(87): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART0->/*RBTHDLR.*/RBR),        // UART0 Rx
+..\Drivers\lpc177x_8x_gpdma.c(88): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART1->/*RBTHDLR.*/THR),        // UART1 Tx
+..\Drivers\lpc177x_8x_gpdma.c(89): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART1->/*RBTHDLR.*/RBR),        // UART1 Rx
+..\Drivers\lpc177x_8x_gpdma.c(90): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART2->/*RBTHDLR.*/THR),        // UART2 Tx
+..\Drivers\lpc177x_8x_gpdma.c(91): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART2->/*RBTHDLR.*/RBR),        // UART2 Rx
+..\Drivers\lpc177x_8x_gpdma.c(92): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM0->MR0),                                     // MAT0.0
+..\Drivers\lpc177x_8x_gpdma.c(93): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM0->MR1),                                     // MAT0.1
+..\Drivers\lpc177x_8x_gpdma.c(94): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM1->MR0),                                     // MAT1.0
+..\Drivers\lpc177x_8x_gpdma.c(95): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM1->MR1),                                     // MAT1.1
+..\Drivers\lpc177x_8x_gpdma.c(96): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM2->MR0),                                     // MAT2.0
+..\Drivers\lpc177x_8x_gpdma.c(97): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM2->MR1),                                     // MAT2.1
+..\Drivers\lpc177x_8x_gpdma.c(98): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_I2S->TXFIFO),                           // I2S Tx
+..\Drivers\lpc177x_8x_gpdma.c(99): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_I2S->RXFIFO),                           // I2S Rx
+..\Drivers\lpc177x_8x_gpdma.c(102): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART3->/*RBTHDLR.*/THR),        // UART3 Tx
+..\Drivers\lpc177x_8x_gpdma.c(103): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART3->/*RBTHDLR.*/RBR),        // UART3 Rx
+..\Drivers\lpc177x_8x_gpdma.c(104): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART4->/*RBTHDLR.*/THR),        // UART4 Tx
+..\Drivers\lpc177x_8x_gpdma.c(105): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_UART4->/*RBTHDLR.*/RBR),        // UART4 Rx
+..\Drivers\lpc177x_8x_gpdma.c(106): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM3->MR0),                                     // MAT3.0
+..\Drivers\lpc177x_8x_gpdma.c(107): warning:  #1296-D: extended constant initialiser used
+                ((uint32_t)&LPC_TIM3->MR1),                                     // MAT3.1
+..\Drivers\lpc177x_8x_gpdma.c: 29 warnings, 0 errors
+compiling lpc177x_8x_gpio.c...
+..\Drivers\lpc177x_8x_gpio.c(341): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO0IntStatR)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(343): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO2IntStatR)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(345): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO0IntStatF)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(347): warning:  #188-D: enumerated type mixed with another type
+                return (((LPC_GPIOINT->IO2IntStatF)>>pinNum)& 0x1);
+..\Drivers\lpc177x_8x_gpio.c(701): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(709): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(745): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(752): warning:  #186-D: pointless comparison of unsigned integer with zero
+                        if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(780): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(808): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c(831): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if ((byteNum >= 0) && (byteNum <= 3))
+..\Drivers\lpc177x_8x_gpio.c: 11 warnings, 0 errors
+compiling lpc177x_8x_nvic.c...
+compiling lpc177x_8x_qei.c...
+..\Drivers\lpc177x_8x_qei.c(283): warning:  #177-D: variable "ld" was declared but never referenced
+        uint32_t ld = 0;
+..\Drivers\lpc177x_8x_qei.c: 1 warning, 0 errors
+compiling lpc177x_8x_timer.c...
+..\Drivers\lpc177x_8x_timer.c(80): warning:  #68-D: integer conversion resulted in a change of sign
+        uint32_t tnum = -1;
+..\Drivers\lpc177x_8x_timer.c: 1 warning, 0 errors
+compiling lpc177x_8x_uart.c...
+compiling nandflash_k9f2g08u0x.c...
+..\Drivers\nandflash_k9f2g08u0x.c(275): warning:  #188-D: enumerated type mixed with another type
+        return (NandFlash_PageReadFromBeginning(pageNum, blockNum, bufPtr) != 0);
+..\Drivers\nandflash_k9f2g08u0x.c: 1 warning, 0 errors
+compiling lpc177x_8x_pinsel.c...
+compiling main.c...
+main.c(135): warning:  #177-D: variable "FlashID" was declared but never referenced
+      uint32_t FlashID;
+main.c: 1 warning, 0 errors
+compiling download.c...
+download.c(48): warning:  #68-D: integer conversion resulted in a change of sign
+                download_len = -1;
+download.c: 1 warning, 0 errors
+compiling yaffs_checkptrw.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffs_checkptrw.c: 2 warnings, 0 errors
+compiling yaffs_guts.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffs_guts.c(638): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                        yaffs_ReadChunkWithTagsFromNAND(dev,theChunk,NULL, &tags);
+..\fs\yaffs_guts.c(708): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev,theChunk,NULL, &tags);
+..\fs\yaffs_guts.c(796): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                yaffs_ReadChunkWithTagsFromNAND(dev, obj->hdrChunk,buffer, &tags);
+..\fs\yaffs_guts.c(918): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunkInNAND, data, &tags);
+..\fs\yaffs_guts.c(916): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(1008): warning:  #223-D: function "yaffs_WriteChunkWithTagsToNAND" declared implicitly
+                writeOk = yaffs_WriteChunkWithTagsToNAND(dev, chunk,data, tags);
+..\fs\yaffs_guts.c(1047): warning:  #223-D: function "yaffs_MarkBlockBad" declared implicitly
+        if (yaffs_MarkBlockBad(dev, blockInNAND) != YAFFS_OK) {
+..\fs\yaffs_guts.c(1048): warning:  #223-D: function "yaffs_EraseBlockInNAND" declared implicitly
+                if (yaffs_EraseBlockInNAND(dev, blockInNAND) != YAFFS_OK) {
+..\fs\yaffs_guts.c(1591): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        yaffs_ReadChunkWithTagsFromNAND(dev, theChunk, NULL,
+..\fs\yaffs_guts.c(2819): warning:  #223-D: function "yaffs_EraseBlockInNAND" declared implicitly
+                erasedOk = yaffs_EraseBlockInNAND(dev, blockNo);
+..\fs\yaffs_guts.c(3111): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev, oldChunk,
+..\fs\yaffs_guts.c(3049): warning:  #550-D: variable "chunksAfter" was set but never used
+        int chunksAfter;
+..\fs\yaffs_guts.c(3560): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                                yaffs_ReadChunkWithTagsFromNAND(dev,
+..\fs\yaffs_guts.c(3627): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                return yaffs_ReadChunkWithTagsFromNAND(in->myDev, chunkInNAND, buffer,NULL);
+..\fs\yaffs_guts.c(3673): warning:  #223-D: function "yaffs_WriteChunkWithTagsToNAND" declared implicitly
+                yaffs_WriteChunkWithTagsToNAND(dev, chunkId, NULL, &tags);
+..\fs\yaffs_guts.c(3802): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, prevChunkId,
+..\fs\yaffs_guts.c(3775): warning:  #550-D: variable "result" was set but never used
+        int result = 0;
+..\fs\yaffs_guts.c(4069): warning:  #550-D: variable "pushout" was set but never used
+        int pushout;
+..\fs\yaffs_guts.c(5398): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5401): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5404): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5407): warning:  #111-D: statement is unreachable
+                        break;
+..\fs\yaffs_guts.c(5602): warning:  #223-D: function "yaffs_QueryInitialBlockState" declared implicitly
+                yaffs_QueryInitialBlockState(dev, blk, &state, &sequenceNumber);
+..\fs\yaffs_guts.c(5639): warning:  #188-D: enumerated type mixed with another type
+                state = bi->blockState;
+..\fs\yaffs_guts.c(5649): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunk, NULL,
+..\fs\yaffs_guts.c(5565): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6023): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                result = yaffs_ReadChunkWithTagsFromNAND(dev,in->hdrChunk,chunkData,&tags);
+..\fs\yaffs_guts.c(6005): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6006): warning:  #550-D: variable "alloc_failed" was set but never used
+        int alloc_failed = 0;
+..\fs\yaffs_guts.c(6128): warning:  #223-D: function "yaffs_QueryInitialBlockState" declared implicitly
+                yaffs_QueryInitialBlockState(dev, blk, &state, &sequenceNumber);
+..\fs\yaffs_guts.c(6233): warning:  #188-D: enumerated type mixed with another type
+                state = bi->blockState;
+..\fs\yaffs_guts.c(6249): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(dev, chunk, NULL,
+..\fs\yaffs_guts.c(6066): warning:  #550-D: variable "result" was set but never used
+        int result;
+..\fs\yaffs_guts.c(6068): warning:  #550-D: variable "deleted" was set but never used
+        int deleted;
+..\fs\yaffs_guts.c(7036): warning:  #223-D: function "yaffs_ReadChunkWithTagsFromNAND" declared implicitly
+                        result = yaffs_ReadChunkWithTagsFromNAND(obj->myDev,
+..\fs\yaffs_guts.c(7028): warning:  #550-D: variable "result" was set but never used
+                int result;
+..\fs\yaffs_guts.c(7096): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7099): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7102): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7105): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7121): warning:  #111-D: statement is unreachable
+                break;
+..\fs\yaffs_guts.c(7318): warning:  #223-D: function "yaffs_InitialiseNAND" declared implicitly
+        if (yaffs_InitialiseNAND(dev) != YAFFS_OK) {
+..\fs\yaffs_guts.c(7519): warning:  #68-D: integer conversion resulted in a change of sign
+                                dev->allocationPage = -1;
+..\fs\yaffs_guts.c(417): warning:  #177-D: variable "blockStateName" was declared but never referenced
+  static const char * blockStateName[] = {
+..\fs\yaffs_guts.c: 46 warnings, 0 errors
+compiling yaffscfg2k.c...
+..\fs\yaffscfg2k.c(64): warning:  #177-D: variable "yaffs_kill_alloc" was declared but never referenced
+  static int yaffs_kill_alloc = 0;
+..\fs\yaffscfg2k.c(65): warning:  #177-D: variable "total_malloced" was declared but never referenced
+  static size_t total_malloced = 0;
+..\fs\yaffscfg2k.c(66): warning:  #177-D: variable "malloc_limit" was declared but never referenced
+  static size_t malloc_limit = 6000000;
+..\fs\yaffscfg2k.c: 3 warnings, 0 errors
+compiling yaffsfs.c...
+..\Drivers\debug_frmwrk.h(44): warning:  #47-D: incompatible redefinition of macro "putchar" (declared at line 681 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define  putchar(x)                                               _db_char(DEBUG_UART_PORT, x)
+..\Drivers\debug_frmwrk.h(59): warning:  #47-D: incompatible redefinition of macro "getchar" (declared at line 648 of "D:\Program Files\mdk\ARM\ARMCC\bin\..\include\stdio.h")
+  #define getchar()                                                     _db_get_char(DEBUG_UART_PORT)
+..\fs\yaffsfs.c(944): warning:  #186-D: pointless comparison of unsigned integer with zero
+                if( (h->position + offset) >= 0)
+..\fs\yaffsfs.c(1576): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal=-1;
+..\fs\yaffsfs.c(1599): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal=-1;
+..\fs\yaffsfs.c(1623): warning:  #68-D: integer conversion resulted in a change of sign
+        loff_t retVal= -1;
+..\fs\yaffsfs.c(1635): warning:  #186-D: pointless comparison of unsigned integer with zero
+        if(retVal < 0){
+..\fs\yaffsfs.c: 7 warnings, 0 errors
+linking...
+.\Flash\YL_LPC1788_Test.axf: Warning: L6914W: option rwpi ignored when using --scatter.
+Program Size: Code=36408 RO-data=1628 RW-data=212 ZI-data=303000  
+Finished: 0 information, 1 warning and 0 error messages.
+FromELF: creating hex file...
+".\Flash\YL_LPC1788_Test.axf" - 0 Error(s), 104 Warning(s).
+*** Completed Cross-Module-Optimization after 3 iteration(s).
+</pre>
+</body>
+</html>

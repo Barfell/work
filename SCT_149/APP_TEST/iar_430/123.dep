@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2363120599</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\app\fet140_ta_22.c</file>
+      <file>$PROJ_DIR$\app\freq.h</file>
+      <file>$PROJ_DIR$\app\freq.c</file>
+      <file>$PROJ_DIR$\app\i430type.h</file>
+      <file>$PROJ_DIR$\app\io430x14x.h</file>
+      <file>$PROJ_DIR$\app\kernel.c</file>
+      <file>$PROJ_DIR$\app\kernel.h</file>
+      <file>$PROJ_DIR$\app\main.c</file>
+      <file>$PROJ_DIR$\app\msp430f149_gpio.c</file>
+      <file>$PROJ_DIR$\app\msp430f149_gpio.h</file>
+      <file>$PROJ_DIR$\app\msp430f149_timer.c</file>
+      <file>$PROJ_DIR$\app\msp430f149_timer.h</file>
+      <file>$PROJ_DIR$\app\msp430f149_uart.c</file>
+      <file>$PROJ_DIR$\app\msp430f149_uart.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\123.ulp</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_gpio.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\fet140_ta_22.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_gpio.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\123.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fet140_ta_22.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\fet140_ta_22.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\kernel.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$TOOLKIT_DIR$\inc\io430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\kernel.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_gpio.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\freq.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\freq.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\freq.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\123.txt</file>
+      <file>$PROJ_DIR$\Debug\Obj\kernel.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_uart.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$TOOLKIT_DIR$\inc\io430x14x.h</file>
+      <file>$PROJ_DIR$\Debug\List\123.map</file>
+      <file>$PROJ_DIR$\Debug\Exe\123.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_uart.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_timer.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_uart.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_timer.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\msp430f149_timer.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 48 47 42</file>
+        </tool>
+        <tool>
+          <name>ULP430</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\fet140_ta_22.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\freq.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 40</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 22 33 27 39 3 9 15 32 13 11 54 46 29 26 6 16 31 34</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 6 3 27 46 39 54 33 22 29 31 26 35 32 34 16 15 13 9 11</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\kernel.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54 16 46 3 34 13 33 27 39 22 31 29 6 15 32 26 35</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 6 3 27 46 39 54 33 22 29 31 26 35 32 34 16 15 13</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 37</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31 22 29 1 33 27 39 9 13 11 3 54 46 16 34 6 15 32 26 35</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 6 3 27 46 39 54 33 22 29 31 26 35 32 34 16 15 13 9 11 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\msp430f149_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 30</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54 3 46 27 39 9</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 9 3 27 46 39 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\msp430f149_timer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 53</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26 46 39 16 54 22 32 33 3 27 29 15 35 11 31 34</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 11 3 27 46 39 54 33 22 29 31 26 35 32 34 16 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\app\msp430f149_uart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 44</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3 27 39 54 46 13</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 13 3 27 46 39 54</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\123.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 47 42</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 18 40 28 20 19 52 51 45</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

@@ -1,0 +1,6 @@
+Added Component: Designator=U14(SOT-23-5)
+Added Pin To Net: NetName=NetC58_2 Pin=U14-2
+Added Pin To Net: NetName=DGND Pin=U14-3
+Added Pin To Net: NetName=NetU13_2 Pin=U14-4
+Added Pin To Net: NetName=+3.3VCOLL Pin=U14-5
+Added Member To Class: ClassName=U_7_RS485_RS232_Sensor Member=Component U14 74HC1G14

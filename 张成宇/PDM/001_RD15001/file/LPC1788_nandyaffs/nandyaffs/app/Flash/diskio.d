@@ -1,0 +1,15 @@
+.\Flash\diskio.o: FATFS_R0.08\diskio.c
+.\Flash\diskio.o: .\Nand_Test\adaptor.h
+.\Flash\diskio.o: ..\app\bsp.h
+.\Flash\diskio.o: ..\Drivers\lpc_types.h
+.\Flash\diskio.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\diskio.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\diskio.o: ..\Drivers\nandflash_k9f2g08u0x.h
+.\Flash\diskio.o: ..\Drivers\lpc177x_8x_emc.h
+.\Flash\diskio.o: ..\Startup\LPC177x_8x.h
+.\Flash\diskio.o: ..\CM3_lib\core_cm3.h
+.\Flash\diskio.o: ..\Drivers\debug_frmwrk.h
+.\Flash\diskio.o: ..\Drivers\lpc177x_8x_uart.h
+.\Flash\diskio.o: FATFS_R0.08\diskio.h
+.\Flash\diskio.o: FATFS_R0.08\integer.h
+.\Flash\diskio.o: ..\app\bsp.h

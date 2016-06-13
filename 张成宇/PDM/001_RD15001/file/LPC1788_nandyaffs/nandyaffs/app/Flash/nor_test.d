@@ -1,0 +1,10 @@
+.\Flash\nor_test.o: Nor_Test\Nor_Test.c
+.\Flash\nor_test.o: ..\app\bsp.h
+.\Flash\nor_test.o: ..\Drivers\lpc_types.h
+.\Flash\nor_test.o: C:\Keil\ARM\RV31\Inc\stdint.h
+.\Flash\nor_test.o: ..\Drivers\phylan_dp83848c.h
+.\Flash\nor_test.o: ..\Drivers\SST39VF6401.h
+.\Flash\nor_test.o: ..\Drivers\debug_frmwrk.h
+.\Flash\nor_test.o: ..\Drivers\lpc177x_8x_uart.h
+.\Flash\nor_test.o: ..\Startup\LPC177x_8x.h
+.\Flash\nor_test.o: ..\CM3_lib\core_cm3.h
