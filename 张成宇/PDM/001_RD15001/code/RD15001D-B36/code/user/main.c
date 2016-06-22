@@ -6,16 +6,16 @@ STATIC VOID BoardInit(VOID)
 {
 	KeyInit();
 	CommInit();//Í¨ĞÅ¿Ú³õÊ¼»¯£¬ÓÃÓÚ¸ú´æ´¢°åÍ¨ĞÅ
-	Adc_Init();
-	MileageInit();
+	Adc_Init();//¹ì¾à
+	MileageInit();//Àï³Ì
 	LCDDrvInit();
-	SynInit();
+	SynInit();//¶¨Ê±Æ÷Ã¿¸ô50ms£¬°Ñ²âÁ¿Àï³Ì¹ì¾àµÄ±êÖ¾ÖÃ1£¬È»ºóÍ¨¹ıÖ÷ÈÎÎñ½øĞĞ²âÁ¿ºÍ·¢ËÍµ½M°å
 	CpldInit();
 	SST25VF0_Init();
 	ExternFlash_Init();
-	uart1_init(115200, 256, 256);//RFIDå£¿
+	uart1_init(115200, 256, 256);//¹ìÕíRFID
 //	uart2_init(115200, 256, 256);//Ë«CPUÍ¨ĞÅµÄ´®¿Ú£¬¶ÔÓ¦M°åµÄuart3
-	uart3_init(115200, 256, 256);
+	uart3_init(115200, 256, 256);//Àï³Ì¹ì¾àÊı¾İ
 }
 
 INT main(VOID)

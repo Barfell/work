@@ -223,6 +223,8 @@ VOID SystemParameter_Compute(VOID)
     SYSTEMPARAMETER.interior_temper_AD = 0;
 }
 
+
+//转换40次得出电压值
 VOID Adc_Read(VOID)
 {
     U8 index;

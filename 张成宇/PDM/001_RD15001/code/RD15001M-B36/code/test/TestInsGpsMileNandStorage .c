@@ -73,6 +73,7 @@ STATIC U8 CalcPosSum(U8* pSrcData, U16 wDataLen)
     return bCheckSum;    
 }
 
+//检测是否有43个字节
 BOOL ParsePacket(U8 *pBuf, U16 u16Length)
 {
 	U8 u8Value;
@@ -223,7 +224,7 @@ VOID TestInsGpsOtherNandStorage(VOID)//INS+GPS+里程轨距用nand+fram
 
 		
 //----------保存数据，USB进入到OTG模式-------------------------------------------KEY2
-        if(g_bSave == TRUE)
+        if(g_bSave == TRUE)//假如显示板发过来的命令是保存数据命令
         {
             USBH_Process(&USB_OTG_Core, &USB_Host);
         }
@@ -235,16 +236,17 @@ VOID TestInsGpsOtherNandStorage(VOID)//INS+GPS+里程轨距用nand+fram
 
 		
 //-----------检测数据是否存满了缓存----------------------------------------------------- 
-        if(GetQueueLength(pQueueUsart1Info) > QUEUEUNIT)
+//2k为一个存储单元，串口接收到的数据没有到2K的话，则不会被保存
+        if(GetQueueLength(pQueueUsart1Info) > QUEUEUNIT)//接收到的数据大于2K
         {
 
-            GetQueue(pBuf, pUsart1Data, pQueueUsart1Info, QUEUEUNIT);
+            GetQueue(pBuf, pUsart1Data, pQueueUsart1Info, QUEUEUNIT);//读出数据
             
             DeleteQueue(pQueueUsart1Info);
             
             AdjustBadBlock(&Ins_nand_address);
 
-            FSMC_NAND_WriteSmallPage(pBuf, Ins_nand_address, &EccCode);
+            FSMC_NAND_WriteSmallPage(pBuf, Ins_nand_address, &EccCode);//将数据写到NAND
 
             FSMC_NAND_WriteSpareArea((U8 *)(&EccCode), Ins_nand_address);
                                   
@@ -255,7 +257,7 @@ VOID TestInsGpsOtherNandStorage(VOID)//INS+GPS+里程轨距用nand+fram
             {
                 Ins_nand_address.Page = 0;
                 Ins_nand_address.Block++;
-                if(Ins_nand_address.Block == NAND_MAXNUMBER_BLOCK)
+                if(Ins_nand_address.Block == NAND_MAXNUMBER_BLOCK)//保存数据到了nand的上限
                 {
 
 					printf("\r\n存Nand测试满，结束\r\n");

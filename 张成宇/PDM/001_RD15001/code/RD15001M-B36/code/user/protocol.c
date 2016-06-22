@@ -13,6 +13,8 @@ QueueDataType GetQueueLength(PQueueInfo pQueueInfo)
     return Ret;
 }
 
+
+//加入队列
 VOID AddQueue(U8 *pDestBuf, U8 *pSrcBuf, PQueueInfo pQueueInfo, U16 UsartRxCount)
 {
     U16 u16Cnt;

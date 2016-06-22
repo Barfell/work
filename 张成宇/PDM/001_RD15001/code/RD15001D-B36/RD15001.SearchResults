@@ -1,9 +1,7 @@
----- switch_value Matches (11 in 1 files) ----
-Mileage.c (code\drv\src):U16 switch_value;
-Mileage.c (code\drv\src):    switch_value = (GPIO_ReadInputData(GPIOE) & 0x6000);
-Mileage.c (code\drv\src):    switch_value = ((switch_value >> 13) & 0x03);
-Mileage.c (code\drv\src):    turn_direction.current_switchstate=switch_value;
-Mileage.c (code\drv\src):        switch_value = (GPIO_ReadInputData(GPIOE) & 0x6000);
-Mileage.c (code\drv\src):        switch_value = ((switch_value >> 13) & 0x03);
-Mileage.c (code\drv\src):        switch_value = (GPIO_ReadInputData(GPIOE) & 0x6000);
-Mileage.c (code\drv\src):        switch_value = ((switch_value >> 13) & 0x03);
+---- g_bMileGaugeAccess Matches (6 in 2 files) ----
+Syn.c (code\drv\src):BOOL g_bMileGaugeAccess = FALSE;
+Syn.c (code\drv\src):            g_bMileGaugeAccess = TRUE;
+Syn.c (code\drv\src):    if(g_bMileGaugeAccess == TRUE)
+Syn.c (code\drv\src):        g_bMileGaugeAccess = FALSE;
+TestComm.c (code\test):EXTERN BOOL g_bMileGaugeAccess;
+TestComm.c (code\test):                        g_bMileGaugeAccess = FALSE;//保存的时候强制不再输出

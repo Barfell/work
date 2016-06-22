@@ -31,7 +31,7 @@ VOID SynInit(VOID)
 	
     GPIO_InitTypeDef GPIO_InitStructure;
     
-
+/*50ms进行发送一次*/
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3,ENABLE);  ///使能TIM3时钟
 	
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
@@ -82,6 +82,8 @@ VOID TIM3_IRQHandler(VOID)
 	}
 	TIM_ClearITPendingBit(TIM3,TIM_IT_CC1);  //清除中断标志位
 }
+
+//发送里程轨距等数据
 VOID HandleSynDataProc(VOID)
 {
     if(g_bMileGaugeAccess == TRUE)
@@ -273,17 +275,17 @@ VOID DisplayMileDataProc(VOID)
 	const GUI_FONT GUI_UNI_PTR *pOldFont;
 	pOldFont = GUI_SetFont(&GUI_Font6x8);//GUI_Font6x8
 	
-	u32Tick = GetSynCount();
+	u32Tick = GetSynCount();//获取时间
 	g_pData = &szData[0];
-	calculate_mileage();
-	Adc_Read();
+	calculate_mileage();//计算里程值
+	Adc_Read();//计算轨距电压
     if(mileage_record.mileage_sign=='-')
         mileage_a=0-mileage_record.mileage;
     else mileage_a=mileage_record.mileage;
         miles=((unsigned long)(mileage_a *1000));
     
     
-        
+        //系统节律时间点
     *(g_pData) = '#';
     *(g_pData + 1) = (u32Tick/1000000000)+'0' ;
     *(g_pData + 2) = ((u32Tick/100000000)%10)+'0' ;
@@ -296,6 +298,7 @@ VOID DisplayMileDataProc(VOID)
     *(g_pData + 9) = ((u32Tick/10)%10)+'0' ;
     *(g_pData + 10) = (u32Tick%10)+'0' ;
 
+		//里程值
     *(g_pData + 11) = '\\';        
     *(g_pData + 12) = mileage_record.mileage_sign;
     *(g_pData + 13) = (miles/10000000)+'0' ;
@@ -307,9 +310,10 @@ VOID DisplayMileDataProc(VOID)
     *(g_pData + 19) = (miles%1000)/100+'0' ;
     *(g_pData + 20) = (miles%100)/10+'0' ;
     *(g_pData + 21) = (miles%10)/1+'0' ;
-   
+
+  		 //轨距值
     *(g_pData + 22) = '\\';
-    //下面的是轨距电压值    
+    	//下面的是轨距电压值    
     gauges = systemvalue.gauge_DC;
     gauges=systemvalue.gauge_DC*1000;
     systemvalue.gauge_DC=0;

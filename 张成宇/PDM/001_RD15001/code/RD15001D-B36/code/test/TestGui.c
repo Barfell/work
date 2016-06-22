@@ -200,7 +200,7 @@ SetRailPillow_begain:
                         break;
                     }
                     
-                    if((GetTickCount() - u32Tick) > 2000)
+                    if((GetTickCount() - u32Tick) > 2000)//超过两秒还没有响应
 					{
 						sprintf((char *)szData, "Set   fail");
 						GUI_DispStringAt((char *)szData, 0, LINE_7);
@@ -339,11 +339,11 @@ VOID TestGuiProc(VOID)
 		{
 			SetKeyNumber(KEY_INVALID);
 			
-			if(u8KeyNumber == KEY_EXIT)
+			if(u8KeyNumber == KEY_EXIT)//退出
 			{
 				break;
 			}
-			else if(u8KeyNumber == KEY_LEFT)
+			else if(u8KeyNumber == KEY_LEFT)//左键
 			{
 				if(g_u8SelectCount == 0)
 				{
@@ -352,7 +352,7 @@ VOID TestGuiProc(VOID)
 				g_u8SelectCount--;
 				
 			}
-			else if(u8KeyNumber == KEY_RIGHT)
+			else if(u8KeyNumber == KEY_RIGHT)//右键
 			{
 				g_u8SelectCount++;
 				if(g_u8SelectCount == DISPALY_ITEM_NUMBER)
@@ -360,15 +360,15 @@ VOID TestGuiProc(VOID)
 					g_u8SelectCount = 0;
 				}
 			}
-			else if(u8KeyNumber == KEY_ENTER)
+			else if(u8KeyNumber == KEY_ENTER)//进入
 			{
 				if(g_u8SelectCount == DISPLAY_BOARDINFO)
 				{
-					DisplayBoardInfo();
+					DisplayBoardInfo();//显示板子信息
 				}
 				else if(g_u8SelectCount == DISPLAY_MILEDATA)
 				{
-					DisplayMileDataProc();
+					DisplayMileDataProc();//显示里程信息
 				}
 				else if(g_u8SelectCount == KEY_GUI)
 				{

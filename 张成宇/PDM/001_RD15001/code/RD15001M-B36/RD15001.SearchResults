@@ -1,6 +1,14 @@
----- ReceiveUsartData Matches (5 in 1 files) ----
-Usart.c (code\drv\src):STATIC VOID ReceiveUsartData(U8 type)//处理接收到的串口数据
-Usart.c (code\drv\src):        ReceiveUsartData(USART1_TYPE);
-Usart.c (code\drv\src):        ReceiveUsartData(USART2_TYPE);
-Usart.c (code\drv\src):        ReceiveUsartData(USART3_TYPE);
-Usart.c (code\drv\src):        ReceiveUsartData(USART4_TYPE);
+---- u16RxDataCount Matches (13 in 1 files) ----
+Usart.c (code\drv\src):    U16  u16RxDataCount;
+Usart.c (code\drv\src):            u16RxDataCount = g_cUsart1Info.UsartRxCount;
+Usart.c (code\drv\src):				if(ParsePacket(g_pUsart1_rx_buf, u16RxDataCount) == TRUE)//检测是否是43个字节以及检验是否正确
+Usart.c (code\drv\src):                        g_pUsart1_rx_buf[u16RxDataCount] = *g_pSyndataCount ;//第44-47字节 保存当前时间
+Usart.c (code\drv\src):                        g_pUsart1_rx_buf[u16RxDataCount + 1] = *(g_pSyndataCount + 1) ;
+Usart.c (code\drv\src):                        g_pUsart1_rx_buf[u16RxDataCount + 2] = *(g_pSyndataCount + 2) ;
+Usart.c (code\drv\src):                        g_pUsart1_rx_buf[u16RxDataCount + 3] = *(g_pSyndataCount + 3) ;
+Usart.c (code\drv\src):                        u16RxDataCount = g_cUsart1Info.UsartRxCount + 4;
+Usart.c (code\drv\src):            u16RxDataCount = g_cUsart2Info.UsartRxCount;
+Usart.c (code\drv\src):            u16RxDataCount = g_cUsart3Info.UsartRxCount;
+Usart.c (code\drv\src):            u16RxDataCount = g_cUsart4Info.UsartRxCount;
+Usart.c (code\drv\src):		AddQueue(pBufDest, pBufRoot, pQueueInfo, u16RxDataCount);
+Usart.c (code\drv\src):    u16RxDataCount = 0;

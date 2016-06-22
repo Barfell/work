@@ -216,6 +216,8 @@ VOID mileage_init(VOID)
     car_direction='+';
     turn_direction.driver_direction='+';
 }
+
+//里程中断服务函数，发生移动时候，进行轨距记录
 VOID EXTI15_10_IRQHandler(VOID)
 {
 

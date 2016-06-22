@@ -11,7 +11,7 @@ STATIC U8 *g_pUsart2_tx_buf;    //发送用的缓冲
 STATIC U8 *g_pUsart3_tx_buf;    //发送用的缓冲  
 STATIC U8 *g_pUsart4_tx_buf;    //发送用的缓冲  
 
-CUsartInfo g_cUsart1Info, g_cUsart2Info, g_cUsart3Info, g_cUsart4Info;
+CUsartInfo g_cUsart1Info, g_cUsart2Info, g_cUsart3Info, g_cUsart4Info;//串口最大字节数，当前串口的数据长度
 
 
 U8 *g_pUsart1_rx_buf; //接收用的缓冲
@@ -25,7 +25,7 @@ __align(4) U8 *pUsart3Data;    //处理用的环形缓冲      大小由MAXQUEUESIZE来决定
 __align(4) U8 *pUsart4Data;    //处理用的环形缓冲      大小由MAXQUEUESIZE来决定
      
 
-PQueueInfo pQueueUsart1Info, pQueueUsart2Info, pQueueUsart3Info, pQueueUsart4Info;
+PQueueInfo pQueueUsart1Info, pQueueUsart2Info, pQueueUsart3Info, pQueueUsart4Info;//队列的一系列参数
 
 BOOL g_bSave = FALSE;
 
@@ -35,6 +35,16 @@ EXTERN BOOL g_bImu;
 EXTERN BOOL ParsePacket(U8 *pBuf, U16 u16Length);
 //#define DEBUG_SYN_UART		/*使用cpld来替代原始时间*/
 
+
+
+/*
+	ERR_TYPE = 0,
+   USART1_TYPE,
+   USART2_TYPE,
+   USART3_TYPE,
+   USART4_TYPE,
+
+*/
 STATIC VOID ReceiveUsartData(U8 type)//处理接收到的串口数据
 {
     U16  u16RxDataCount;
@@ -61,14 +71,14 @@ STATIC VOID ReceiveUsartData(U8 type)//处理接收到的串口数据
 			g_pUsart1_rx_buf[4] = *(g_pTestdataCount + 2) ;
 			g_pUsart1_rx_buf[5] = *(g_pTestdataCount + 3) ;
 		#endif
-			if(g_bImu == TRUE)
+			if(g_bImu == TRUE)//IMU开启了的话
 			{
 				if(ParsePacket(g_pUsart1_rx_buf, u16RxDataCount) == TRUE)//检测是否是43个字节以及检验是否正确
 				{
-					u32SynCnt = GetSynCount();//获取当前时间
+					u32SynCnt = GetSynCount();//获取当前系统节律时间点
                     if(u32SynCnt != 0)
                     {
-                        g_pUsart1_rx_buf[u16RxDataCount] = *g_pSyndataCount ;//44-47 保存当前时间
+                        g_pUsart1_rx_buf[u16RxDataCount] = *g_pSyndataCount ;//第44-47字节 保存当前时间
                         g_pUsart1_rx_buf[u16RxDataCount + 1] = *(g_pSyndataCount + 1) ;
                         g_pUsart1_rx_buf[u16RxDataCount + 2] = *(g_pSyndataCount + 2) ;
                         g_pUsart1_rx_buf[u16RxDataCount + 3] = *(g_pSyndataCount + 3) ;
@@ -559,7 +569,7 @@ VOID uart2_init(U32 bound, U16 SendSize, U16 ReceiveSize)
 		{
 			EnterException(ERR_USATT2_MALLOC_FAIL);
 		}
-		else
+		else//申请内存成功后，指针指向全局变量
 		{
 			pUsart2Data = pHandleReceiveBuf;
 			pQueueUsart2Info = pQueueInfo;
